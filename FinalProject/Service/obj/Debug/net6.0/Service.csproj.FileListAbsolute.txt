@@ -1,0 +1,38 @@
+C:\Users\Əsgərxan\Desktop\FinalProject\Service\bin\Debug\net6.0\Service.deps.json
+C:\Users\Əsgərxan\Desktop\FinalProject\Service\bin\Debug\net6.0\Service.runtimeconfig.json
+C:\Users\Əsgərxan\Desktop\FinalProject\Service\bin\Debug\net6.0\Service.dll
+C:\Users\Əsgərxan\Desktop\FinalProject\Service\bin\Debug\net6.0\Service.pdb
+C:\Users\Əsgərxan\Desktop\FinalProject\Service\bin\Debug\net6.0\Domain.dll
+C:\Users\Əsgərxan\Desktop\FinalProject\Service\bin\Debug\net6.0\Repository.dll
+C:\Users\Əsgərxan\Desktop\FinalProject\Service\bin\Debug\net6.0\Repository.pdb
+C:\Users\Əsgərxan\Desktop\FinalProject\Service\bin\Debug\net6.0\Domain.pdb
+C:\Users\Əsgərxan\Desktop\FinalProject\Service\obj\Debug\net6.0\Service.csproj.AssemblyReference.cache
+C:\Users\Əsgərxan\Desktop\FinalProject\Service\obj\Debug\net6.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Əsgərxan\Desktop\FinalProject\Service\obj\Debug\net6.0\Service.AssemblyInfoInputs.cache
+C:\Users\Əsgərxan\Desktop\FinalProject\Service\obj\Debug\net6.0\Service.AssemblyInfo.cs
+C:\Users\Əsgərxan\Desktop\FinalProject\Service\obj\Debug\net6.0\Service.csproj.CoreCompileInputs.cache
+C:\Users\Əsgərxan\Desktop\FinalProject\Service\obj\Debug\net6.0\Service.csproj.Up2Date
+C:\Users\Əsgərxan\Desktop\FinalProject\Service\obj\Debug\net6.0\Service.dll
+C:\Users\Əsgərxan\Desktop\FinalProject\Service\obj\Debug\net6.0\refint\Service.dll
+C:\Users\Əsgərxan\Desktop\FinalProject\Service\obj\Debug\net6.0\Service.pdb
+C:\Users\Əsgərxan\Desktop\FinalProject\Service\obj\Debug\net6.0\Service.genruntimeconfig.cache
+C:\Users\Əsgərxan\Desktop\FinalProject\Service\obj\Debug\net6.0\ref\Service.dll
+C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Service\bin\Debug\net6.0\Service.deps.json
+C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Service\bin\Debug\net6.0\Service.runtimeconfig.json
+C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Service\bin\Debug\net6.0\Service.dll
+C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Service\bin\Debug\net6.0\Service.pdb
+C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Service\bin\Debug\net6.0\Domain.dll
+C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Service\bin\Debug\net6.0\Repository.dll
+C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Service\bin\Debug\net6.0\Repository.pdb
+C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Service\bin\Debug\net6.0\Domain.pdb
+C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Service\obj\Debug\net6.0\Service.csproj.AssemblyReference.cache
+C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Service\obj\Debug\net6.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Service\obj\Debug\net6.0\Service.AssemblyInfoInputs.cache
+C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Service\obj\Debug\net6.0\Service.AssemblyInfo.cs
+C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Service\obj\Debug\net6.0\Service.csproj.CoreCompileInputs.cache
+C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Service\obj\Debug\net6.0\Service.csproj.Up2Date
+C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Service\obj\Debug\net6.0\Service.dll
+C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Service\obj\Debug\net6.0\refint\Service.dll
+C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Service\obj\Debug\net6.0\Service.pdb
+C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Service\obj\Debug\net6.0\Service.genruntimeconfig.cache
+C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Service\obj\Debug\net6.0\ref\Service.dll

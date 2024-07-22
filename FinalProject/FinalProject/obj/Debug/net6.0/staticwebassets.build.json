@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "7S5T/GyQFbBuL1M3xOyvF+SA3PlryYwVBTVqgaJI7W4=",
+  "Source": "FinalProject",
+  "BasePath": "_content/FinalProject",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "FinalProject\\wwwroot",
+      "Source": "FinalProject",
+      "ContentRoot": "C:\\Users\\Əsgərxan\\Desktop\\Yeni qovluq (4)\\FinalProject\\FinalProject\\wwwroot\\",
+      "BasePath": "_content/FinalProject",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Əsgərxan\\Desktop\\Yeni qovluq (4)\\FinalProject\\FinalProject\\wwwroot\\templates\\confirm.html",
+      "SourceId": "FinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Əsgərxan\\Desktop\\Yeni qovluq (4)\\FinalProject\\FinalProject\\wwwroot\\",
+      "BasePath": "_content/FinalProject",
+      "RelativePath": "templates/confirm.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\templates\\confirm.html"
+    }
+  ]
+}
