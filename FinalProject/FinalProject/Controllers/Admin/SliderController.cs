@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Service.DTOs.Admin.Sliders;
-using Service.Helpers.Extensions;
 using Service.Services.Interfaces;
 using System.ComponentModel.DataAnnotations;
 

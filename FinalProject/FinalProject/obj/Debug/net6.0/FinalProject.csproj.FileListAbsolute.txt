@@ -177,3 +177,4 @@ C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\FinalProject\obj\Debug\
 C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\FinalProject\obj\Debug\net6.0\ref\FinalProject.dll
 C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\FinalProject\bin\Debug\net6.0\FinalProject.staticwebassets.runtime.json
 C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\FinalProject\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
+C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\FinalProject\obj\Debug\net6.0\FinalProject.sourcelink.json

@@ -1,12 +1,9 @@
 ﻿using AutoMapper;
 using Domain.Entities;
 using Service.DTOs.Account;
+using Service.DTOs.Admin.Abouts;
+using Service.DTOs.Admin.Categories;
 using Service.DTOs.Admin.Sliders;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Service.Helpers
 {
@@ -20,6 +17,14 @@ namespace Service.Helpers
             CreateMap<Slider, SliderDto>();
             CreateMap<SliderCreateDto, Slider>();
             CreateMap<SliderEditDto, Slider>().ForMember(dest => dest.Image, opt => opt.Condition(src => (src.Image is not null)));
+
+            CreateMap<About, AboutDto>();
+            CreateMap<AboutCreateDto, About>();
+            CreateMap<AboutEditDto, About>().ForMember(dest => dest.Image, opt => opt.Condition(src => (src.Image is not null)));
+
+            CreateMap<Category, CategoryDto>();
+            CreateMap<CategoryCreateDto, Category>();
+            CreateMap<CategoryEditDto, Category>().ForMember(dest => dest.Icon, opt => opt.Condition(src => (src.Icon is not null)));
         }
     }
 }

@@ -65,6 +65,10 @@ namespace FinalProject.Middlewares
                     response.StatusCode = (int)HttpStatusCode.Forbidden;
                     errorResponse.Message = ex.Message;
                     break;
+                case RequiredException ex:
+                    response.StatusCode = (int)HttpStatusCode.LengthRequired;
+                    errorResponse.Message = ex.Message;
+                    break;
 
                 default:
                     response.StatusCode = (int)HttpStatusCode.InternalServerError;

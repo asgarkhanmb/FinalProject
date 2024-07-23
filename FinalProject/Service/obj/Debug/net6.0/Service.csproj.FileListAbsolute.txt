@@ -36,3 +36,4 @@ C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Service\obj\Debug\net6.
 C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Service\obj\Debug\net6.0\Service.pdb
 C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Service\obj\Debug\net6.0\Service.genruntimeconfig.cache
 C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Service\obj\Debug\net6.0\ref\Service.dll
+C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Service\obj\Debug\net6.0\Service.sourcelink.json

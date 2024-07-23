@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Yeni qovluq (4)\\FinalProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\yeni qovluq (4)\\finalproject\\service\\dtos\\admin\\abouts\\aboutdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\dtos\\admin\\abouts\\aboutdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A201CC92-207E-4B07-927F-F08302CAEAD5}|Domain\\Domain.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\yeni qovluq (4)\\finalproject\\domain\\entities\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A201CC92-207E-4B07-927F-F08302CAEAD5}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\yeni qovluq (4)\\finalproject\\service\\dtos\\admin\\abouts\\abouteditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\dtos\\admin\\abouts\\abouteditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A201CC92-207E-4B07-927F-F08302CAEAD5}|Domain\\Domain.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\yeni qovluq (4)\\finalproject\\domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A201CC92-207E-4B07-927F-F08302CAEAD5}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\yeni qovluq (4)\\finalproject\\service\\dtos\\admin\\abouts\\aboutcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\dtos\\admin\\abouts\\aboutcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A201CC92-207E-4B07-927F-F08302CAEAD5}|Domain\\Domain.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\yeni qovluq (4)\\finalproject\\domain\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A201CC92-207E-4B07-927F-F08302CAEAD5}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,41 +38,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AboutEditDto.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Yeni qovluq (4)\\FinalProject\\Service\\DTOs\\Admin\\Abouts\\AboutEditDto.cs",
-              "RelativeDocumentMoniker": "Service\\DTOs\\Admin\\Abouts\\AboutEditDto.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Yeni qovluq (4)\\FinalProject\\Service\\DTOs\\Admin\\Abouts\\AboutEditDto.cs",
-              "RelativeToolTip": "Service\\DTOs\\Admin\\Abouts\\AboutEditDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Yeni qovluq (4)\\FinalProject\\Domain\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Category.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Yeni qovluq (4)\\FinalProject\\Domain\\Entities\\Category.cs",
+              "RelativeToolTip": "Domain\\Entities\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T07:37:27.099Z",
+              "WhenOpened": "2024-07-23T20:25:39.424Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AboutDto.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Yeni qovluq (4)\\FinalProject\\Service\\DTOs\\Admin\\Abouts\\AboutDto.cs",
-              "RelativeDocumentMoniker": "Service\\DTOs\\Admin\\Abouts\\AboutDto.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Yeni qovluq (4)\\FinalProject\\Service\\DTOs\\Admin\\Abouts\\AboutDto.cs",
-              "RelativeToolTip": "Service\\DTOs\\Admin\\Abouts\\AboutDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "ProductImage.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Yeni qovluq (4)\\FinalProject\\Domain\\Entities\\ProductImage.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\ProductImage.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Yeni qovluq (4)\\FinalProject\\Domain\\Entities\\ProductImage.cs",
+              "RelativeToolTip": "Domain\\Entities\\ProductImage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T07:36:50.757Z",
+              "WhenOpened": "2024-07-23T20:04:16.386Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AboutCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Yeni qovluq (4)\\FinalProject\\Service\\DTOs\\Admin\\Abouts\\AboutCreateDto.cs",
-              "RelativeDocumentMoniker": "Service\\DTOs\\Admin\\Abouts\\AboutCreateDto.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Yeni qovluq (4)\\FinalProject\\Service\\DTOs\\Admin\\Abouts\\AboutCreateDto.cs",
-              "RelativeToolTip": "Service\\DTOs\\Admin\\Abouts\\AboutCreateDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Yeni qovluq (4)\\FinalProject\\Domain\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Product.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Yeni qovluq (4)\\FinalProject\\Domain\\Entities\\Product.cs",
+              "RelativeToolTip": "Domain\\Entities\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T07:36:00.316Z",
+              "WhenOpened": "2024-07-23T20:02:15.252Z",
               "EditorCaption": ""
             }
           ]

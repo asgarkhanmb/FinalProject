@@ -26,3 +26,4 @@ C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Domain\obj\Debug\net6.0
 C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Domain\obj\Debug\net6.0\Domain.pdb
 C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Domain\obj\Debug\net6.0\Domain.genruntimeconfig.cache
 C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Domain\obj\Debug\net6.0\ref\Domain.dll
+C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Domain\obj\Debug\net6.0\Domain.sourcelink.json

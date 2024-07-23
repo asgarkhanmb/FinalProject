@@ -28,6 +28,7 @@ namespace Service.Services
 
         public async Task CreateAsync(SliderCreateDto model)
         {
+            if (model.Title.Length > 50 || model.Description.Length > 100) throw new RequiredException("Exceed the Title or Description length limit!!");
             string fileName = Guid.NewGuid().ToString() + "-" + model.UploadImage.FileName;
 
             string path = _env.GenerateFilePath( "images", fileName);
@@ -93,8 +94,8 @@ namespace Service.Services
 
         public async Task<PaginationResponse<SliderDto>> GetPaginateDataAsync(int page, int take)
         {
-            var cities = await _sliderRepo.GetAllAsync();
-            int totalPage = (int)Math.Ceiling((decimal)cities.Count() / take);
+            var slider = await _sliderRepo.GetAllAsync();
+            int totalPage = (int)Math.Ceiling((decimal)slider.Count() / take);
 
             var mappedDatas = _mapper.Map<IEnumerable<SliderDto>>(await _sliderRepo.GetPaginateDataAsync(page, take));
             return new PaginationResponse<SliderDto>(mappedDatas, totalPage, page);

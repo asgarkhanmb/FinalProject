@@ -4,11 +4,6 @@ using Service.DTOs.Account;
 using Service.Helpers;
 using Service.Services.Interfaces;
 using Service.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using FluentValidation.AspNetCore;
 
 namespace Service
@@ -30,6 +25,8 @@ namespace Service
             services.AddScoped<IAccountService, AccountService>();
             services.AddScoped<IEmailService, EmailService>();
             services.AddScoped<ISliderService, SliderService>();
+            services.AddScoped<IAboutService, AboutService>();
+            services.AddScoped<ICategoryService, CategoryService>();
 
             return services;
         }

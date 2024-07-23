@@ -32,3 +32,4 @@ C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Repository\obj\Debug\ne
 C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Repository\obj\Debug\net6.0\Repository.pdb
 C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Repository\obj\Debug\net6.0\Repository.genruntimeconfig.cache
 C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Repository\obj\Debug\net6.0\ref\Repository.dll
+C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Repository\obj\Debug\net6.0\Repository.sourcelink.json
