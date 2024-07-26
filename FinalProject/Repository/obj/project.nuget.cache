@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sJFMxRjfR1U=",
+  "dgSpecHash": "ahRRRCMf+AM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Əsgərxan\\Desktop\\Yeni qovluq (4)\\FinalProject\\Repository\\Repository.csproj",
+  "projectFilePath": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\Repository\\Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Əsgərxan\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Əsgərxan\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",

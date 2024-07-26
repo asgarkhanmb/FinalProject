@@ -12,6 +12,7 @@ namespace Repository.Repositories.Interfaces
     {
         Task CreateAsync(T entity);
         Task EditAsync(T entity);
+        Task<T> GetByInclude(Expression<Func<T, bool>> predicate, params string[] includes);
         IQueryable<T> FindAllWithIncludes();
         Task DeleteAsync(T entity);
         Task<IEnumerable<T>> GetAllAsync();

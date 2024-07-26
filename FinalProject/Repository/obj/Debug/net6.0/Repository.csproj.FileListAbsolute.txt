@@ -26,10 +26,28 @@ C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Repository\obj\Debug\ne
 C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Repository\obj\Debug\net6.0\Repository.AssemblyInfoInputs.cache
 C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Repository\obj\Debug\net6.0\Repository.AssemblyInfo.cs
 C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Repository\obj\Debug\net6.0\Repository.csproj.CoreCompileInputs.cache
+C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Repository\obj\Debug\net6.0\Repository.sourcelink.json
 C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Repository\obj\Debug\net6.0\Repository.csproj.Up2Date
 C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Repository\obj\Debug\net6.0\Repository.dll
 C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Repository\obj\Debug\net6.0\refint\Repository.dll
 C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Repository\obj\Debug\net6.0\Repository.pdb
 C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Repository\obj\Debug\net6.0\Repository.genruntimeconfig.cache
 C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Repository\obj\Debug\net6.0\ref\Repository.dll
-C:\Users\Əsgərxan\Desktop\Yeni qovluq (4)\FinalProject\Repository\obj\Debug\net6.0\Repository.sourcelink.json
+C:\Users\Əsgərxan\Desktop\Final\FinalProject\Repository\bin\Debug\net6.0\Repository.deps.json
+C:\Users\Əsgərxan\Desktop\Final\FinalProject\Repository\bin\Debug\net6.0\Repository.runtimeconfig.json
+C:\Users\Əsgərxan\Desktop\Final\FinalProject\Repository\bin\Debug\net6.0\Repository.dll
+C:\Users\Əsgərxan\Desktop\Final\FinalProject\Repository\bin\Debug\net6.0\Repository.pdb
+C:\Users\Əsgərxan\Desktop\Final\FinalProject\Repository\bin\Debug\net6.0\Domain.dll
+C:\Users\Əsgərxan\Desktop\Final\FinalProject\Repository\bin\Debug\net6.0\Domain.pdb
+C:\Users\Əsgərxan\Desktop\Final\FinalProject\Repository\obj\Debug\net6.0\Repository.csproj.AssemblyReference.cache
+C:\Users\Əsgərxan\Desktop\Final\FinalProject\Repository\obj\Debug\net6.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Əsgərxan\Desktop\Final\FinalProject\Repository\obj\Debug\net6.0\Repository.AssemblyInfoInputs.cache
+C:\Users\Əsgərxan\Desktop\Final\FinalProject\Repository\obj\Debug\net6.0\Repository.AssemblyInfo.cs
+C:\Users\Əsgərxan\Desktop\Final\FinalProject\Repository\obj\Debug\net6.0\Repository.csproj.CoreCompileInputs.cache
+C:\Users\Əsgərxan\Desktop\Final\FinalProject\Repository\obj\Debug\net6.0\Repository.sourcelink.json
+C:\Users\Əsgərxan\Desktop\Final\FinalProject\Repository\obj\Debug\net6.0\Repository.csproj.Up2Date
+C:\Users\Əsgərxan\Desktop\Final\FinalProject\Repository\obj\Debug\net6.0\Repository.dll
+C:\Users\Əsgərxan\Desktop\Final\FinalProject\Repository\obj\Debug\net6.0\refint\Repository.dll
+C:\Users\Əsgərxan\Desktop\Final\FinalProject\Repository\obj\Debug\net6.0\Repository.pdb
+C:\Users\Əsgərxan\Desktop\Final\FinalProject\Repository\obj\Debug\net6.0\Repository.genruntimeconfig.cache
+C:\Users\Əsgərxan\Desktop\Final\FinalProject\Repository\obj\Debug\net6.0\ref\Repository.dll

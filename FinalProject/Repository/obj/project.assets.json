@@ -3552,11 +3552,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Əsgərxan\\Desktop\\Yeni qovluq (4)\\FinalProject\\Repository\\Repository.csproj",
+      "projectUniqueName": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\Repository\\Repository.csproj",
       "projectName": "Repository",
-      "projectPath": "C:\\Users\\Əsgərxan\\Desktop\\Yeni qovluq (4)\\FinalProject\\Repository\\Repository.csproj",
+      "projectPath": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\Repository\\Repository.csproj",
       "packagesPath": "C:\\Users\\Əsgərxan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Əsgərxan\\Desktop\\Yeni qovluq (4)\\FinalProject\\Repository\\obj\\",
+      "outputPath": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\Repository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3578,8 +3578,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Əsgərxan\\Desktop\\Yeni qovluq (4)\\FinalProject\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Əsgərxan\\Desktop\\Yeni qovluq (4)\\FinalProject\\Domain\\Domain.csproj"
+            "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\Domain\\Domain.csproj"
             }
           }
         }

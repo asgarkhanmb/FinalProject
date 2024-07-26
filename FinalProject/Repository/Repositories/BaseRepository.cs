@@ -45,7 +45,19 @@ namespace Repository.Repositories
         {
             return await _entities.AsNoTracking().FirstOrDefaultAsync(m => m.Id == id);
         }
+        public async Task<T> GetByInclude(Expression<Func<T, bool>> predicate, params string[] includes)
+        {
+            IQueryable<T> query = _entities;
+            if (includes.Length > 0)
+            {
+                foreach (var include in includes)
+                {
+                   query= query.Include(include);
+                }
+            }
 
+            return await query.FirstOrDefaultAsync(predicate);
+        }
         public IQueryable<T> FindBy(Expression<Func<T, bool>> predicate, params Expression<Func<T, object>>[] includes)
         {
             var query = _entities.Where(predicate);
