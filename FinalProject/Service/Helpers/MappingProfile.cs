@@ -3,10 +3,10 @@ using Domain.Entities;
 using Service.DTOs.Account;
 using Service.DTOs.Admin.Abouts;
 using Service.DTOs.Admin.Categories;
+using Service.DTOs.Admin.ContactSettings;
 using Service.DTOs.Admin.Products;
 using Service.DTOs.Admin.Sliders;
 using Service.DTOs.Ui.Contacts;
-using System.Text.RegularExpressions;
 
 namespace Service.Helpers
 {
@@ -31,14 +31,17 @@ namespace Service.Helpers
 
 
             CreateMap<Product, ProductDto>().ForMember(dest => dest.CategoryName, opt => opt.MapFrom(src => src.Category.Name))
-
-                .ForMember(d => d.Images, opt => opt.MapFrom(s => s.ProductImages.Select(m => m.Image).ToList()));
+                                            .ForMember(d => d.Images, opt => opt.MapFrom(s => s.ProductImages.Select(m => m.Image).ToList()));
             CreateMap<ProductCreateDto, Product>();
             CreateMap<ProductEditDto, Product>();               
 
-
             CreateMap<Contact, ContactDto>();
             CreateMap<ContactCreateDto, Contact>();
+
+            CreateMap<ContactSetting, ContactSettingDto>();
+            CreateMap<ContactSettingCreateDto, ContactSetting>();
+            CreateMap<ContactSettingEditDto, ContactSetting>().ForMember(dest => dest.Image, opt => opt.Condition(src => (src.Image is not null)));
+
 
         }
     }

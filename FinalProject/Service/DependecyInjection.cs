@@ -29,6 +29,9 @@ namespace Service
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<IContactService, ContactService>();
+            services.AddScoped<IContactSettingService, ContactSettingService>();
+
+
 
             return services;
         }

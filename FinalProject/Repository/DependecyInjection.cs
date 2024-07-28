@@ -15,7 +15,7 @@ namespace Repository
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IContactRepository, ContactRepository>();
-
+            services.AddScoped<IContactSettingRepository, ContactSettingRepository>();
 
             return services;
         }
