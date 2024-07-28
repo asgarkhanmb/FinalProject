@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\FinalProject\\wwwroot\\images\\0029138a-284b-4971-a15a-eb2c731b6804-hero-2.jpeg",
-      "PackagePath": "staticwebassets\\images\\0029138a-284b-4971-a15a-eb2c731b6804-hero-2.jpeg"
-    },
-    {
       "Id": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\FinalProject\\wwwroot\\images\\051ca256-a139-4cb6-bb1e-ae44735e265f-cake-1.webp",
       "PackagePath": "staticwebassets\\images\\051ca256-a139-4cb6-bb1e-ae44735e265f-cake-1.webp"
     },
@@ -53,12 +49,20 @@
       "PackagePath": "staticwebassets\\images\\8276a170-00cd-4499-bbf8-a75a87be55a3-hero-2.jpeg"
     },
     {
+      "Id": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\FinalProject\\wwwroot\\images\\8e2b90b4-f440-4755-8419-f5553b829584-cake-1.webp",
+      "PackagePath": "staticwebassets\\images\\8e2b90b4-f440-4755-8419-f5553b829584-cake-1.webp"
+    },
+    {
       "Id": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\FinalProject\\wwwroot\\images\\966a87fe-bc1c-4ab6-9c55-3715f6c0ee10-img_bg_3.jpg",
       "PackagePath": "staticwebassets\\images\\966a87fe-bc1c-4ab6-9c55-3715f6c0ee10-img_bg_3.jpg"
     },
     {
       "Id": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\FinalProject\\wwwroot\\images\\9711188c-936b-4306-91a1-1f3d81d448d1-cake-1.webp",
       "PackagePath": "staticwebassets\\images\\9711188c-936b-4306-91a1-1f3d81d448d1-cake-1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\FinalProject\\wwwroot\\images\\974ef93d-3ff8-4642-a717-030b8e802b3e-hero-2.jpeg",
+      "PackagePath": "staticwebassets\\images\\974ef93d-3ff8-4642-a717-030b8e802b3e-hero-2.jpeg"
     },
     {
       "Id": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\FinalProject\\wwwroot\\images\\9c6885ff-e9d4-4b60-9526-9b68721117b2-hero-2.jpeg",
@@ -85,8 +89,12 @@
       "PackagePath": "staticwebassets\\images\\b480f194-8dd3-4437-a351-1282f04cf219-cake-1.webp"
     },
     {
-      "Id": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\FinalProject\\wwwroot\\images\\c1adf2e7-1322-49f2-bbe8-74b5add2813d-cake-1.webp",
-      "PackagePath": "staticwebassets\\images\\c1adf2e7-1322-49f2-bbe8-74b5add2813d-cake-1.webp"
+      "Id": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\FinalProject\\wwwroot\\images\\bc52adee-8745-4d48-8aae-94fe8860b1f1-hero-2.jpeg",
+      "PackagePath": "staticwebassets\\images\\bc52adee-8745-4d48-8aae-94fe8860b1f1-hero-2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\FinalProject\\wwwroot\\images\\c6bab840-8907-4f34-bab2-7a906abef288-hero-2.jpeg",
+      "PackagePath": "staticwebassets\\images\\c6bab840-8907-4f34-bab2-7a906abef288-hero-2.jpeg"
     },
     {
       "Id": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\FinalProject\\wwwroot\\images\\cdb97d63-70d0-48a8-bd47-74f7350d55f0-1.jpg",

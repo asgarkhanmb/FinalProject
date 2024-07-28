@@ -1,4 +1,5 @@
 ﻿using Domain.Common;
+using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Repository.Data;
 using Repository.Repositories.Interfaces;
@@ -77,6 +78,11 @@ namespace Repository.Repositories
         public IQueryable<T> GetAllTest()
         {
             return _entities.AsQueryable();
+        }
+
+        public async Task<bool> AnyAsync(Expression<Func<Product, bool>> predicate)
+        {
+            return await _context.Products.AnyAsync(predicate);
         }
     }
 }

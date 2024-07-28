@@ -1,4 +1,5 @@
 ﻿using Domain.Common;
+using Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,5 +20,6 @@ namespace Repository.Repositories.Interfaces
         Task<T> GetById(int id);
         Task<IEnumerable<T>> FindAll(Expression<Func<T, bool>> predicate);
         IQueryable<T> FindBy(Expression<Func<T, bool>> predicate, params Expression<Func<T, object>>[] includes);
+        Task<bool> AnyAsync(Expression<Func<Product, bool>> predicate);
     }
 }

@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FinalProject.Controllers.UI
 {
-    [Route("api/[controller]/[action]")]
+    [Route("api/ui/[controller]/[action]")]
     [ApiController]
     public class BaseController : ControllerBase
     {

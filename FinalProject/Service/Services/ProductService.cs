@@ -29,6 +29,13 @@ namespace Service.Services
 
         public async Task CreateAsync(ProductCreateDto model)
         {
+            bool productExists = await _productRepo.AnyAsync(m=>m.Name==model.Name);
+
+            if (productExists)
+            {
+                throw new RequiredException("A product with the same name already exists.");
+            }
+
             List<ProductImage> images = new();
 
             foreach (var item in model.UploadImages)
@@ -120,7 +127,7 @@ namespace Service.Services
 
         public async Task<PaginationResponse<ProductDto>> GetPaginateDataAsync(int page, int take)
         {
-            var product = await _productRepo.GetAllAsync();
+            var product = await _productRepo.FindAllWithIncludes().Include(m=>m.ProductImages).Include(m=>m.Category).ToListAsync();
             int totalPage = (int)Math.Ceiling((decimal)product.Count() / take);
 
             var mappedDatas = _mapper.Map<IEnumerable<ProductDto>>(await _productRepo.GetPaginateDataAsync(page, take));

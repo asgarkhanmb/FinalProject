@@ -28,6 +28,13 @@ namespace Service.Services
 
         public async Task CreateAsync(CategoryCreateDto model)
         {
+            bool categoryExists = await _categoryRepo.AnyAsync(m=>m.Category.Name==model.Name);
+
+            if (categoryExists)
+            {
+                throw new RequiredException("A category with the same name already exists.");
+            }
+
             if (model.Name.Length>20) throw new RequiredException("Exceed the Name length limit!!");
             string fileName = Guid.NewGuid().ToString() + "-" + model.UploadImage.FileName;
 

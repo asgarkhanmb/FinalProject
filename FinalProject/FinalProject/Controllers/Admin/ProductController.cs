@@ -44,6 +44,10 @@ namespace FinalProject.Controllers.Admin
         {
             return Ok(await _productService.GetByIdAsync(id));
         }
-
+        [HttpGet]
+        public async Task<IActionResult> GetPaginateDatas([FromQuery] int page = 1, [FromQuery] int take = 2)
+        {
+            return Ok(await _productService.GetPaginateDataAsync(page, take));
+        }
     }
 }
