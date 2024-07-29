@@ -14,14 +14,17 @@ namespace Service.Services
     public class ProductService : IProductService
     {
         private readonly IProductRepository _productRepo;
+        private readonly ICategoryRepository _categoryRepo;
         private readonly IWebHostEnvironment _env;
         private readonly IMapper _mapper;
 
         public ProductService(IProductRepository productRepo,
+                              ICategoryRepository categoryRepo,
                               IWebHostEnvironment env,
                               IMapper mapper)
         {
             _productRepo = productRepo;
+            _categoryRepo = categoryRepo;
             _env = env;
             _mapper = mapper;
         }
@@ -35,6 +38,14 @@ namespace Service.Services
             {
                 throw new RequiredException("A product with the same name already exists.");
             }
+
+            bool categoryExists = await _categoryRepo.AnyAsync(c => c.Id == model.CategoryId);
+
+            if (!categoryExists)
+            {
+                throw new NotFoundException("The specified category does not exist.");
+            }
+
 
             List<ProductImage> images = new();
 
@@ -76,6 +87,12 @@ namespace Service.Services
 
         public async Task EditAsync(int? id, ProductEditDto model)
         {
+            bool productExists = await _productRepo.AnyAsync(m => m.Name == model.Name);
+
+            if (productExists)
+            {
+                throw new RequiredException("A product with the same name already exists.");
+            }
             var existProduct = await _productRepo.GetByInclude(p=>p.Id==id, "ProductImages");
             _mapper.Map(model, existProduct);
 
