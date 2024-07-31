@@ -80,9 +80,9 @@ namespace Repository.Repositories
             return _entities.AsQueryable();
         }
 
-        public async Task<bool> AnyAsync(Expression<Func<Product, bool>> predicate)
+        public async Task<bool> ExistAsync(Expression<Func<T, bool>> predicate)
         {
-            return await _context.Products.AnyAsync(predicate);
+            return await _entities.AnyAsync(predicate);
         }
     }
 }

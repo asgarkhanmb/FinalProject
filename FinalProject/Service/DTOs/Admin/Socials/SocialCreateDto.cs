@@ -1,14 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Http;
+using Swashbuckle.AspNetCore.Annotations;
+using System.ComponentModel.DataAnnotations;
+
 
 namespace Service.DTOs.Admin.Socials
 {
     public class SocialCreateDto
     {
+        [Required]
         public string Name { get; set; }
+        [Required]
         public string Url { get; set; }
+        [Required]
+        public int TeamId { get; set; }
+
     }
 }

@@ -10,6 +10,7 @@ namespace Repository.Repositories
     {
         public CategoryRepository(AppDbContext context) : base(context) { }
 
+   
 
         public async Task<IEnumerable<Category>> GetPaginateDataAsync(int page, int take)
         {

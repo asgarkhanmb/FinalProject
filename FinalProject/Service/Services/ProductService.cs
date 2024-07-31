@@ -32,14 +32,14 @@ namespace Service.Services
 
         public async Task CreateAsync(ProductCreateDto model)
         {
-            bool productExists = await _productRepo.AnyAsync(m=>m.Name==model.Name);
+            bool productExists = await _productRepo.ExistAsync(m=>m.Name==model.Name);
 
             if (productExists)
             {
                 throw new RequiredException("A product with the same name already exists.");
             }
 
-            bool categoryExists = await _categoryRepo.AnyAsync(c => c.Id == model.CategoryId);
+            bool categoryExists = await _categoryRepo.ExistAsync(c => c.Id == model.CategoryId);
 
             if (!categoryExists)
             {
@@ -87,7 +87,7 @@ namespace Service.Services
 
         public async Task EditAsync(int? id, ProductEditDto model)
         {
-            bool productExists = await _productRepo.AnyAsync(m => m.Name == model.Name);
+            bool productExists = await _productRepo.ExistAsync(m => m.Name == model.Name);
 
             if (productExists)
             {

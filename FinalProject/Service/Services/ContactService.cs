@@ -5,6 +5,7 @@ using Repository.Repositories.Interfaces;
 using Service.DTOs.Ui.Contacts;
 using Service.Helpers.Exceptions;
 using Service.Services.Interfaces;
+using System.ComponentModel.DataAnnotations;
 
 namespace Service.Services
 {
@@ -23,11 +24,12 @@ namespace Service.Services
 
         public async Task CreateAsync(ContactCreateDto model)
         {
+        
             if (model.Name.Length > 20||model.Message.Length>200) throw new RequiredException("Exceed the length limit!!");
             if (model == null)  throw new NotFoundException("Data not found");
-            if (string.IsNullOrEmpty(model.Email) || model.Email.Length > 50 || !model.Email.Contains("@gmail.com"))
+            if (string.IsNullOrEmpty(model.Email) || model.Email.Length > 50)
             {
-                throw new RequiredException("Email is required, must be less than 50 characters, and must contain '@'.");
+                throw new RequiredException("Email is required, must be less than 50 characters.");
             }
             var contact = _mapper.Map<Contact>(model);
             await _contactRepo.CreateAsync(contact);

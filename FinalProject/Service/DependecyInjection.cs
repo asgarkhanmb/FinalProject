@@ -30,7 +30,8 @@ namespace Service
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<IContactService, ContactService>();
             services.AddScoped<IContactSettingService, ContactSettingService>();
-
+            services.AddScoped<ISocialService, SocialService>();
+            services.AddScoped<ITeamService, TeamService>();
 
 
             return services;

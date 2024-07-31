@@ -9,5 +9,6 @@ namespace Repository.Repositories.Interfaces
 {
     public interface ITeamRepository :IBaseRepository<Team>
     {
+        Task<IEnumerable<Team>> GetPaginateDataAsync(int page, int take);
     }
 }

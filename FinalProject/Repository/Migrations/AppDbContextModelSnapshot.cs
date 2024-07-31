@@ -315,10 +315,6 @@ namespace Repository.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Image")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(50)
@@ -327,7 +323,16 @@ namespace Repository.Migrations
                     b.Property<bool>("SoftDelete")
                         .HasColumnType("bit");
 
+                    b.Property<int>("TeamId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Url")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("TeamId");
 
                     b.ToTable("Socials");
                 });
@@ -368,33 +373,6 @@ namespace Repository.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Teams");
-                });
-
-            modelBuilder.Entity("Domain.Entities.TeamSocial", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("SocialId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TeamId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Url")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("SocialId");
-
-                    b.HasIndex("TeamId");
-
-                    b.ToTable("TeamSocials");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -552,21 +530,13 @@ namespace Repository.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("Domain.Entities.TeamSocial", b =>
+            modelBuilder.Entity("Domain.Entities.Social", b =>
                 {
-                    b.HasOne("Domain.Entities.Social", "Social")
-                        .WithMany()
-                        .HasForeignKey("SocialId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("Domain.Entities.Team", "Team")
-                        .WithMany()
+                        .WithMany("Socials")
                         .HasForeignKey("TeamId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Social");
 
                     b.Navigation("Team");
                 });
@@ -630,6 +600,11 @@ namespace Repository.Migrations
             modelBuilder.Entity("Domain.Entities.Product", b =>
                 {
                     b.Navigation("ProductImages");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Team", b =>
+                {
+                    b.Navigation("Socials");
                 });
 #pragma warning restore 612, 618
         }

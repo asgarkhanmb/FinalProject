@@ -19,7 +19,6 @@ namespace Repository.Data
         public DbSet<ContactSetting> ContactSettings { get; set; }
         public DbSet<Team> Teams { get; set; }
         public DbSet<Social> Socials { get; set; }
-        public DbSet<TeamSocial>TeamSocials { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

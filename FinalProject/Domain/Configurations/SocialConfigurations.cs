@@ -9,7 +9,7 @@ namespace Domain.Configurations
         public void Configure(EntityTypeBuilder<Social> builder)
         {
             builder.Property(m => m.Name).IsRequired().HasMaxLength(50);
-            builder.Property(m => m.Image).IsRequired();
+
         }
     }
 }

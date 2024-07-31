@@ -6,6 +6,8 @@ using Service.DTOs.Admin.Categories;
 using Service.DTOs.Admin.ContactSettings;
 using Service.DTOs.Admin.Products;
 using Service.DTOs.Admin.Sliders;
+using Service.DTOs.Admin.Socials;
+using Service.DTOs.Admin.Teams;
 using Service.DTOs.Ui.Contacts;
 
 namespace Service.Helpers
@@ -42,7 +44,14 @@ namespace Service.Helpers
             CreateMap<ContactSettingCreateDto, ContactSetting>();
             CreateMap<ContactSettingEditDto, ContactSetting>().ForMember(dest => dest.Image, opt => opt.Condition(src => (src.Image is not null)));
 
+            CreateMap<Social, SocialDto>();
+            CreateMap<SocialCreateDto, Social>();
+            CreateMap<SocialEditDto, Social>();
 
-        }
+            CreateMap<Team, TeamDto>().ForMember(dest => dest.SocialNames, opt => opt.MapFrom(src => src.Socials.Select(m=>m.Name).ToList()));
+                                     
+            CreateMap<TeamCreateDto, Team>();
+            CreateMap<TeamEditDto, Team>();
+        }                                     
     }
 }

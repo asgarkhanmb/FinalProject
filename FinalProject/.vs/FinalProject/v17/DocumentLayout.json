@@ -3,24 +3,148 @@
   "WorkspaceRootPath": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A201CC92-207E-4B07-927F-F08302CAEAD5}|Domain\\Domain.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\domain\\entities\\social.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A201CC92-207E-4B07-927F-F08302CAEAD5}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\social.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\finalproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\dtos\\admin\\socials\\socialcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\dtos\\admin\\socials\\socialcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\dtos\\ui\\contacts\\contactcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\dtos\\ui\\contacts\\contactcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\dtos\\ui\\contacts\\contactdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\dtos\\ui\\contacts\\contactdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\services\\contactservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\services\\contactservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\services\\sliderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\services\\sliderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\services\\socialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\services\\socialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\services\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\services\\contactsettingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\services\\contactsettingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\services\\aboutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\services\\aboutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02ED7861-03BE-4A5D-A3E6-65E8F411D54C}|Repository\\Repository.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\repository\\repositories\\interfaces\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02ED7861-03BE-4A5D-A3E6-65E8F411D54C}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\interfaces\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\helpers\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\helpers\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\dtos\\admin\\teams\\teamdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\dtos\\admin\\teams\\teamdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\dtos\\admin\\teams\\teamcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\dtos\\admin\\teams\\teamcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A201CC92-207E-4B07-927F-F08302CAEAD5}|Domain\\Domain.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\domain\\entities\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A201CC92-207E-4B07-927F-F08302CAEAD5}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A201CC92-207E-4B07-927F-F08302CAEAD5}|Domain\\Domain.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A201CC92-207E-4B07-927F-F08302CAEAD5}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A201CC92-207E-4B07-927F-F08302CAEAD5}|Domain\\Domain.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\domain\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A201CC92-207E-4B07-927F-F08302CAEAD5}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\dtos\\admin\\categories\\categorycreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\dtos\\admin\\categories\\categorycreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\dtos\\admin\\categories\\categoryeditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\dtos\\admin\\categories\\categoryeditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\dtos\\admin\\categories\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\dtos\\admin\\categories\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\dtos\\admin\\products\\productcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\dtos\\admin\\products\\productcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\dtos\\admin\\socials\\socialcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\dtos\\admin\\socials\\socialcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A201CC92-207E-4B07-927F-F08302CAEAD5}|Domain\\Domain.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\domain\\entities\\social.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A201CC92-207E-4B07-927F-F08302CAEAD5}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\social.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\dependecyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\dependecyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02ED7861-03BE-4A5D-A3E6-65E8F411D54C}|Repository\\Repository.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\repository\\dependecyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02ED7861-03BE-4A5D-A3E6-65E8F411D54C}|Repository\\Repository.csproj|solutionrelative:repository\\dependecyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\finalproject\\controllers\\admin\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\controllers\\admin\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\finalproject\\controllers\\admin\\socialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\controllers\\admin\\socialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02ED7861-03BE-4A5D-A3E6-65E8F411D54C}|Repository\\Repository.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\repository\\repositories\\interfaces\\iteamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02ED7861-03BE-4A5D-A3E6-65E8F411D54C}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\interfaces\\iteamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02ED7861-03BE-4A5D-A3E6-65E8F411D54C}|Repository\\Repository.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\repository\\repositories\\teamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02ED7861-03BE-4A5D-A3E6-65E8F411D54C}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\teamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A201CC92-207E-4B07-927F-F08302CAEAD5}|Domain\\Domain.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\domain\\configurations\\teamconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A201CC92-207E-4B07-927F-F08302CAEAD5}|Domain\\Domain.csproj|solutionrelative:domain\\configurations\\teamconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\services\\interfaces\\isliderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\services\\interfaces\\isliderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\services\\interfaces\\iteamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\services\\interfaces\\iteamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\services\\interfaces\\isocialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\services\\interfaces\\isocialservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,60 +154,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Social.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Domain\\Entities\\Social.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\Social.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Domain\\Entities\\Social.cs",
-              "RelativeToolTip": "Domain\\Entities\\Social.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T11:00:39.323Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SocialCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Socials\\SocialCreateDto.cs",
-              "RelativeDocumentMoniker": "Service\\DTOs\\Admin\\Socials\\SocialCreateDto.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Socials\\SocialCreateDto.cs",
-              "RelativeToolTip": "Service\\DTOs\\Admin\\Socials\\SocialCreateDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T10:55:37.124Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TeamCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Teams\\TeamCreateDto.cs",
-              "RelativeDocumentMoniker": "Service\\DTOs\\Admin\\Teams\\TeamCreateDto.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Teams\\TeamCreateDto.cs",
-              "RelativeToolTip": "Service\\DTOs\\Admin\\Teams\\TeamCreateDto.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T10:39:48.812Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\ProductService.cs",
-              "RelativeDocumentMoniker": "Service\\Services\\ProductService.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\ProductService.cs",
-              "RelativeToolTip": "Service\\Services\\ProductService.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAgwFsAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T09:21:20.357Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -98,15 +170,470 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\FinalProject\\Program.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Program.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\FinalProject\\Program.cs",
+              "RelativeToolTip": "FinalProject\\Program.cs",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAAGwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T12:48:16.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContactCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Ui\\Contacts\\ContactCreateDto.cs",
+              "RelativeDocumentMoniker": "Service\\DTOs\\Ui\\Contacts\\ContactCreateDto.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Ui\\Contacts\\ContactCreateDto.cs",
+              "RelativeToolTip": "Service\\DTOs\\Ui\\Contacts\\ContactCreateDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T12:16:59.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ContactDto.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Ui\\Contacts\\ContactDto.cs",
+              "RelativeDocumentMoniker": "Service\\DTOs\\Ui\\Contacts\\ContactDto.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Ui\\Contacts\\ContactDto.cs",
+              "RelativeToolTip": "Service\\DTOs\\Ui\\Contacts\\ContactDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T12:17:00.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\EmailService.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\EmailService.cs",
+              "RelativeToolTip": "Service\\Services\\EmailService.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T11:24:43.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ContactSettingService.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\ContactSettingService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\ContactSettingService.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\ContactSettingService.cs",
+              "RelativeToolTip": "Service\\Services\\ContactSettingService.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAkwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T11:24:40.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ContactService.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\ContactService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\ContactService.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\ContactService.cs",
+              "RelativeToolTip": "Service\\Services\\ContactService.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAwB8AAABgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T11:24:32.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\ProductService.cs",
+              "RelativeToolTip": "Service\\Services\\ProductService.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAUwFkAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T11:14:21.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SliderService.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\SliderService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\SliderService.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\SliderService.cs",
+              "RelativeToolTip": "Service\\Services\\SliderService.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwGAAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T08:31:38.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SocialService.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\SocialService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\SocialService.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\SocialService.cs",
+              "RelativeToolTip": "Service\\Services\\SocialService.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwCMAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T08:43:18.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TeamService.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\TeamService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\TeamService.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\TeamService.cs",
+              "RelativeToolTip": "Service\\Services\\TeamService.cs",
+              "ViewState": "AQIAAFYAAAAAAAAAAAA9wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T08:29:25.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\CategoryService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\CategoryService.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\CategoryService.cs",
+              "RelativeToolTip": "Service\\Services\\CategoryService.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAkwB4AAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T11:22:32.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\AccountService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\AccountService.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\AccountService.cs",
+              "RelativeToolTip": "Service\\Services\\AccountService.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T11:24:22.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AboutService.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\AboutService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\AboutService.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\AboutService.cs",
+              "RelativeToolTip": "Service\\Services\\AboutService.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAkwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T11:24:14.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IBaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Repository\\Repositories\\Interfaces\\IBaseRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repositories\\Interfaces\\IBaseRepository.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Repository\\Repositories\\Interfaces\\IBaseRepository.cs",
+              "RelativeToolTip": "Repository\\Repositories\\Interfaces\\IBaseRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T11:21:59.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Domain\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Product.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Domain\\Entities\\Product.cs",
+              "RelativeToolTip": "Domain\\Entities\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T11:15:26.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Team.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Domain\\Entities\\Team.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Team.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Domain\\Entities\\Team.cs",
+              "RelativeToolTip": "Domain\\Entities\\Team.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T10:30:41.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Domain\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Category.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Domain\\Entities\\Category.cs",
+              "RelativeToolTip": "Domain\\Entities\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T11:13:15.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TeamCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Teams\\TeamCreateDto.cs",
+              "RelativeDocumentMoniker": "Service\\DTOs\\Admin\\Teams\\TeamCreateDto.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Teams\\TeamCreateDto.cs",
+              "RelativeToolTip": "Service\\DTOs\\Admin\\Teams\\TeamCreateDto.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T11:14:42.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TeamDto.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Teams\\TeamDto.cs",
+              "RelativeDocumentMoniker": "Service\\DTOs\\Admin\\Teams\\TeamDto.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Teams\\TeamDto.cs",
+              "RelativeToolTip": "Service\\DTOs\\Admin\\Teams\\TeamDto.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAuwAkAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T10:30:26.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Helpers\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "Service\\Helpers\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Helpers\\MappingProfile.cs",
+              "RelativeToolTip": "Service\\Helpers\\MappingProfile.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAIwDMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T09:13:55.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CategoryCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Categories\\CategoryCreateDto.cs",
+              "RelativeDocumentMoniker": "Service\\DTOs\\Admin\\Categories\\CategoryCreateDto.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Categories\\CategoryCreateDto.cs",
+              "RelativeToolTip": "Service\\DTOs\\Admin\\Categories\\CategoryCreateDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T11:15:07.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CategoryEditDto.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Categories\\CategoryEditDto.cs",
+              "RelativeDocumentMoniker": "Service\\DTOs\\Admin\\Categories\\CategoryEditDto.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Categories\\CategoryEditDto.cs",
+              "RelativeToolTip": "Service\\DTOs\\Admin\\Categories\\CategoryEditDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T11:15:12.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CategoryDto.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Categories\\CategoryDto.cs",
+              "RelativeDocumentMoniker": "Service\\DTOs\\Admin\\Categories\\CategoryDto.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Categories\\CategoryDto.cs",
+              "RelativeToolTip": "Service\\DTOs\\Admin\\Categories\\CategoryDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T11:15:10.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "ProductCreateDto.cs",
               "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Products\\ProductCreateDto.cs",
               "RelativeDocumentMoniker": "Service\\DTOs\\Admin\\Products\\ProductCreateDto.cs",
               "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Products\\ProductCreateDto.cs",
               "RelativeToolTip": "Service\\DTOs\\Admin\\Products\\ProductCreateDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAqAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T09:22:16.623Z",
+              "WhenOpened": "2024-07-31T11:14:48.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Social.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Domain\\Entities\\Social.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Social.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Domain\\Entities\\Social.cs",
+              "RelativeToolTip": "Domain\\Entities\\Social.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T10:30:38.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "SocialCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Socials\\SocialCreateDto.cs",
+              "RelativeDocumentMoniker": "Service\\DTOs\\Admin\\Socials\\SocialCreateDto.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Socials\\SocialCreateDto.cs",
+              "RelativeToolTip": "Service\\DTOs\\Admin\\Socials\\SocialCreateDto.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAABEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T09:35:35.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "DependecyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DependecyInjection.cs",
+              "RelativeDocumentMoniker": "Service\\DependecyInjection.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DependecyInjection.cs",
+              "RelativeToolTip": "Service\\DependecyInjection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T08:45:15.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DependecyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Repository\\DependecyInjection.cs",
+              "RelativeDocumentMoniker": "Repository\\DependecyInjection.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Repository\\DependecyInjection.cs",
+              "RelativeToolTip": "Repository\\DependecyInjection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T09:13:00.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "SocialController.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\FinalProject\\Controllers\\Admin\\SocialController.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Controllers\\Admin\\SocialController.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\FinalProject\\Controllers\\Admin\\SocialController.cs",
+              "RelativeToolTip": "FinalProject\\Controllers\\Admin\\SocialController.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAgwDIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T09:11:12.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "TeamController.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\FinalProject\\Controllers\\Admin\\TeamController.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Controllers\\Admin\\TeamController.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\FinalProject\\Controllers\\Admin\\TeamController.cs",
+              "RelativeToolTip": "FinalProject\\Controllers\\Admin\\TeamController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAYwDEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T09:10:22.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "TeamRepository.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Repository\\Repositories\\TeamRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repositories\\TeamRepository.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Repository\\Repositories\\TeamRepository.cs",
+              "RelativeToolTip": "Repository\\Repositories\\TeamRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAcAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T08:45:42.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "TeamConfigurations.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Domain\\Configurations\\TeamConfigurations.cs",
+              "RelativeDocumentMoniker": "Domain\\Configurations\\TeamConfigurations.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Domain\\Configurations\\TeamConfigurations.cs",
+              "RelativeToolTip": "Domain\\Configurations\\TeamConfigurations.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T08:32:31.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ISliderService.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\Interfaces\\ISliderService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\Interfaces\\ISliderService.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\Interfaces\\ISliderService.cs",
+              "RelativeToolTip": "Service\\Services\\Interfaces\\ISliderService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T08:31:33.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ITeamRepository.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Repository\\Repositories\\Interfaces\\ITeamRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repositories\\Interfaces\\ITeamRepository.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Repository\\Repositories\\Interfaces\\ITeamRepository.cs",
+              "RelativeToolTip": "Repository\\Repositories\\Interfaces\\ITeamRepository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAwA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T08:27:24.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ITeamService.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\Interfaces\\ITeamService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\Interfaces\\ITeamService.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\Interfaces\\ITeamService.cs",
+              "RelativeToolTip": "Service\\Services\\Interfaces\\ITeamService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T08:27:50.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ISocialService.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\Interfaces\\ISocialService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\Interfaces\\ISocialService.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\Interfaces\\ISocialService.cs",
+              "RelativeToolTip": "Service\\Services\\Interfaces\\ISocialService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T08:28:32.029Z",
               "EditorCaption": ""
             }
           ]

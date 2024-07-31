@@ -28,7 +28,7 @@ namespace Service.Services
 
         public async Task CreateAsync(CategoryCreateDto model)
         {
-            bool categoryExists = await _categoryRepo.AnyAsync(m=>m.Category.Name==model.Name);
+            bool categoryExists = await _categoryRepo.ExistAsync(m=>m.Name==model.Name);
 
             if (categoryExists)
             {

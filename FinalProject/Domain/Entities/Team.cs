@@ -9,6 +9,6 @@ namespace Domain.Entities
         public string Image { get; set; }
         public string FullName { get; set; }
         public string Position { get; set; }
-        List<TeamSocial> TeamSocials { get; set; }  
+        public List<Social> Socials { get; set; }
     }
 }
