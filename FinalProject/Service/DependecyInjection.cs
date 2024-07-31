@@ -32,6 +32,7 @@ namespace Service
             services.AddScoped<IContactSettingService, ContactSettingService>();
             services.AddScoped<ISocialService, SocialService>();
             services.AddScoped<ITeamService, TeamService>();
+            services.AddScoped<ITestimonialService, TestimonialService>();
 
 
             return services;

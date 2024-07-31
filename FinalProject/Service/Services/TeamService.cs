@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Repository.Helpers;
 using Repository.Repositories.Interfaces;
+using Service.DTOs.Admin.Products;
 using Service.DTOs.Admin.Teams;
 using Service.Helpers.Exceptions;
 using Service.Helpers.Extensions;
@@ -30,7 +31,9 @@ namespace Service.Services
 
         public async Task CreateAsync(TeamCreateDto model)
         {
-            if (model.Title.Length > 20 || model.FullName.Length > 50 || model.Position.Length>30) throw new RequiredException("Exceed the length limit!!");
+            if (model.Title.Length > 20 || model.FullName.Length > 50 || model.Position.Length>30) 
+                throw new RequiredException("Exceed the length limit!!");
+
             string fileName = Guid.NewGuid().ToString() + "-" + model.UploadImage.FileName;
 
             string path = _env.GenerateFilePath("images", fileName);
@@ -71,9 +74,6 @@ namespace Service.Services
 
             }
             _mapper.Map(model, existTeam);
-
-
-
             await _teamRepo.EditAsync(existTeam);
         }
 
@@ -86,13 +86,8 @@ namespace Service.Services
 
         public async Task<TeamDto> GetByIdAsync(int? id)
         {
-            if (id is null) throw new ArgumentNullException();
-
             var existTeam = await _teamRepo.GetById((int)id) ?? throw new NotFoundException("Data not found");
-
-            if (existTeam is null) throw new NullReferenceException();
-
-            return _mapper.Map<TeamDto>(existTeam);
+            return _mapper.Map<TeamDto>(await _teamRepo.GetByInclude(p => p.Id == id, "Socials"));
         }
 
         public async Task<PaginationResponse<TeamDto>> GetPaginateDataAsync(int page, int take)

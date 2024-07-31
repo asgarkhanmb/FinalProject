@@ -18,6 +18,7 @@ namespace Repository
             services.AddScoped<IContactSettingRepository, ContactSettingRepository>();
             services.AddScoped<ITeamRepository, TeamRepository>();
             services.AddScoped<ISocialRepository, SocialRepository>();
+            services.AddScoped<ITestimonialRepository,TestimonialRepository>();
 
 
 

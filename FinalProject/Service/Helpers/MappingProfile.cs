@@ -8,6 +8,7 @@ using Service.DTOs.Admin.Products;
 using Service.DTOs.Admin.Sliders;
 using Service.DTOs.Admin.Socials;
 using Service.DTOs.Admin.Teams;
+using Service.DTOs.Admin.Testimonials;
 using Service.DTOs.Ui.Contacts;
 
 namespace Service.Helpers
@@ -52,6 +53,11 @@ namespace Service.Helpers
                                      
             CreateMap<TeamCreateDto, Team>();
             CreateMap<TeamEditDto, Team>();
-        }                                     
+
+            CreateMap<Testimonial, TestimonialDto>();
+            CreateMap<TestimonialCreateDto, Testimonial>();
+            CreateMap<TestimonialEditDto, Testimonial>().ForMember(dest => dest.Image, opt => opt.Condition(src => (src.Image is not null)));
+
+        }
     }
 }
