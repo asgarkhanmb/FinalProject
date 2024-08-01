@@ -17,7 +17,7 @@ namespace FinalProject.Controllers.Admin
         public async Task<IActionResult> Create([FromForm] ProductCreateDto request)
         {
             await _productService.CreateAsync(request);
-            return CreatedAtAction(nameof(Create), new {Response = "Successfully added"});
+            return CreatedAtAction(nameof(Create), new { Response = "Data Successfully Created" });
         }
 
         [HttpDelete]

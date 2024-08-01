@@ -17,7 +17,7 @@ namespace FinalProject.Controllers.Admin
         public async Task<IActionResult> Create([FromForm] ContactSettingCreateDto request)
         {
             await _contactSettingService.CreateAsync(request);
-            return CreatedAtAction(nameof(Create), request);
+            return CreatedAtAction(nameof(Create), new { Response = "Data Successfully Created" });
         }
         [HttpDelete]
         public async Task<IActionResult> Delete([FromQuery][Required] int id)

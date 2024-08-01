@@ -17,7 +17,7 @@ namespace FinalProject.Controllers.Admin
         public async Task<IActionResult> Create([FromForm] TeamCreateDto request)
         {
             await _teamService.CreateAsync(request);
-            return CreatedAtAction(nameof(Create), request);
+            return CreatedAtAction(nameof(Create), new { Response = "Data Successfully Created" });
         }
         [HttpDelete]
         public async Task<IActionResult> Delete([FromQuery][Required] int id)

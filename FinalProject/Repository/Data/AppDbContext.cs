@@ -20,6 +20,8 @@ namespace Repository.Data
         public DbSet<Team> Teams { get; set; }
         public DbSet<Social> Socials { get; set; }
         public DbSet<Testimonial>Testimonials { get; set; }
+        public DbSet<Instagram> Instagrams { get; set; }
+        public DbSet<InstagramGallery> InstagramGalleries { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

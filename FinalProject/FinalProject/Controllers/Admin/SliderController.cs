@@ -18,7 +18,7 @@ namespace FinalProject.Controllers.Admin
         public async Task<IActionResult> Create([FromForm] SliderCreateDto request)
         {
             await _sliderService.CreateAsync(request);
-            return CreatedAtAction(nameof(Create), request);
+            return CreatedAtAction(nameof(Create), new { Response = "Data Successfully Created" });
         }
         [HttpDelete]
         public async Task<IActionResult> Delete([FromQuery][Required] int id)

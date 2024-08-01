@@ -16,10 +16,14 @@ namespace FinalProject.Controllers.UI
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] ContactCreateDto request)
+        public async Task<IActionResult> Create([FromQuery] ContactCreateDto request)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             await _contactService.CreateAsync(request);
-            return CreatedAtAction(nameof(Create), new { Response = "Successfully added" });
+            return CreatedAtAction(nameof(Create), new { Response = "Data Successfully Created" });
         }
     }
 }

@@ -4,6 +4,7 @@ using Service.DTOs.Account;
 using Service.DTOs.Admin.Abouts;
 using Service.DTOs.Admin.Categories;
 using Service.DTOs.Admin.ContactSettings;
+using Service.DTOs.Admin.Instagrams;
 using Service.DTOs.Admin.Products;
 using Service.DTOs.Admin.Sliders;
 using Service.DTOs.Admin.Socials;
@@ -58,6 +59,9 @@ namespace Service.Helpers
             CreateMap<TestimonialCreateDto, Testimonial>();
             CreateMap<TestimonialEditDto, Testimonial>().ForMember(dest => dest.Image, opt => opt.Condition(src => (src.Image is not null)));
 
+            CreateMap<Instagram, InstagramDto>().ForMember(d => d.Images, opt => opt.MapFrom(s => s.InstagramGalleries.Select(m => m.Image).ToList()));
+            CreateMap<InstagramCreateDto, Instagram>();
+            CreateMap<InstagramEditDto, Instagram>();
         }
     }
 }

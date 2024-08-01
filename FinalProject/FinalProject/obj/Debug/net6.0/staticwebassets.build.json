@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Eo02JxAxeZrwGZrhvenZYGJ/v9VSKrV/nrEMezHb9Uw=",
+  "Hash": "6VdVbohFLCzntUIek8S1NoRbQrChqpmzap2Kh9DjqRM=",
   "Source": "FinalProject",
   "BasePath": "_content/FinalProject",
   "Mode": "Default",
@@ -131,6 +131,25 @@
       "OriginalItemSpec": "wwwroot\\images\\1090be0d-f6c0-4b9e-a980-f098efc5b174-cake-1.webp"
     },
     {
+      "Identity": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\FinalProject\\wwwroot\\images\\12da2196-170e-421e-974e-dc1b5539a3be-hero-2.jpeg",
+      "SourceId": "FinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\FinalProject\\wwwroot\\",
+      "BasePath": "_content/FinalProject",
+      "RelativePath": "images/12da2196-170e-421e-974e-dc1b5539a3be-hero-2.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\12da2196-170e-421e-974e-dc1b5539a3be-hero-2.jpeg"
+    },
+    {
       "Identity": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\FinalProject\\wwwroot\\images\\138cf30f-4aeb-4f64-9c29-0f28ab654b1f-hero-2.jpeg",
       "SourceId": "FinalProject",
       "SourceType": "Discovered",
@@ -148,6 +167,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\138cf30f-4aeb-4f64-9c29-0f28ab654b1f-hero-2.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\FinalProject\\wwwroot\\images\\283670d6-d84f-4504-9199-d636d32731cd-instagram.webp",
+      "SourceId": "FinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\FinalProject\\wwwroot\\",
+      "BasePath": "_content/FinalProject",
+      "RelativePath": "images/283670d6-d84f-4504-9199-d636d32731cd-instagram.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\283670d6-d84f-4504-9199-d636d32731cd-instagram.webp"
     },
     {
       "Identity": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\FinalProject\\wwwroot\\images\\3abbcc07-0d6b-4360-9625-f3e903dbb232-img_bg_3.jpg",

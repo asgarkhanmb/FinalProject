@@ -33,6 +33,7 @@ namespace Service
             services.AddScoped<ISocialService, SocialService>();
             services.AddScoped<ITeamService, TeamService>();
             services.AddScoped<ITestimonialService, TestimonialService>();
+            services.AddScoped<IInstagramService, InstagramService>();
 
 
             return services;
