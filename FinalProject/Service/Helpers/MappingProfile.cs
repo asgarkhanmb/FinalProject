@@ -2,6 +2,7 @@
 using Domain.Entities;
 using Service.DTOs.Account;
 using Service.DTOs.Admin.Abouts;
+using Service.DTOs.Admin.Blogs;
 using Service.DTOs.Admin.Categories;
 using Service.DTOs.Admin.ContactSettings;
 using Service.DTOs.Admin.Instagrams;
@@ -62,6 +63,11 @@ namespace Service.Helpers
             CreateMap<Instagram, InstagramDto>().ForMember(d => d.Images, opt => opt.MapFrom(s => s.InstagramGalleries.Select(m => m.Image).ToList()));
             CreateMap<InstagramCreateDto, Instagram>();
             CreateMap<InstagramEditDto, Instagram>();
+
+            CreateMap<Blog, BlogDto>();
+            CreateMap<BlogCreateDto, Blog>();
+            CreateMap<BlogEditDto, Blog>().ForMember(dest => dest.Image, opt => opt.Condition(src => (src.Image is not null)));
+
         }
     }
 }

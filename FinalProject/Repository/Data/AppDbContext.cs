@@ -22,6 +22,7 @@ namespace Repository.Data
         public DbSet<Testimonial>Testimonials { get; set; }
         public DbSet<Instagram> Instagrams { get; set; }
         public DbSet<InstagramGallery> InstagramGalleries { get; set; }
+        public DbSet<Blog> Blogs { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

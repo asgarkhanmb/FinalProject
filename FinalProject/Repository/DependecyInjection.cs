@@ -20,6 +20,7 @@ namespace Repository
             services.AddScoped<ISocialRepository, SocialRepository>();
             services.AddScoped<ITestimonialRepository,TestimonialRepository>();
             services.AddScoped<IInstagramRepository, InstagramRepository>();
+            services.AddScoped<IBlogRepository, BlogRepository>();
 
 
 

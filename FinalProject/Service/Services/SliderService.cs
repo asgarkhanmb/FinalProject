@@ -52,6 +52,7 @@ namespace Service.Services
 
         public async Task EditAsync(int? id, SliderEditDto model)
         {
+            if (model.Title.Length > 50 || model.Description.Length > 100) throw new RequiredException("Exceed the Title or Description length limit!!");
             var existSlider = await _sliderRepo.GetById((int)id) ?? throw new NotFoundException("Data not found");
 
             if (model.UploadImage is not null)

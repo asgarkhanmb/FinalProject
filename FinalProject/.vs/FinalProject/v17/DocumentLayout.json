@@ -3,96 +3,72 @@
   "WorkspaceRootPath": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\dependecyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\dependecyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\finalproject\\controllers\\admin\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\controllers\\admin\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\finalproject\\controllers\\admin\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\controllers\\admin\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\helpers\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\helpers\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\dtos\\admin\\instagrams\\instagramcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\dtos\\admin\\instagrams\\instagramcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\dependecyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\dependecyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\services\\instagramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\services\\instagramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\services\\blogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\services\\blogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\services\\sliderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\services\\sliderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\finalproject\\controllers\\admin\\instagramcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\controllers\\admin\\instagramcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\services\\interfaces\\iblogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\services\\interfaces\\iblogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\finalproject\\controllers\\admin\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\controllers\\admin\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\services\\interfaces\\isliderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\services\\interfaces\\isliderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\services\\contactservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\services\\contactservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\services\\interfaces\\iinstagramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\services\\interfaces\\iinstagramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\services\\interfaces\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\services\\interfaces\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\services\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\services\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{02ED7861-03BE-4A5D-A3E6-65E8F411D54C}|Repository\\Repository.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\repository\\dependecyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02ED7861-03BE-4A5D-A3E6-65E8F411D54C}|Repository\\Repository.csproj|solutionrelative:repository\\dependecyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02ED7861-03BE-4A5D-A3E6-65E8F411D54C}|Repository\\Repository.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\repository\\repositories\\instagramrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02ED7861-03BE-4A5D-A3E6-65E8F411D54C}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\instagramrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\dtos\\admin\\blogs\\blogeditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\dtos\\admin\\blogs\\blogeditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02ED7861-03BE-4A5D-A3E6-65E8F411D54C}|Repository\\Repository.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\repository\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02ED7861-03BE-4A5D-A3E6-65E8F411D54C}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\dtos\\admin\\blogs\\blogcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\dtos\\admin\\blogs\\blogcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02ED7861-03BE-4A5D-A3E6-65E8F411D54C}|Repository\\Repository.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\repository\\repositories\\interfaces\\iinstagramrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02ED7861-03BE-4A5D-A3E6-65E8F411D54C}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\interfaces\\iinstagramrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\dtos\\admin\\blogs\\blogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\dtos\\admin\\blogs\\blogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02ED7861-03BE-4A5D-A3E6-65E8F411D54C}|Repository\\Repository.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\repository\\repositories\\interfaces\\itestimonialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02ED7861-03BE-4A5D-A3E6-65E8F411D54C}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\interfaces\\itestimonialrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\dtos\\admin\\sliders\\slidercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\dtos\\admin\\sliders\\slidercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\dtos\\admin\\instagrams\\instagrameditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\dtos\\admin\\instagrams\\instagrameditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02ED7861-03BE-4A5D-A3E6-65E8F411D54C}|Repository\\Repository.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\repository\\repositories\\blogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02ED7861-03BE-4A5D-A3E6-65E8F411D54C}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\blogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\dtos\\admin\\instagrams\\instagramdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\dtos\\admin\\instagrams\\instagramdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02ED7861-03BE-4A5D-A3E6-65E8F411D54C}|Repository\\Repository.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\repository\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02ED7861-03BE-4A5D-A3E6-65E8F411D54C}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A201CC92-207E-4B07-927F-F08302CAEAD5}|Domain\\Domain.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A201CC92-207E-4B07-927F-F08302CAEAD5}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A201CC92-207E-4B07-927F-F08302CAEAD5}|Domain\\Domain.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\domain\\entities\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A201CC92-207E-4B07-927F-F08302CAEAD5}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\dtos\\admin\\products\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\dtos\\admin\\products\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A201CC92-207E-4B07-927F-F08302CAEAD5}|Domain\\Domain.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\domain\\entities\\instagram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A201CC92-207E-4B07-927F-F08302CAEAD5}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\instagram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\dtos\\admin\\products\\productcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\dtos\\admin\\products\\productcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02ED7861-03BE-4A5D-A3E6-65E8F411D54C}|Repository\\Repository.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\repository\\repositories\\interfaces\\iblogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02ED7861-03BE-4A5D-A3E6-65E8F411D54C}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\interfaces\\iblogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -102,8 +78,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SliderController.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\FinalProject\\Controllers\\Admin\\SliderController.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Controllers\\Admin\\SliderController.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\FinalProject\\Controllers\\Admin\\SliderController.cs",
+              "RelativeToolTip": "FinalProject\\Controllers\\Admin\\SliderController.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAiwBAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T09:12:21.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BlogController.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\FinalProject\\Controllers\\Admin\\BlogController.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Controllers\\Admin\\BlogController.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\FinalProject\\Controllers\\Admin\\BlogController.cs",
+              "RelativeToolTip": "FinalProject\\Controllers\\Admin\\BlogController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T09:11:43.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Helpers\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "Service\\Helpers\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Helpers\\MappingProfile.cs",
+              "RelativeToolTip": "Service\\Helpers\\MappingProfile.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAQwEkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T09:09:40.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DependecyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DependecyInjection.cs",
+              "RelativeDocumentMoniker": "Service\\DependecyInjection.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DependecyInjection.cs",
+              "RelativeToolTip": "Service\\DependecyInjection.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwCQAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T09:09:12.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SliderService.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\SliderService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\SliderService.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\SliderService.cs",
+              "RelativeToolTip": "Service\\Services\\SliderService.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAA7wGEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T09:03:16.552Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -118,302 +159,148 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DependecyInjection.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DependecyInjection.cs",
-              "RelativeDocumentMoniker": "Service\\DependecyInjection.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DependecyInjection.cs",
-              "RelativeToolTip": "Service\\DependecyInjection.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwCIAAABKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T08:50:21.429Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "InstagramController.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\FinalProject\\Controllers\\Admin\\InstagramController.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Controllers\\Admin\\InstagramController.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\FinalProject\\Controllers\\Admin\\InstagramController.cs",
-              "RelativeToolTip": "FinalProject\\Controllers\\Admin\\InstagramController.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAowB0AAABWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T08:46:29.181Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MappingProfile.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Helpers\\MappingProfile.cs",
-              "RelativeDocumentMoniker": "Service\\Helpers\\MappingProfile.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Helpers\\MappingProfile.cs",
-              "RelativeToolTip": "Service\\Helpers\\MappingProfile.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAwD0AAACKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T16:23:33.084Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "InstagramService.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\InstagramService.cs",
-              "RelativeDocumentMoniker": "Service\\Services\\InstagramService.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\InstagramService.cs",
-              "RelativeToolTip": "Service\\Services\\InstagramService.cs",
-              "ViewState": "AQIAAGAAAAAAAAAAAAAkwHIAAABzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T16:28:45.734Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\ProductService.cs",
-              "RelativeDocumentMoniker": "Service\\Services\\ProductService.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\ProductService.cs",
-              "RelativeToolTip": "Service\\Services\\ProductService.cs",
-              "ViewState": "AQIAAIMAAAAAAAAAAAAQwIwAAAACAAAA",
+              "Title": "BlogService.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\BlogService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\BlogService.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\BlogService.cs",
+              "RelativeToolTip": "Service\\Services\\BlogService.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwAoAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T16:31:37.727Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "InstagramCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Instagrams\\InstagramCreateDto.cs",
-              "RelativeDocumentMoniker": "Service\\DTOs\\Admin\\Instagrams\\InstagramCreateDto.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Instagrams\\InstagramCreateDto.cs",
-              "RelativeToolTip": "Service\\DTOs\\Admin\\Instagrams\\InstagramCreateDto.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T16:18:57.295Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\FinalProject\\Controllers\\Admin\\CategoryController.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Controllers\\Admin\\CategoryController.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\FinalProject\\Controllers\\Admin\\CategoryController.cs",
-              "RelativeToolTip": "FinalProject\\Controllers\\Admin\\CategoryController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T08:47:40.056Z",
+              "WhenOpened": "2024-08-02T08:59:36.259Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "CategoryService.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\CategoryService.cs",
-              "RelativeDocumentMoniker": "Service\\Services\\CategoryService.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\CategoryService.cs",
-              "RelativeToolTip": "Service\\Services\\CategoryService.cs",
-              "ViewState": "AQIAAFIAAAAAAAAAAAAkwFsAAAAKAAAA",
+              "Title": "ISliderService.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\Interfaces\\ISliderService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\Interfaces\\ISliderService.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\Interfaces\\ISliderService.cs",
+              "RelativeToolTip": "Service\\Services\\Interfaces\\ISliderService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T16:37:31.217Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T08:58:43.864Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "ContactService.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\ContactService.cs",
-              "RelativeDocumentMoniker": "Service\\Services\\ContactService.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\ContactService.cs",
-              "RelativeToolTip": "Service\\Services\\ContactService.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAgwC0AAAAMAAAA",
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\Interfaces\\IProductService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\Interfaces\\IProductService.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\Interfaces\\IProductService.cs",
+              "RelativeToolTip": "Service\\Services\\Interfaces\\IProductService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T16:37:30.032Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T08:58:43.284Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ICategoryService.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\Interfaces\\ICategoryService.cs",
-              "RelativeDocumentMoniker": "Service\\Services\\Interfaces\\ICategoryService.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\Interfaces\\ICategoryService.cs",
-              "RelativeToolTip": "Service\\Services\\Interfaces\\ICategoryService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "DocumentIndex": 6,
+              "Title": "IBlogService.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\Interfaces\\IBlogService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\Interfaces\\IBlogService.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\Interfaces\\IBlogService.cs",
+              "RelativeToolTip": "Service\\Services\\Interfaces\\IBlogService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T16:27:47.399Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T08:58:31.816Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "IInstagramService.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\Interfaces\\IInstagramService.cs",
-              "RelativeDocumentMoniker": "Service\\Services\\Interfaces\\IInstagramService.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\Interfaces\\IInstagramService.cs",
-              "RelativeToolTip": "Service\\Services\\Interfaces\\IInstagramService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T16:27:33.643Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "DependecyInjection.cs",
               "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Repository\\DependecyInjection.cs",
               "RelativeDocumentMoniker": "Repository\\DependecyInjection.cs",
               "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Repository\\DependecyInjection.cs",
               "RelativeToolTip": "Repository\\DependecyInjection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABMAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T16:26:57.738Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T08:57:29.94Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Repository\\Repositories\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\Repositories\\ProductRepository.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Repository\\Repositories\\ProductRepository.cs",
-              "RelativeToolTip": "Repository\\Repositories\\ProductRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAjAAAA",
+              "DocumentIndex": 10,
+              "Title": "BlogEditDto.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Blogs\\BlogEditDto.cs",
+              "RelativeDocumentMoniker": "Service\\DTOs\\Admin\\Blogs\\BlogEditDto.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Blogs\\BlogEditDto.cs",
+              "RelativeToolTip": "Service\\DTOs\\Admin\\Blogs\\BlogEditDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T16:26:01.476Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T08:56:36.91Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "InstagramRepository.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Repository\\Repositories\\InstagramRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\Repositories\\InstagramRepository.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Repository\\Repositories\\InstagramRepository.cs",
-              "RelativeToolTip": "Repository\\Repositories\\InstagramRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAaAAAA",
+              "Title": "BlogDto.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Blogs\\BlogDto.cs",
+              "RelativeDocumentMoniker": "Service\\DTOs\\Admin\\Blogs\\BlogDto.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Blogs\\BlogDto.cs",
+              "RelativeToolTip": "Service\\DTOs\\Admin\\Blogs\\BlogDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T16:25:54.192Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T08:56:13.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SliderCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Sliders\\SliderCreateDto.cs",
+              "RelativeDocumentMoniker": "Service\\DTOs\\Admin\\Sliders\\SliderCreateDto.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Sliders\\SliderCreateDto.cs",
+              "RelativeToolTip": "Service\\DTOs\\Admin\\Sliders\\SliderCreateDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T08:55:54.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BlogCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Blogs\\BlogCreateDto.cs",
+              "RelativeDocumentMoniker": "Service\\DTOs\\Admin\\Blogs\\BlogCreateDto.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Blogs\\BlogCreateDto.cs",
+              "RelativeToolTip": "Service\\DTOs\\Admin\\Blogs\\BlogCreateDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T08:55:43.947Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "ITestimonialRepository.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Repository\\Repositories\\Interfaces\\ITestimonialRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\Repositories\\Interfaces\\ITestimonialRepository.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Repository\\Repositories\\Interfaces\\ITestimonialRepository.cs",
-              "RelativeToolTip": "Repository\\Repositories\\Interfaces\\ITestimonialRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAsAAAA",
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Repository\\Repositories\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repositories\\CategoryRepository.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Repository\\Repositories\\CategoryRepository.cs",
+              "RelativeToolTip": "Repository\\Repositories\\CategoryRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T16:25:15.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T08:52:04.181Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "IInstagramRepository.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Repository\\Repositories\\Interfaces\\IInstagramRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\Repositories\\Interfaces\\IInstagramRepository.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Repository\\Repositories\\Interfaces\\IInstagramRepository.cs",
-              "RelativeToolTip": "Repository\\Repositories\\Interfaces\\IInstagramRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Title": "BlogRepository.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Repository\\Repositories\\BlogRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repositories\\BlogRepository.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Repository\\Repositories\\BlogRepository.cs",
+              "RelativeToolTip": "Repository\\Repositories\\BlogRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T16:25:07.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T08:51:51.013Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "InstagramEditDto.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Instagrams\\InstagramEditDto.cs",
-              "RelativeDocumentMoniker": "Service\\DTOs\\Admin\\Instagrams\\InstagramEditDto.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Instagrams\\InstagramEditDto.cs",
-              "RelativeToolTip": "Service\\DTOs\\Admin\\Instagrams\\InstagramEditDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA8AAAA",
+              "Title": "IBlogRepository.cs",
+              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Repository\\Repositories\\Interfaces\\IBlogRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repositories\\Interfaces\\IBlogRepository.cs",
+              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Repository\\Repositories\\Interfaces\\IBlogRepository.cs",
+              "RelativeToolTip": "Repository\\Repositories\\Interfaces\\IBlogRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T16:22:53.075Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ProductImage.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Domain\\Entities\\ProductImage.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\ProductImage.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Domain\\Entities\\ProductImage.cs",
-              "RelativeToolTip": "Domain\\Entities\\ProductImage.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T16:21:56.536Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ProductDto.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Products\\ProductDto.cs",
-              "RelativeDocumentMoniker": "Service\\DTOs\\Admin\\Products\\ProductDto.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Products\\ProductDto.cs",
-              "RelativeToolTip": "Service\\DTOs\\Admin\\Products\\ProductDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T16:21:21.264Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "InstagramDto.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Instagrams\\InstagramDto.cs",
-              "RelativeDocumentMoniker": "Service\\DTOs\\Admin\\Instagrams\\InstagramDto.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Instagrams\\InstagramDto.cs",
-              "RelativeToolTip": "Service\\DTOs\\Admin\\Instagrams\\InstagramDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T16:20:53.422Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Domain\\Entities\\Product.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\Product.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Domain\\Entities\\Product.cs",
-              "RelativeToolTip": "Domain\\Entities\\Product.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T16:19:21.163Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Instagram.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Domain\\Entities\\Instagram.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\Instagram.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Domain\\Entities\\Instagram.cs",
-              "RelativeToolTip": "Domain\\Entities\\Instagram.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T16:19:08.957Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ProductCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Products\\ProductCreateDto.cs",
-              "RelativeDocumentMoniker": "Service\\DTOs\\Admin\\Products\\ProductCreateDto.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Admin\\Products\\ProductCreateDto.cs",
-              "RelativeToolTip": "Service\\DTOs\\Admin\\Products\\ProductCreateDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T16:19:32.081Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T08:50:47.458Z"
             }
           ]
         }
