@@ -27,9 +27,9 @@ namespace Service.Services
         
             if (model.Name.Length > 20||model.Message.Length>200) throw new RequiredException("Exceed the length limit!!");
             if (model == null)  throw new NotFoundException("Data not found");
-            if (string.IsNullOrEmpty(model.Email) || model.Email.Length > 50)
+            if (string.IsNullOrEmpty(model.Email) || model.Email.Length > 200 || model.Email.Length < 15)
             {
-                throw new RequiredException("Email is required, must be less than 50 characters.");
+                throw new RequiredException("Email is required, must be between 5 and 200 characters.");
             }
             var contact = _mapper.Map<Contact>(model);
             await _contactRepo.CreateAsync(contact);

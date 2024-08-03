@@ -35,7 +35,8 @@ namespace Service
             services.AddScoped<ITestimonialService, TestimonialService>();
             services.AddScoped<IInstagramService, InstagramService>();
             services.AddScoped<IBlogService, BlogService>();
-
+            services.AddScoped<ISettingService, SettingService>();
+            services.AddScoped<ISubscribeService, SubscribeService>();
 
             return services;
         }

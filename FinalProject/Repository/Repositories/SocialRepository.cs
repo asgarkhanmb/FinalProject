@@ -9,7 +9,7 @@ namespace Repository.Repositories
     {
         public SocialRepository(AppDbContext context) : base(context) { }
 
-       
+
         public async Task<IEnumerable<Social>> GetPaginateDataAsync(int page, int take)
         {
             return await _entities.Skip((page - 1) * take).Take(take).ToListAsync();

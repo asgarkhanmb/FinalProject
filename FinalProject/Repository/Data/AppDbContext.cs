@@ -14,15 +14,17 @@ namespace Repository.Data
         public DbSet<About> Abouts { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
-        public DbSet<ProductImage>ProductImages { get; set; }
+        public DbSet<ProductImage> ProductImages { get; set; }
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<ContactSetting> ContactSettings { get; set; }
         public DbSet<Team> Teams { get; set; }
         public DbSet<Social> Socials { get; set; }
-        public DbSet<Testimonial>Testimonials { get; set; }
+        public DbSet<Testimonial> Testimonials { get; set; }
         public DbSet<Instagram> Instagrams { get; set; }
         public DbSet<InstagramGallery> InstagramGalleries { get; set; }
         public DbSet<Blog> Blogs { get; set; }
+        public DbSet<Setting> Settings { get; set; }
+        public DbSet<Subscribe> Subscribes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

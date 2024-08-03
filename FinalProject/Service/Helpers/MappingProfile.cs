@@ -7,8 +7,10 @@ using Service.DTOs.Admin.Categories;
 using Service.DTOs.Admin.ContactSettings;
 using Service.DTOs.Admin.Instagrams;
 using Service.DTOs.Admin.Products;
+using Service.DTOs.Admin.Settings;
 using Service.DTOs.Admin.Sliders;
 using Service.DTOs.Admin.Socials;
+using Service.DTOs.Admin.Subscribes;
 using Service.DTOs.Admin.Teams;
 using Service.DTOs.Admin.Testimonials;
 using Service.DTOs.Ui.Contacts;
@@ -67,6 +69,14 @@ namespace Service.Helpers
             CreateMap<Blog, BlogDto>();
             CreateMap<BlogCreateDto, Blog>();
             CreateMap<BlogEditDto, Blog>().ForMember(dest => dest.Image, opt => opt.Condition(src => (src.Image is not null)));
+
+            CreateMap<Setting, SettingDto>();
+            CreateMap<SettingCreateDto, Setting>();
+            CreateMap<SettingEditDto, Setting>().ForMember(dest => dest.Logo, opt => opt.Condition(src => (src.Logo is not null)));
+
+            CreateMap<Subscribe, SubscribeDto>();
+            CreateMap<SubscribeCreateDto, Subscribe>();
+            CreateMap<SubscribeEditDto, Subscribe>();
 
         }
     }

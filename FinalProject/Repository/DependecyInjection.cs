@@ -21,7 +21,8 @@ namespace Repository
             services.AddScoped<ITestimonialRepository,TestimonialRepository>();
             services.AddScoped<IInstagramRepository, InstagramRepository>();
             services.AddScoped<IBlogRepository, BlogRepository>();
-
+            services.AddScoped<ISettingRepository, SettingRepository>();
+            services.AddScoped<ISubscribeRepository, SubscribeRepository>();
 
 
             return services;
