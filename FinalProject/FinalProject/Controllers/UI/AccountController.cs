@@ -16,7 +16,7 @@ namespace FinalProject.Controllers.UI
         }
 
         [HttpPost]
-        public async Task<IActionResult> SignUp([FromBody] RegisterDto request)
+        public async Task<IActionResult> SignUp([FromQuery] RegisterDto request)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
 
@@ -28,7 +28,7 @@ namespace FinalProject.Controllers.UI
             return Ok(response);
         }
         [HttpPost]
-        public async Task<IActionResult> SignIn([FromBody] LoginDto request)
+        public async Task<IActionResult> SignIn([FromQuery] LoginDto request)
         {
             return Ok(await _accountService.SignInAsync(request));
         }
