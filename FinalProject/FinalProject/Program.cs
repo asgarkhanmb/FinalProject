@@ -10,7 +10,6 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Text.Json.Serialization;
 using System.Text;
 using Repository;
-using FinalProject.Middlewares;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -55,7 +54,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 //    .Enrich.FromLogContext()
 //    .CreateLogger();
 
-builder.Logging.ClearProviders();
+//builder.Logging.ClearProviders();
 //builder.Logging.AddSerilog(logger);
 
 builder.Services.AddRepositoryLayer();
@@ -94,6 +93,7 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
+
 JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear(); // => remove default claims
 builder.Services
     .AddAuthentication(options =>
@@ -129,7 +129,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseMiddleware<ExceptionHandlingMiddleware>();
+//app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 app.UseHttpsRedirection();
 

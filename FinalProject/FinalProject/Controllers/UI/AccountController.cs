@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Service.DTOs.Account;
+using Service.Helpers.Account;
 using Service.Services.Interfaces;
 
 namespace FinalProject.Controllers.UI
@@ -32,6 +33,5 @@ namespace FinalProject.Controllers.UI
         {
             return Ok(await _accountService.SignInAsync(request));
         }
-
     }
 }

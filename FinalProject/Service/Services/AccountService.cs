@@ -14,7 +14,8 @@ using System.Text;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using System.Web;
-using Service.Helpers.Extensions;
+using Microsoft.AspNetCore.Http;
+
 
 namespace Service.Services
 {
@@ -26,13 +27,14 @@ namespace Service.Services
         private readonly JwtSettings _jwtSettings;
         private readonly IWebHostEnvironment _env;
         private readonly IEmailService _emailService;
-
+        private readonly ITokenService _tokenService;
         public AccountService(UserManager<AppUser> userManager,
                               RoleManager<IdentityRole> roleManager,
                               IMapper mapper,
                               IOptions<JwtSettings> jwtSettings,
                               IWebHostEnvironment env,
-                              IEmailService emailService)
+                              IEmailService emailService,
+                              ITokenService tokenService)
         {
             _userManager = userManager;
             _roleManager = roleManager;
@@ -40,10 +42,14 @@ namespace Service.Services
             _jwtSettings = jwtSettings.Value;
             _env = env;
             _emailService = emailService;
+            _tokenService = tokenService;
+
         }
         public async Task<RegisterResponse> SignUpAsync(RegisterDto model)
         {
             var user = _mapper.Map<AppUser>(model);
+
+
 
             IdentityResult result = await _userManager.CreateAsync(user, model.Password);
 
@@ -52,63 +58,58 @@ namespace Service.Services
                 return new RegisterResponse
                 {
                     Success = false,
-                    Errors = result.Errors.Select(m => m.Description)
+                    ResponseMessage = result.Errors.Select(m => m.Description)
                 };
             }
 
             await _userManager.AddToRoleAsync(user, Roles.Member.ToString());
 
             string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-            string url = $"http://localhost:44356/Account/Verify/{HttpUtility.UrlEncode(user.Email)}/{HttpUtility.UrlEncode(token)}";
-            string path = _env.GenerateFilePath("templates", "confirm.html");
-
-            string html = await path.ReadFromFileAsync();
-
-            string confirmHtml = html.Replace("verify-link", url);
-            _emailService.Send(user.Email, "Email confirmation", confirmHtml);
-
+            string url = $"https://localhost:44317/Account/Verify/{HttpUtility.UrlEncode(user.Email)}/{HttpUtility.UrlEncode(token)}";
+            _emailService.Send(user.Email, "Email confirmation", url);
             return new RegisterResponse
             {
                 Success = true,
-                Errors = null
+                ResponseMessage =new List<string>() { token }
             };
         }
-        public async Task<bool> ConfirmEmailAsync(string userId, string token)
-        {
-            var user = await _userManager.FindByIdAsync(userId);
-            await _userManager.ConfirmEmailAsync(user, token);
-            return true;
-        }
+     
         public async Task<LoginResponse> SignInAsync(LoginDto model)
         {
             var user = await _userManager.FindByEmailAsync(model.EmailOrUsername) ??
-                       await _userManager.FindByNameAsync(model.EmailOrUsername);
+               await _userManager.FindByNameAsync(model.EmailOrUsername);
 
-            if (user is null)
+            if (user == null)
             {
                 return new LoginResponse
                 {
                     Success = false,
-                    Error = "Login failed",
+                    Error = "Login failed: User not found",
+                    Token = null
+                };
+            }
+            bool isPasswordCorrect = await _userManager.CheckPasswordAsync(user, model.Password);
+            if (!isPasswordCorrect)
+            {
+                return new LoginResponse
+                {
+                    Success = false,
+                    Error = "Login failed: Password or Username incorrect!!",
                     Token = null
                 };
             }
 
-
-            bool result = await _userManager.CheckPasswordAsync(user, model.Password);
-
-            if (!result)
+            if (!await _userManager.IsEmailConfirmedAsync(user))
             {
                 return new LoginResponse
                 {
                     Success = false,
-                    Error = "Login failed",
+                    Error = "Login failed: Email not confirmed",
                     Token = null
                 };
             }
 
             List<string> userRoles = (List<string>)await _userManager.GetRolesAsync(user);
-
             string token = GenerateJwtToken(user.UserName, userRoles);
 
             return new LoginResponse
@@ -171,6 +172,35 @@ namespace Service.Services
             );
 
             return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+
+        public async Task<ResponseObj> VerifyEmail(string VerifyEmail, string token)
+        {
+            AppUser appUser = await _userManager.FindByEmailAsync(VerifyEmail);
+            if (appUser == null || appUser.IsDeleted)
+            {
+                return new ResponseObj
+                {
+                    ResponseMessage = "User does not exist.",
+                    StatusCode = (int)StatusCodes.Status400BadRequest
+                };
+            }
+            IdentityResult resoult = await _userManager.ConfirmEmailAsync(appUser, token);
+            if (!resoult.Succeeded)
+            {
+                return new ResponseObj
+                {
+                    ResponseMessage = string.Join(", ", resoult.Errors.Select(error => error.Description)),
+                    StatusCode = (int)StatusCodes.Status400BadRequest
+                };
+            }
+            await _userManager.UpdateSecurityStampAsync(appUser);
+            IList<string> roles = await _userManager.GetRolesAsync(appUser);
+            return new ResponseObj
+            {
+                ResponseMessage = _tokenService.CreateToken(appUser, roles),
+                StatusCode = (int)StatusCodes.Status200OK
+            };
         }
     }
 }

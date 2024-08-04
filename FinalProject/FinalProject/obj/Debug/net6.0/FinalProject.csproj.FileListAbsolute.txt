@@ -273,3 +273,4 @@ C:\Users\Əsgərxan\Desktop\Final\FinalProject\FinalProject\obj\Debug\net6.0\ref
 C:\Users\Əsgərxan\Desktop\Final\FinalProject\FinalProject\obj\Debug\net6.0\FinalProject.pdb
 C:\Users\Əsgərxan\Desktop\Final\FinalProject\FinalProject\obj\Debug\net6.0\FinalProject.genruntimeconfig.cache
 C:\Users\Əsgərxan\Desktop\Final\FinalProject\FinalProject\obj\Debug\net6.0\ref\FinalProject.dll
+C:\Users\Əsgərxan\Desktop\Final\FinalProject\FinalProject\bin\Debug\net6.0\Newtonsoft.Json.dll

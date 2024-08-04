@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Service.DTOs.Account;
+﻿using Service.DTOs.Account;
 using Service.Helpers.Account;
 
 
@@ -12,6 +11,6 @@ namespace Service.Services.Interfaces
         Task<IEnumerable<UserDto>> GetAllUsersAsync();
         Task<UserDto> GetUserByUserNameAsync(string userName);
         Task CreateRoleAsync();
-        Task<bool> ConfirmEmailAsync(string userId, string token);
+        Task<ResponseObj> VerifyEmail(string VerifyEmail, string token);
     }
 }

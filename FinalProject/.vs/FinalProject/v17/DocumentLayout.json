@@ -1,36 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\finalproject\\controllers\\ui\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\controllers\\ui\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\finalproject\\controllers\\admin\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\controllers\\admin\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\dtos\\account\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\dtos\\account\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\finalproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\dtos\\account\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\dtos\\account\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\dtos\\account\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\dtos\\account\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A201CC92-207E-4B07-927F-F08302CAEAD5}|Domain\\Domain.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\domain\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A201CC92-207E-4B07-927F-F08302CAEAD5}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -38,86 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\FinalProject\\Controllers\\UI\\AccountController.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Controllers\\UI\\AccountController.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\FinalProject\\Controllers\\UI\\AccountController.cs",
-              "RelativeToolTip": "FinalProject\\Controllers\\UI\\AccountController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T08:00:23.381Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\FinalProject\\Program.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Program.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\FinalProject\\Program.cs",
-              "RelativeToolTip": "FinalProject\\Program.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAAAIEAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T07:35:12.037Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserDto.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Account\\UserDto.cs",
-              "RelativeDocumentMoniker": "Service\\DTOs\\Account\\UserDto.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Account\\UserDto.cs",
-              "RelativeToolTip": "Service\\DTOs\\Account\\UserDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T07:28:51.171Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RegisterDto.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Account\\RegisterDto.cs",
-              "RelativeDocumentMoniker": "Service\\DTOs\\Account\\RegisterDto.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Account\\RegisterDto.cs",
-              "RelativeToolTip": "Service\\DTOs\\Account\\RegisterDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T07:28:10.453Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginDto.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Account\\LoginDto.cs",
-              "RelativeDocumentMoniker": "Service\\DTOs\\Account\\LoginDto.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\DTOs\\Account\\LoginDto.cs",
-              "RelativeToolTip": "Service\\DTOs\\Account\\LoginDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T07:27:43.802Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AppUser.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Domain\\Entities\\AppUser.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\AppUser.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Domain\\Entities\\AppUser.cs",
-              "RelativeToolTip": "Domain\\Entities\\AppUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-03T12:55:15.162Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -129,19 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AboutController.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\FinalProject\\Controllers\\Admin\\AboutController.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Controllers\\Admin\\AboutController.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\FinalProject\\Controllers\\Admin\\AboutController.cs",
-              "RelativeToolTip": "FinalProject\\Controllers\\Admin\\AboutController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T06:49:53.805Z",
-              "EditorCaption": ""
             }
           ]
         }
