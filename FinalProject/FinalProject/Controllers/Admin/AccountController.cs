@@ -31,5 +31,43 @@ namespace FinalProject.Controllers.Admin
             await _accountService.CreateRoleAsync();
             return Ok();
         }
+        [HttpPost]
+        public async Task<IActionResult> AddRole([FromQuery] RoleAssignmentDto request)
+        {
+            if (request == null || string.IsNullOrWhiteSpace(request.Username) || string.IsNullOrWhiteSpace(request.RoleName))
+            {
+                return BadRequest("Invalid request.");
+            }
+
+            var response = await _accountService.AddRoleAsync(request.Username, request.RoleName);
+
+            if (response.StatusCode == StatusCodes.Status200OK)
+            {
+                return Ok(response.ResponseMessage);
+            }
+            else
+            {
+                return BadRequest(response.ResponseMessage);
+            }
+        }
+        [HttpPost]
+        public async Task<IActionResult> RemoveRole([FromQuery] RoleAssignmentDto request)
+        {
+            if (request == null || string.IsNullOrWhiteSpace(request.Username) || string.IsNullOrWhiteSpace(request.RoleName))
+            {
+                return BadRequest("Invalid request.");
+            }
+
+            var response = await _accountService.RemoveRoleAsync(request.Username, request.RoleName);
+
+            if (response.StatusCode == StatusCodes.Status200OK)
+            {
+                return Ok(response.ResponseMessage);
+            }
+            else
+            {
+                return BadRequest(response.ResponseMessage);
+            }
+        }
     }
 }

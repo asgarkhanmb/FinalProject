@@ -46,7 +46,7 @@ namespace FinalProject.Controllers.UI
             return Ok(responseObj.ResponseMessage);
         }
         [HttpPost]
-        public async Task<IActionResult> ResetPassword([FromBody] UserResetPasswordDto userResetPasswordDto)
+        public async Task<IActionResult> ResetPassword([FromQuery] UserResetPasswordDto userResetPasswordDto)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
             ResponseObj responseObj = await _accountService.ResetPassword(userResetPasswordDto);

@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Hosting;
 using Repository.Helpers;
 using Repository.Repositories.Interfaces;
 using Service.DTOs.Admin.Categories;
+using Service.DTOs.Admin.Products;
 using Service.Helpers.Exceptions;
 using Service.Helpers.Extensions;
 using Service.Services.Interfaces;
@@ -105,6 +106,12 @@ namespace Service.Services
 
             var mappedDatas = _mapper.Map<IEnumerable<CategoryDto>>(await _categoryRepo.GetPaginateDataAsync(page, take));
             return new PaginationResponse<CategoryDto>(mappedDatas, totalPage, page);
+        }
+
+        public async Task<IEnumerable<CategoryDto>> Search(string name)
+        {
+            if (string.IsNullOrEmpty(name)) throw new NotFoundException("Data not found");
+            return _mapper.Map<IEnumerable<CategoryDto>>(await _categoryRepo.FindAll(m => m.Name.Contains(name)));
         }
     }
 }

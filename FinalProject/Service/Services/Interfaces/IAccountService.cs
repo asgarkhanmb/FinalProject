@@ -14,5 +14,7 @@ namespace Service.Services.Interfaces
         Task<ResponseObj> VerifyEmail(string VerifyEmail, string token);
         Task<ResponseObj> ForgetPassword(string email, string requestScheme, string requestHost);
         Task<ResponseObj> ResetPassword(UserResetPasswordDto userResetPasswordDto);
+        Task<ResponseObj> AddRoleAsync(string username, string roleName);
+        Task<ResponseObj> RemoveRoleAsync(string username, string roleName);
     }
 }

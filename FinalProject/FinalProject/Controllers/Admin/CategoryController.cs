@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Service.DTOs.Admin.Categories;
+using Service.Services;
 using Service.Services.Interfaces;
 using System.ComponentModel.DataAnnotations;
 
@@ -46,6 +47,11 @@ namespace FinalProject.Controllers.Admin
         public async Task<IActionResult> GetPaginateDatas([FromQuery] int page = 1, [FromQuery] int take = 2)
         {
             return Ok(await _categoryService.GetPaginateDataAsync(page, take));
+        }
+        [HttpGet]
+        public async Task<IActionResult> Search([FromQuery] string name)
+        {
+            return Ok(await _categoryService.Search(name));
         }
     }
 }

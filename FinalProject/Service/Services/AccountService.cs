@@ -16,9 +16,7 @@ using Microsoft.AspNetCore.Hosting;
 using System.Web;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Caching.Distributed;
-using Newtonsoft.Json;
 using Service.Helpers;
-using Newtonsoft.Json.Linq;
 
 
 namespace Service.Services
@@ -82,10 +80,10 @@ namespace Service.Services
             return new RegisterResponse
             {
                 Success = true,
-                ResponseMessage =new List<string>() { token }
+                ResponseMessage = new List<string>() { token }
             };
         }
-     
+
         public async Task<LoginResponse> SignInAsync(LoginDto model)
         {
             var user = await _userManager.FindByEmailAsync(model.EmailOrUsername) ??
@@ -132,9 +130,19 @@ namespace Service.Services
             };
         }
 
+
         public async Task<IEnumerable<UserDto>> GetAllUsersAsync()
         {
-            return _mapper.Map<IEnumerable<UserDto>>(await _userManager.Users.ToListAsync());
+            var users = await _userManager.Users.ToListAsync();
+            var userDtos = _mapper.Map<IEnumerable<UserDto>>(users);
+
+            foreach (var userDto in userDtos)
+            {
+                var roles = await _userManager.GetRolesAsync(await _userManager.FindByNameAsync(userDto.Username));
+                userDto.Roles = roles.ToList();
+            }
+
+            return userDtos;
         }
 
         public async Task<UserDto> GetUserByUserNameAsync(string userName)
@@ -226,19 +234,12 @@ namespace Service.Services
             };
             string token = await _userManager.GeneratePasswordResetTokenAsync(appUser);
             var urlHelper = _urlHelper.GetUrlHelper();
-            //string link = urlHelper.Action(nameof(ResetPassword), "Account", new { email = appUser.Email, token }, requestScheme, requestHost);
             string link = $"https://localhost:44317/reset/{HttpUtility.UrlEncode(appUser.Email)}/{HttpUtility.UrlEncode(token)}";
-            string resetPasswordBody = string.Empty;
-            using (StreamReader stream = new StreamReader("wwwroot/Verification/ResetPassword.html"))
-            {
-                resetPasswordBody = await stream.ReadToEndAsync();
-            };
-            resetPasswordBody = resetPasswordBody.Replace("{{link}}", link);
-            resetPasswordBody = resetPasswordBody.Replace("{{userName}}", appUser.FullName);
-            _sendEmail.Send("https://localhost:44317", "Cake Store", appUser.Email, resetPasswordBody, "Reset Password");
+            _sendEmail.Send("asgarkhanmb@code.edu.az", "Cake Store", appUser.Email, link, "Reset Password");
+            IList<string> roles = await _userManager.GetRolesAsync(appUser);
             return new ResponseObj
             {
-                ResponseMessage = $"reset password link sended to {appUser.UserName} ",
+                ResponseMessage = token,
                 StatusCode = (int)StatusCodes.Status200OK
             };
         }
@@ -271,5 +272,87 @@ namespace Service.Services
                 ResponseMessage = "Password successfully reseted"
             };
         }
+
+        public async Task<ResponseObj> AddRoleAsync(string username, string roleName)
+        {
+            var user = await _userManager.FindByNameAsync(username);
+            if (user == null || user.IsDeleted)
+            {
+                return new ResponseObj
+                {
+                    ResponseMessage = "User does not exist.",
+                    StatusCode = (int)StatusCodes.Status400BadRequest
+                };
+            }
+
+            if (!await _roleManager.RoleExistsAsync(roleName))
+            {
+                return new ResponseObj
+                {
+                    ResponseMessage = "Role does not exist.",
+                    StatusCode = (int)StatusCodes.Status400BadRequest
+                };
+            }
+
+            var result = await _userManager.AddToRoleAsync(user, roleName);
+            if (!result.Succeeded)
+            {
+                return new ResponseObj
+                {
+                    ResponseMessage = string.Join(", ", result.Errors.Select(error => error.Description)),
+                    StatusCode = (int)StatusCodes.Status400BadRequest
+                };
+            }
+
+            return new ResponseObj
+            {
+                ResponseMessage = $"Role '{roleName}' added to user '{username}' successfully.",
+                StatusCode = (int)StatusCodes.Status200OK
+            };
+        }
+        public async Task<ResponseObj> RemoveRoleAsync(string username, string roleName)
+        {
+            var user = await _userManager.FindByNameAsync(username);
+            if (user == null || user.IsDeleted)
+            {
+                return new ResponseObj
+                {
+                    ResponseMessage = "User does not exist.",
+                    StatusCode = (int)StatusCodes.Status400BadRequest
+                };
+            }
+            if (!await _roleManager.RoleExistsAsync(roleName))
+            {
+                return new ResponseObj
+                {
+                    ResponseMessage = "Role does not exist.",
+                    StatusCode = (int)StatusCodes.Status400BadRequest
+                };
+            }
+            if (roleName.Equals(Roles.Member.ToString(), StringComparison.OrdinalIgnoreCase))
+            {
+                return new ResponseObj
+                {
+                    ResponseMessage = "The 'Member' role cannot be removed.",
+                    StatusCode = (int)StatusCodes.Status400BadRequest
+                };
+            }
+            var result = await _userManager.RemoveFromRoleAsync(user, roleName);
+            if (!result.Succeeded)
+            {
+                return new ResponseObj
+                {
+                    ResponseMessage = string.Join(", ", result.Errors.Select(error => error.Description)),
+                    StatusCode = (int)StatusCodes.Status400BadRequest
+                };
+            }
+
+            return new ResponseObj
+            {
+                ResponseMessage = $"Role '{roleName}' removed from user '{username}' successfully.",
+                StatusCode = (int)StatusCodes.Status200OK
+            };
+        }
+
     }
 }

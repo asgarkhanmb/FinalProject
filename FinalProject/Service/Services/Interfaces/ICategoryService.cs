@@ -1,5 +1,6 @@
 ﻿using Repository.Helpers;
 using Service.DTOs.Admin.Categories;
+using Service.DTOs.Admin.Products;
 
 
 namespace Service.Services.Interfaces
@@ -11,6 +12,7 @@ namespace Service.Services.Interfaces
         Task CreateAsync(CategoryCreateDto model);
         Task DeleteAsync(int? id);
         Task EditAsync(int? id, CategoryEditDto model);
+        Task<IEnumerable<CategoryDto>> Search(string name);
         Task<PaginationResponse<CategoryDto>> GetPaginateDataAsync(int page, int take);
     }
 }
