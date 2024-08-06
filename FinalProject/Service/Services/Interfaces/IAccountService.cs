@@ -12,5 +12,7 @@ namespace Service.Services.Interfaces
         Task<UserDto> GetUserByUserNameAsync(string userName);
         Task CreateRoleAsync();
         Task<ResponseObj> VerifyEmail(string VerifyEmail, string token);
+        Task<ResponseObj> ForgetPassword(string email, string requestScheme, string requestHost);
+        Task<ResponseObj> ResetPassword(UserResetPasswordDto userResetPasswordDto);
     }
 }

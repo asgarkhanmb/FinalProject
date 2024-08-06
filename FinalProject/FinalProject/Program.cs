@@ -11,6 +11,7 @@ using System.Text.Json.Serialization;
 using System.Text;
 using Repository;
 using Microsoft.OpenApi.Models;
+using FinalProject.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -129,7 +130,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-//app.UseMiddleware<ExceptionHandlingMiddleware>();
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 app.UseHttpsRedirection();
 

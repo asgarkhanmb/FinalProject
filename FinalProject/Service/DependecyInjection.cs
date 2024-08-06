@@ -5,7 +5,6 @@ using Service.Helpers;
 using Service.Services.Interfaces;
 using Service.Services;
 using FluentValidation.AspNetCore;
-using Microsoft.Extensions.Caching.Distributed;
 
 namespace Service
 {
@@ -21,7 +20,7 @@ namespace Service
             });
 
             services.AddScoped<IValidator<RegisterDto>, RegisterDtoValidator>();
-
+            services.AddDistributedMemoryCache();
             services.AddHttpContextAccessor();
             services.AddScoped<UrlHelperService>();
             services.AddScoped<IAccountService, AccountService>();
@@ -40,7 +39,7 @@ namespace Service
             services.AddScoped<ISettingService, SettingService>();
             services.AddScoped<ISubscribeService, SubscribeService>();
             services.AddScoped<ITokenService, TokenService>();
-
+            services.AddScoped<ISendEmail, SendEmail>();
 
             return services;
         }

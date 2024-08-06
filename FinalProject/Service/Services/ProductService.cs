@@ -121,8 +121,6 @@ namespace Service.Services
                     existProduct.ProductImages.Add(new ProductImage { Image = fileName, IsMain =++i==1? true:false });
                 }
             }
-            
-           
 
             await _productRepo.EditAsync(existProduct);
         }
@@ -150,5 +148,23 @@ namespace Service.Services
             var mappedDatas = _mapper.Map<IEnumerable<ProductDto>>(await _productRepo.GetPaginateDataAsync(page, take));
             return new PaginationResponse<ProductDto>(mappedDatas, totalPage, page);
         }
+
+        public async Task<IEnumerable<ProductDto>> Search(string name)
+        {
+            if (string.IsNullOrEmpty(name)) throw new NotFoundException("Data not found");
+            return _mapper.Map<IEnumerable<ProductDto>>(await _productRepo.FindAll(m => m.Name.Contains(name)));
+        }
+
+        public async Task<IEnumerable<ProductDto>> SortBy(string sortKey, bool isDescending)
+        {
+            var validSortKeys = new List<string> { "Name","name", "Price","price" };
+            if (string.IsNullOrEmpty(sortKey) || !validSortKeys.Contains(sortKey))
+            {
+                throw new NotFoundException("Invalid sortKey");
+            }
+            var product = await _productRepo.FindAllWithIncludes().Include(m => m.Category).ToListAsync();
+            return _mapper.Map<IEnumerable<ProductDto>>(await _productRepo.SortBy(sortKey, isDescending));
+        }
+
     }
 }

@@ -15,6 +15,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using System.Web;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Caching.Distributed;
+using Newtonsoft.Json;
+using Service.Helpers;
+using Newtonsoft.Json.Linq;
 
 
 namespace Service.Services
@@ -28,13 +32,19 @@ namespace Service.Services
         private readonly IWebHostEnvironment _env;
         private readonly IEmailService _emailService;
         private readonly ITokenService _tokenService;
+        private readonly UrlHelperService _urlHelper;
+        private readonly ISendEmail _sendEmail;
+        private readonly IDistributedCache _distributedCache;
         public AccountService(UserManager<AppUser> userManager,
                               RoleManager<IdentityRole> roleManager,
                               IMapper mapper,
                               IOptions<JwtSettings> jwtSettings,
                               IWebHostEnvironment env,
                               IEmailService emailService,
-                              ITokenService tokenService)
+                              ITokenService tokenService,
+                              UrlHelperService urlHelper,
+                              ISendEmail sendEmail,
+                              IDistributedCache distributedCache)
         {
             _userManager = userManager;
             _roleManager = roleManager;
@@ -43,7 +53,9 @@ namespace Service.Services
             _env = env;
             _emailService = emailService;
             _tokenService = tokenService;
-
+            _urlHelper = urlHelper;
+            _sendEmail = sendEmail;
+            _distributedCache = distributedCache;
         }
         public async Task<RegisterResponse> SignUpAsync(RegisterDto model)
         {
@@ -200,6 +212,62 @@ namespace Service.Services
             {
                 ResponseMessage = _tokenService.CreateToken(appUser, roles),
                 StatusCode = (int)StatusCodes.Status200OK
+            };
+        }
+
+        public async Task<ResponseObj> ForgetPassword(string email, string requestScheme, string requestHost)
+        {
+            AppUser appUser = await _userManager.FindByEmailAsync(email);
+            if (appUser == null || appUser.IsDeleted) return new ResponseObj
+            {
+                ResponseMessage = "User does not exist.",
+                StatusCode = (int)StatusCodes.Status400BadRequest
+            };
+            string token = await _userManager.GeneratePasswordResetTokenAsync(appUser);
+            var urlHelper = _urlHelper.GetUrlHelper();
+            //string link = urlHelper.Action(nameof(ResetPassword), "Account", new { email = appUser.Email, token }, requestScheme, requestHost);
+            string link = $"https://localhost:44317/reset/{HttpUtility.UrlEncode(appUser.Email)}/{HttpUtility.UrlEncode(token)}";
+            string resetPasswordBody = string.Empty;
+            using (StreamReader stream = new StreamReader("wwwroot/Verification/ResetPassword.html"))
+            {
+                resetPasswordBody = await stream.ReadToEndAsync();
+            };
+            resetPasswordBody = resetPasswordBody.Replace("{{link}}", link);
+            resetPasswordBody = resetPasswordBody.Replace("{{userName}}", appUser.FullName);
+            _sendEmail.Send("https://localhost:44317", "Cake Store", appUser.Email, resetPasswordBody, "Reset Password");
+            return new ResponseObj
+            {
+                ResponseMessage = $"reset password link sended to {appUser.UserName} ",
+                StatusCode = (int)StatusCodes.Status200OK
+            };
+        }
+
+        public async Task<ResponseObj> ResetPassword(UserResetPasswordDto userResetPasswordDto)
+        {
+            AppUser appUser = await _userManager.FindByEmailAsync(userResetPasswordDto.Email);
+            if (appUser == null || appUser.IsDeleted) return new ResponseObj
+            {
+                ResponseMessage = "User not found",
+                StatusCode = (int)StatusCodes.Status404NotFound
+            };
+            var isSucceeded = await _userManager.VerifyUserTokenAsync(appUser, _userManager.Options.Tokens.PasswordResetTokenProvider, "ResetPassword", userResetPasswordDto.Token);
+            if (!isSucceeded) return new ResponseObj
+            {
+                StatusCode = (int)StatusCodes.Status400BadRequest,
+                ResponseMessage = "TokenIsNotValid"
+            };
+            IdentityResult resoult = await _userManager.ResetPasswordAsync(appUser, userResetPasswordDto.Token, userResetPasswordDto.Password);
+            if (!resoult.Succeeded) return new ResponseObj
+            {
+                ResponseMessage = string.Join(", ", resoult.Errors.Select(error => error.Description)),
+                StatusCode = (int)StatusCodes.Status400BadRequest
+            };
+            await _userManager.UpdateSecurityStampAsync(appUser);
+            await _distributedCache.RemoveAsync(appUser.Email);
+            return new ResponseObj
+            {
+                StatusCode = (int)StatusCodes.Status200OK,
+                ResponseMessage = "Password successfully reseted"
             };
         }
     }

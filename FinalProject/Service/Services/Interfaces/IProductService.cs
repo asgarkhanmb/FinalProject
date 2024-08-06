@@ -16,5 +16,7 @@ namespace Service.Services.Interfaces
         Task DeleteAsync(int? id);
         Task EditAsync(int? id, ProductEditDto model);
         Task<PaginationResponse<ProductDto>> GetPaginateDataAsync(int page, int take);
+        Task<IEnumerable<ProductDto>> Search(string name);
+        Task<IEnumerable<ProductDto>> SortBy(string sortKey, bool isDescending);
     }
 }
