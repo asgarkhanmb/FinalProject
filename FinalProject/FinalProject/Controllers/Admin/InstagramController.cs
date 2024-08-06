@@ -8,8 +8,6 @@ namespace FinalProject.Controllers.Admin
     public class InstagramController :BaseController
     {
         private readonly IInstagramService _instagramService;
-
-
         public InstagramController(IInstagramService instagramService)
         {
             _instagramService = instagramService;   

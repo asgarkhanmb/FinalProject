@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MmkpxeYNJotgaSkZdcTEyjUR0jorgLvShVCpvz5JTSg=",
+  "Hash": "P5gopf2iJU9p9I9jHuw96eLphw1OQNuXXTix4ORhLm8=",
   "Source": "FinalProject",
   "BasePath": "_content/FinalProject",
   "Mode": "Default",
@@ -281,6 +281,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\5a3f0f5f-654a-4d8d-867a-e6c634ca23e4-1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\FinalProject\\wwwroot\\images\\62a4dde6-0976-4ed6-baa4-879f81828c75-cake-1.webp",
+      "SourceId": "FinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\FinalProject\\wwwroot\\",
+      "BasePath": "_content/FinalProject",
+      "RelativePath": "images/62a4dde6-0976-4ed6-baa4-879f81828c75-cake-1.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\62a4dde6-0976-4ed6-baa4-879f81828c75-cake-1.webp"
     },
     {
       "Identity": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\FinalProject\\wwwroot\\images\\6a7d49fd-6776-4398-96cf-81d652c91b44-hero-2.jpeg",
@@ -661,6 +680,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\e783a038-4f3d-4987-8c8f-ec883c07b36b-hero-2.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\FinalProject\\wwwroot\\images\\eab630b6-f260-4246-acae-e17c7d63ea4e-hero-2.jpeg",
+      "SourceId": "FinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\FinalProject\\wwwroot\\",
+      "BasePath": "_content/FinalProject",
+      "RelativePath": "images/eab630b6-f260-4246-acae-e17c7d63ea4e-hero-2.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\eab630b6-f260-4246-acae-e17c7d63ea4e-hero-2.jpeg"
     },
     {
       "Identity": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\FinalProject\\wwwroot\\images\\f27501f7-a91b-45d7-a15f-05b83f5aa3ad-hero-2.jpeg",

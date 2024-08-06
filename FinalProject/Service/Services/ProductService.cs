@@ -152,6 +152,7 @@ namespace Service.Services
         public async Task<IEnumerable<ProductDto>> Search(string name)
         {
             if (string.IsNullOrEmpty(name)) throw new NotFoundException("Data not found");
+            var product = await _productRepo.FindAllWithIncludes().Include(m => m.Category).Include(m => m.ProductImages).ToListAsync();
             return _mapper.Map<IEnumerable<ProductDto>>(await _productRepo.FindAll(m => m.Name.Contains(name)));
         }
 
@@ -162,8 +163,13 @@ namespace Service.Services
             {
                 throw new NotFoundException("Invalid sortKey");
             }
-            var product = await _productRepo.FindAllWithIncludes().Include(m => m.Category).ToListAsync();
+            var product = await _productRepo.FindAllWithIncludes().Include(m => m.Category).Include(m => m.ProductImages).ToListAsync();
             return _mapper.Map<IEnumerable<ProductDto>>(await _productRepo.SortBy(sortKey, isDescending));
+        }
+        public async Task<IEnumerable<ProductDto>> FilterAsync(string name, string countryName,decimal? price)
+        {
+            var product = await _productRepo.FindAllWithIncludes().Include(m => m.Category).Include(m=>m.ProductImages).ToListAsync();
+            return _mapper.Map<IEnumerable<ProductDto>>(await _productRepo.FilterAsync(name, countryName,price));
         }
 
     }

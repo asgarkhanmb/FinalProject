@@ -1,40 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\service\\services\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9614DCB4-D56D-4D72-9175-5BF03AA9B624}|Service\\Service.csproj|solutionrelative:service\\services\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\finalproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\finalproject\\controllers\\admin\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\controllers\\admin\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02ED7861-03BE-4A5D-A3E6-65E8F411D54C}|Repository\\Repository.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\repository\\repositories\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02ED7861-03BE-4A5D-A3E6-65E8F411D54C}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02ED7861-03BE-4A5D-A3E6-65E8F411D54C}|Repository\\Repository.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\repository\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02ED7861-03BE-4A5D-A3E6-65E8F411D54C}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\finalproject\\controllers\\ui\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\controllers\\ui\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|c:\\users\\\u0259sg\u0259rxan\\desktop\\final\\finalproject\\finalproject\\controllers\\ui\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\controllers\\ui\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -42,60 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Repository\\Repositories\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\Repositories\\ProductRepository.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Repository\\Repositories\\ProductRepository.cs",
-              "RelativeToolTip": "Repository\\Repositories\\ProductRepository.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAjwBIAAABLAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T11:20:47.769Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Repository\\Repositories\\Interfaces\\IProductRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\Repositories\\Interfaces\\IProductRepository.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Repository\\Repositories\\Interfaces\\IProductRepository.cs",
-              "RelativeToolTip": "Repository\\Repositories\\Interfaces\\IProductRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T11:20:01.484Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\FinalProject\\Controllers\\Admin\\ProductController.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Controllers\\Admin\\ProductController.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\FinalProject\\Controllers\\Admin\\ProductController.cs",
-              "RelativeToolTip": "FinalProject\\Controllers\\Admin\\ProductController.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAkwDYAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T11:18:42.335Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\FinalProject\\Program.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Program.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\FinalProject\\Program.cs",
-              "RelativeToolTip": "FinalProject\\Program.cs",
-              "ViewState": "AQIAAHAAAAAAAAAAAAAAAIQAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T11:09:07.456Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -107,58 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IProductService.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\Interfaces\\IProductService.cs",
-              "RelativeDocumentMoniker": "Service\\Services\\Interfaces\\IProductService.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\Interfaces\\IProductService.cs",
-              "RelativeToolTip": "Service\\Services\\Interfaces\\IProductService.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAuwBMAAABQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T11:03:33.345Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\ProductService.cs",
-              "RelativeDocumentMoniker": "Service\\Services\\ProductService.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\Service\\Services\\ProductService.cs",
-              "RelativeToolTip": "Service\\Services\\ProductService.cs",
-              "ViewState": "AQIAAJAAAAAAAAAAAAAAwKcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T11:03:25.679Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\FinalProject\\Controllers\\UI\\ProductController.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Controllers\\UI\\ProductController.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\FinalProject\\Controllers\\UI\\ProductController.cs",
-              "RelativeToolTip": "FinalProject\\Controllers\\UI\\ProductController.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAQwCYAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T10:58:38.589Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AboutController.cs",
-              "DocumentMoniker": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\FinalProject\\Controllers\\UI\\AboutController.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Controllers\\UI\\AboutController.cs",
-              "ToolTip": "C:\\Users\\\u018Fsg\u0259rxan\\Desktop\\Final\\FinalProject\\FinalProject\\Controllers\\UI\\AboutController.cs",
-              "RelativeToolTip": "FinalProject\\Controllers\\UI\\AboutController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T10:54:25.748Z",
-              "EditorCaption": ""
             }
           ]
         }

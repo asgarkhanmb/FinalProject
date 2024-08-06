@@ -10,6 +10,26 @@ namespace Repository.Repositories
     {
         public ProductRepository(AppDbContext context) : base(context) { }
 
+        public async Task<IEnumerable<Product>> FilterAsync(string name, string categoryName, decimal? price)
+        {
+            var query = _entities.AsQueryable();
+
+            if (name is not null)
+            {
+                query = query.Where(m => m.Name == name);
+            }
+
+            if (categoryName is not null)
+            {
+                query = query.Where(m => m.Category.Name == categoryName);
+            }
+            if(price is not null)
+            {
+                query = query.Where(m=>m.Price == price);
+            }
+
+            return await query.ToListAsync();
+        }
 
         public async Task<IEnumerable<Product>> GetPaginateDataAsync(int page, int take)
         {

@@ -20,7 +20,7 @@ namespace FinalProject.Controllers.UI
                 return BadRequest(ModelState);
             }
             await _subscribeService.AddSubscribeAsync(request);
-            return CreatedAtAction(nameof(AddSubscribe), new { Response = "Data Successfully Created" });
+            return CreatedAtAction(nameof(AddSubscribe), new { Response = "Successfully Subscribe" });
         }
     }
 }
