@@ -166,10 +166,9 @@ namespace Service.Services
             var product = await _productRepo.FindAllWithIncludes().Include(m => m.Category).Include(m => m.ProductImages).ToListAsync();
             return _mapper.Map<IEnumerable<ProductDto>>(await _productRepo.SortBy(sortKey, isDescending));
         }
-        public async Task<IEnumerable<ProductDto>> FilterAsync(string name, string countryName,decimal? price)
+        public async Task<IEnumerable<ProductDto>> FilterAsync(string categoryName)
         {
-            var product = await _productRepo.FindAllWithIncludes().Include(m => m.Category).Include(m=>m.ProductImages).ToListAsync();
-            return _mapper.Map<IEnumerable<ProductDto>>(await _productRepo.FilterAsync(name, countryName,price));
+            return _mapper.Map<IEnumerable<ProductDto>>(await _productRepo.FilterAsync(categoryName));
         }
 
     }

@@ -6,6 +6,7 @@ namespace Repository.Repositories.Interfaces
 {
     public interface IBaseRepository<T> where T : BaseEntity
     {
+        Task<int> SaveChanges();
         Task CreateAsync(T entity);
         Task EditAsync(T entity);
         Task<T> GetByInclude(Expression<Func<T, bool>> predicate, params string[] includes);

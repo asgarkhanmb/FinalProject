@@ -40,6 +40,8 @@ namespace Service
             services.AddScoped<ISubscribeService, SubscribeService>();
             services.AddScoped<ITokenService, TokenService>();
             services.AddScoped<ISendEmail, SendEmail>();
+            services.AddScoped<IWishlistService, WishlistService>();
+
 
             return services;
         }

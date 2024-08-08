@@ -10,25 +10,18 @@ namespace Repository.Repositories
     {
         public ProductRepository(AppDbContext context) : base(context) { }
 
-        public async Task<IEnumerable<Product>> FilterAsync(string name, string categoryName, decimal? price)
+        public async Task<IEnumerable<Product>> FilterAsync(string categoryName)
         {
-            var query = _entities.AsQueryable();
+            IEnumerable<Product> query = await _context.Products
+                .Include(m => m.Category)
+                .Include(m => m.ProductImages)
+                .ToListAsync();
 
-            if (name is not null)
+            if (!string.IsNullOrEmpty(categoryName))
             {
-                query = query.Where(m => m.Name == name);
+                query = query.Where(p => p.Category.Name.ToLower() == categoryName.ToLower());
             }
-
-            if (categoryName is not null)
-            {
-                query = query.Where(m => m.Category.Name == categoryName);
-            }
-            if(price is not null)
-            {
-                query = query.Where(m=>m.Price == price);
-            }
-
-            return await query.ToListAsync();
+            return query.ToList();
         }
 
         public async Task<IEnumerable<Product>> GetPaginateDataAsync(int page, int take)

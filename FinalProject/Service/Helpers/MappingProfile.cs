@@ -13,6 +13,7 @@ using Service.DTOs.Admin.Socials;
 using Service.DTOs.Admin.Subscribes;
 using Service.DTOs.Admin.Teams;
 using Service.DTOs.Admin.Testimonials;
+using Service.DTOs.Admin.Wishlists;
 using Service.DTOs.Ui.Contacts;
 
 namespace Service.Helpers
@@ -77,6 +78,13 @@ namespace Service.Helpers
             CreateMap<Subscribe, SubscribeDto>();
             CreateMap<SubscribeCreateDto, Subscribe>();
             CreateMap<SubscribeEditDto, Subscribe>();
+
+            CreateMap<Wishlist, WishlistDto>();
+            CreateMap<WishlistDto, Wishlist>();
+            CreateMap<WishlistProduct, WishlistProductDto>();
+            CreateMap<WishlistProductDto, WishlistProduct>();
+
+
 
         }
     }

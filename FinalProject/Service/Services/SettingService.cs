@@ -1,18 +1,11 @@
 ﻿using AutoMapper;
-using Domain.Common;
 using Domain.Entities;
 using Microsoft.AspNetCore.Hosting;
 using Repository.Repositories.Interfaces;
 using Service.DTOs.Admin.Settings;
-using Service.DTOs.Admin.Sliders;
 using Service.Helpers.Exceptions;
 using Service.Helpers.Extensions;
 using Service.Services.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Service.Services
 {
@@ -32,6 +25,20 @@ namespace Service.Services
         }
         public async Task CreateAsync(SettingCreateDto model)
         {
+
+            bool titleExists = await _settingRepo.ExistAsync(m => m.Title == model.Title);
+
+            if (titleExists)
+            {
+                throw new RequiredException("A Title already exists.");
+            }
+            bool phoneExists = await _settingRepo.ExistAsync(m => m.Phone == model.Phone);
+
+            if (phoneExists)
+            {
+                throw new RequiredException("A Phone number already exists.");
+            }
+
             if (model.Title.Length > 20 || model.Phone.Length > 50) throw new RequiredException("Exceed the Title or Phone length limit!!");
             string fileName = Guid.NewGuid().ToString() + "-" + model.UploadImage.FileName;
 
@@ -56,6 +63,24 @@ namespace Service.Services
 
         public async Task EditAsync(int? id, SettingEditDto model)
         {
+            bool logoExists = await _settingRepo.ExistAsync(m => m.Logo == model.Logo);
+
+            if (logoExists)
+            {
+                throw new RequiredException("A Logo already exists.");
+            }
+            bool titleExists = await _settingRepo.ExistAsync(m => m.Title == model.Title);
+
+            if (logoExists)
+            {
+                throw new RequiredException("A Title already exists.");
+            }
+            bool phoneExists = await _settingRepo.ExistAsync(m => m.Phone == model.Phone);
+
+            if (logoExists)
+            {
+                throw new RequiredException("A Phone number already exists.");
+            }
             if (model.Title.Length > 20 || model.Phone.Length > 50) throw new RequiredException("Exceed the Title or Phone length limit!!");
             var existSetting = await _settingRepo.GetById((int)id) ?? throw new NotFoundException("Data not found");
 

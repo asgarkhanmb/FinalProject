@@ -25,6 +25,8 @@ namespace Repository.Data
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Setting> Settings { get; set; }
         public DbSet<Subscribe> Subscribes { get; set; }
+        public DbSet<Wishlist> Wishlists { get; set; }
+        public DbSet<WishlistProduct> WishlistProducts { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

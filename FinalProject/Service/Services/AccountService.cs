@@ -147,12 +147,18 @@ namespace Service.Services
 
         public async Task<UserDto> GetUserByUserNameAsync(string userName)
         {
-            if (userName is null) throw new NotFoundException($"User not found");
+            if (userName is null) throw new NotFoundException("User not found");
+
             var existUser = await _userManager.FindByNameAsync(userName);
 
-            return existUser is null
-                ? throw new NotFoundException($"{userName} - user not found")
-                : _mapper.Map<UserDto>(existUser);
+            if (existUser is null)
+                throw new NotFoundException($"{userName} - user not found");
+
+            var roles = await _userManager.GetRolesAsync(existUser);
+            var userDto = _mapper.Map<UserDto>(existUser);
+            userDto.Roles = roles.ToList();
+
+            return userDto;
         }
 
         public async Task CreateRoleAsync()

@@ -84,5 +84,10 @@ namespace Repository.Repositories
         {
             return await _entities.AnyAsync(predicate);
         }
+
+        public async Task<int> SaveChanges()
+        {
+            return await _context.SaveChangesAsync();
+        }
     }
 }

@@ -18,6 +18,6 @@ namespace Service.Services.Interfaces
         Task<PaginationResponse<ProductDto>> GetPaginateDataAsync(int page, int take);
         Task<IEnumerable<ProductDto>> Search(string name);
         Task<IEnumerable<ProductDto>> SortBy(string sortKey, bool isDescending);
-        Task<IEnumerable<ProductDto>> FilterAsync(string name, string categoryName,decimal? price);
+        Task<IEnumerable<ProductDto>> FilterAsync(string categoryName);
     }
 }

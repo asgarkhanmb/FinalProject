@@ -37,9 +37,9 @@ namespace FinalProject.Controllers.UI
             return Ok(await _productService.SortBy(sortKey, isDescending));
         }
         [HttpGet]
-        public async Task<IActionResult> Filter([FromQuery] string name, [FromQuery] string categoryName, [FromQuery]decimal price)
+        public async Task<IActionResult> Filter([FromQuery] string categoryName)
         {
-            return Ok(await _productService.FilterAsync(name, categoryName,price));
+            return Ok(await _productService.FilterAsync(categoryName));
         }
     }
 }
