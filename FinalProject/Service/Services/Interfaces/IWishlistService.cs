@@ -1,4 +1,5 @@
-﻿using Service.DTOs.Admin.Wishlists;
+﻿using Domain.Entities;
+using Service.DTOs.Admin.Wishlists;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -46,6 +46,7 @@ namespace Service.Services
             }
 
             await _wishlistRepository.SaveChanges();
+
         }
         public async Task DeleteProductFromWishList(int productId, int wishListId)
         {
@@ -59,6 +60,7 @@ namespace Service.Services
             await _wishlistRepository.DeleteAsync(id);
             await _wishlistRepository.SaveChanges();
         }
+
         private WishlistDto ConvertToDto(Wishlist wishlist)
         {
             if (wishlist == null)
@@ -69,7 +71,7 @@ namespace Service.Services
             {
 
                 AppUserId = wishlist.AppUserId,
-                ProductId =wishlist.WishlistProducts[0].ProductId,
+                ProductId = wishlist.WishlistProducts[0].ProductId,
 
             };
         }
