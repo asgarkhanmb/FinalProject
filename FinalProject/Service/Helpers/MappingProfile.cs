@@ -2,6 +2,7 @@
 using Domain.Entities;
 using Service.DTOs.Account;
 using Service.DTOs.Admin.Abouts;
+using Service.DTOs.Admin.Baskets;
 using Service.DTOs.Admin.Blogs;
 using Service.DTOs.Admin.Categories;
 using Service.DTOs.Admin.ContactSettings;
@@ -83,7 +84,6 @@ namespace Service.Helpers
             CreateMap<WishlistDto, Wishlist>();
             CreateMap<WishlistProduct, WishlistProductDto>();
             CreateMap<WishlistProductDto, WishlistProduct>();
-
 
 
         }

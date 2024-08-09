@@ -25,7 +25,7 @@ namespace FinalProject.Controllers.Admin
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddWishlist([FromBody] WishlistDto wishlistDto)
+        public async Task<IActionResult> AddWishlist([FromQuery] WishlistDto wishlistDto)
         {
             await _wishlistService.AddWishlistAsync(wishlistDto);
             return CreatedAtAction(nameof(GetWishlistByUserId), new { userId = wishlistDto.AppUserId }, wishlistDto);

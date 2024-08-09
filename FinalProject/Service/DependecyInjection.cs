@@ -41,6 +41,8 @@ namespace Service
             services.AddScoped<ITokenService, TokenService>();
             services.AddScoped<ISendEmail, SendEmail>();
             services.AddScoped<IWishlistService, WishlistService>();
+            services.AddScoped<IBasketService, BasketService>();
+
 
 
             return services;

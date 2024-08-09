@@ -11,5 +11,7 @@ namespace Domain.Entities
         public int CategoryId { get; set; }
         public List<ProductImage> ProductImages { get; set; }
         public List<WishlistProduct> WishlistProducts { get; set; }
+        public List<BasketProduct> BasketProducts { get; set; }
+
     }
 }
