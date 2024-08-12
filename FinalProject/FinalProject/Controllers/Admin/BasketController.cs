@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Service.DTOs.Admin.Baskets;
+using Service.DTOs.Ui.Baskets;
+using Service.Helpers.Exceptions;
 using Service.Services.Interfaces;
+using System.ComponentModel.DataAnnotations;
 
 
 namespace FinalProject.Controllers.Admin
@@ -12,37 +14,48 @@ namespace FinalProject.Controllers.Admin
         public BasketController(IBasketService basketService)
         {
             _basketService = basketService;
-
         }
+
         [HttpGet("{userId}")]
         public async Task<IActionResult> GetBasketByUserId(string userId)
         {
             var basket = await _basketService.GetBasketByUserIdAsync(userId);
             if (basket == null)
-            {
-                return NotFound();
-            }
+                throw new NotFoundException("User not found");
+
             return Ok(basket);
+        }
+        [HttpPost]
+        public async Task<IActionResult> AddBasket([FromQuery][Required]BasketCreateDto basketCreateDto)
+        {
+            await _basketService.AddBasketAsync(basketCreateDto);
+            return Ok();
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddBasket([FromQuery] BasketDto basketDto)
+        public async Task<IActionResult> IncreaseQuantity(int productId, string userId)
         {
-            await _basketService.AddBasketAsync(basketDto);
-            return CreatedAtAction(nameof(GetBasketByUserId), new { userId = basketDto.AppUserId }, basketDto);
+            await _basketService.IncreaseQuantityAsync(productId, userId);
+            return Ok();
         }
 
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteBasket(int id)
+        [HttpPost]
+        public async Task<IActionResult> DecreaseQuantity(int productId, string userId)
         {
-            await _basketService.DeleteBasketAsync(id);
-            return NoContent();
+            await _basketService.DecreaseQuantityAsync(productId, userId);
+            return Ok();
         }
-        [HttpDelete("DeleteProductFromBasket/{id}")]
-        public async Task<IActionResult> DeleteProductFromBasket(int id, int productId)
+        [HttpDelete]
+        public async Task<IActionResult> DeleteProductFromBasket(int productId, string userId)
         {
-            await _basketService.DeleteProductFromBasket(productId, id);
-            return NoContent();
+            await _basketService.DeleteProductFromBasketAsync(productId, userId);
+            return Ok();
+        }
+        [HttpGet]
+        public async Task<IActionResult> GetAllBaskets()
+        {
+            var baskets = await _basketService.GetAllBasketsAsync();
+            return Ok(baskets);
         }
     }
 }

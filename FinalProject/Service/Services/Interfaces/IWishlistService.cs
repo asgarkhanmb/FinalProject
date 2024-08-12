@@ -1,5 +1,5 @@
 ﻿using Domain.Entities;
-using Service.DTOs.Admin.Wishlists;
+using Service.DTOs.Ui.Wishlists;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +12,6 @@ namespace Service.Services.Interfaces
     {
         Task<WishlistDto> GetWishlistByUserIdAsync(string userId);
         Task AddWishlistAsync(WishlistDto wishlistDto);
-        Task DeleteWishlistAsync(int id);
         Task DeleteProductFromWishList(int productId, int wishListId);
 
     }

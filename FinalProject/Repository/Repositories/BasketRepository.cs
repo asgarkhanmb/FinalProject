@@ -17,38 +17,25 @@ namespace Repository.Repositories
 
         public async Task AddAsync(Basket basket)
         {
-            _context.Baskets.Add(basket);
-        }
-
-        public async Task DeleteAsync(int id)
-        {
-           var basket = await GetByIdAsync(id);
-           if(basket != null)
-            {
-                _context.Baskets.Remove(basket);
-            }
-
-        }
-
-        public async Task<Basket> GetByIdAsync(int id)
-        {
-            return await _context.Baskets.Include(m => m.BasketProducts)
-                                         .ThenInclude(m => m.Product)
-                                         .ThenInclude(m => m.ProductImages)
-                                         .FirstOrDefaultAsync(m => m.Id == id);
+            await _context.Baskets.AddAsync(basket);
         }
 
         public async Task<Basket> GetByUserIdAsync(string userId)
         {
-            return await _context.Baskets.Include(m => m.BasketProducts)
-                                         .ThenInclude(m => m.Product)
-                                         .ThenInclude(m => m.ProductImages)
-                                         .FirstOrDefaultAsync(m => m.AppUserId == userId);
+            return await _context.Baskets
+        .Include(b => b.BasketProducts)
+        
+        .FirstOrDefaultAsync(b => b.AppUserId == userId);
         }
 
-        public async Task UpdateAsync(Basket basket)
+        public void Remove(BasketProduct basketProduct)
         {
-            _context.Baskets.Update(basket);
+            _context.BasketProducts.Remove(basketProduct);
+        }
+
+        public async Task SaveChangesAsync()
+        {
+            await _context.SaveChangesAsync();
         }
     }
 }

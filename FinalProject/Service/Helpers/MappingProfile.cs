@@ -2,7 +2,6 @@
 using Domain.Entities;
 using Service.DTOs.Account;
 using Service.DTOs.Admin.Abouts;
-using Service.DTOs.Admin.Baskets;
 using Service.DTOs.Admin.Blogs;
 using Service.DTOs.Admin.Categories;
 using Service.DTOs.Admin.ContactSettings;
@@ -14,8 +13,9 @@ using Service.DTOs.Admin.Socials;
 using Service.DTOs.Admin.Subscribes;
 using Service.DTOs.Admin.Teams;
 using Service.DTOs.Admin.Testimonials;
-using Service.DTOs.Admin.Wishlists;
+using Service.DTOs.Ui.Baskets;
 using Service.DTOs.Ui.Contacts;
+using Service.DTOs.Ui.Wishlists;
 
 namespace Service.Helpers
 {
@@ -84,6 +84,12 @@ namespace Service.Helpers
             CreateMap<WishlistDto, Wishlist>();
             CreateMap<WishlistProduct, WishlistProductDto>();
             CreateMap<WishlistProductDto, WishlistProduct>();
+
+            CreateMap<Basket, BasketDto>();
+            CreateMap<BasketCreateDto, Basket>();
+            CreateMap<BasketProduct, BasketProductDto>();
+            CreateMap<BasketProductDto, BasketProduct>();
+
 
 
         }

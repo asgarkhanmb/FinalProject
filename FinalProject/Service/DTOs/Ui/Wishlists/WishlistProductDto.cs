@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Service.DTOs.Admin.Wishlists
+namespace Service.DTOs.Ui.Wishlists
 {
     public class WishlistProductDto
     {

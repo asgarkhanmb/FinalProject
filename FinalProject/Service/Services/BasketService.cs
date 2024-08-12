@@ -1,81 +1,115 @@
 ﻿using Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 using Repository.Repositories.Interfaces;
-using Service.DTOs.Admin.Baskets;
+using Service.DTOs.Ui.Baskets;
 using Service.Services.Interfaces;
-
 
 namespace Service.Services
 {
     public class BasketService : IBasketService
     {
         private readonly IBasketRepository _basketRepository;
-        private readonly IProductService _productService;
 
-
-        public BasketService(IBasketRepository basketRepository,
-                             IProductService productService)
+        public BasketService(IBasketRepository basketRepository)
         {
             _basketRepository = basketRepository;
-            _productService = productService;
-        }
-
-        public async Task AddBasketAsync(BasketDto basketDto)
-        {
-            BasketDto existBasketDto = await GetBasketByUserIdAsync(basketDto.AppUserId);
-            if (existBasketDto == null)
-            {
-                List<BasketProduct>basketProducts = new List<BasketProduct>();
-                basketProducts.Add(new BasketProduct { ProductId = basketDto.ProductId });
-                var basket = new Basket
-                {
-                    AppUserId = basketDto.AppUserId,
-                    BasketProducts = basketProducts
-                };
-
-                await _basketRepository.AddAsync(basket);
-            }
-            else
-            {
-                Basket existBsket = await _basketRepository.GetByUserIdAsync(existBasketDto.AppUserId);
-                existBsket.BasketProducts.Add(new BasketProduct { ProductId = basketDto.ProductId });
-            }
-            await _basketRepository.SaveChanges();
-
-        }
-
-        public async Task DeleteBasketAsync(int id)
-        {
-            await _basketRepository.DeleteAsync(id);
-            await _basketRepository.SaveChanges();
-        }
-
-        public async Task DeleteProductFromBasket(int productId, int basketId)
-        {
-            Basket existBasket = await _basketRepository.GetByIdAsync(basketId);
-            existBasket.BasketProducts.RemoveAll(p => p.ProductId == productId);
-
-            await _basketRepository.SaveChanges();
         }
 
         public async Task<BasketDto> GetBasketByUserIdAsync(string userId)
         {
-           var basket = await _basketRepository.GetByUserIdAsync(userId);
+            var basket = await _basketRepository.GetByUserIdAsync(userId);
             return ConvertToDto(basket);
+        }
+
+        public async Task AddBasketAsync(BasketCreateDto basketCreateDto)
+        {
+            var basket = await _basketRepository.GetByUserIdAsync(basketCreateDto.UserId);
+
+            if (basket == null)
+            {
+                basket = new Basket
+                {
+                    AppUserId = basketCreateDto.UserId
+                };
+                basket.BasketProducts.Add(new BasketProduct { ProductId = basketCreateDto.ProductId, Quantity = 1 });
+                await _basketRepository.AddAsync(basket);
+            }
+            else
+            {
+                var existingProduct = basket.BasketProducts.FirstOrDefault(bp => bp.ProductId == basketCreateDto.ProductId);
+                if (existingProduct != null)
+                {
+                    existingProduct.Quantity++;
+                }
+                else
+                {
+                    basket.BasketProducts.Add(new BasketProduct { ProductId = basketCreateDto.ProductId, Quantity = 1 });
+                }
+            }
+            await _basketRepository.SaveChangesAsync();
+        }
+
+
+        public async Task IncreaseQuantityAsync(int productId, string userId)
+        {
+            var basket = await _basketRepository.GetByUserIdAsync(userId);
+            var product = basket.BasketProducts.FirstOrDefault(bp => bp.ProductId == productId);
+            if (product != null)
+            {
+                product.Quantity++;
+                await _basketRepository.SaveChangesAsync();
+            }
+        }
+
+        public async Task DecreaseQuantityAsync(int productId, string userId)
+        {
+            var basket = await _basketRepository.GetByUserIdAsync(userId);
+            var product = basket.BasketProducts.FirstOrDefault(bp => bp.ProductId == productId);
+            if (product != null)
+            {
+                product.Quantity--;
+                if (product.Quantity == 0)
+                {
+                    basket.BasketProducts.Remove(product);
+                }
+                await _basketRepository.SaveChangesAsync();
+            }
         }
 
         private BasketDto ConvertToDto(Basket basket)
         {
-            if (basket == null)
-            {
-                return null;
-            }
+            if (basket == null) return null;
             return new BasketDto
             {
-
+                Id = basket.Id,
                 AppUserId = basket.AppUserId,
-                ProductId = basket.BasketProducts[0].ProductId,
-
+                BasketProducts = basket.BasketProducts.Select(bp => new BasketProductDto
+                {
+                    ProductId = bp.ProductId,
+                    Quantity = bp.Quantity
+                }).ToList(),
+                TotalProductCount = basket.BasketProducts.Sum(bp => bp.Quantity)
             };
+        }
+
+        public async Task DeleteProductFromBasketAsync(int productId, string userId)
+        {
+            var basket = await _basketRepository.GetByUserIdAsync(userId);
+            if (basket != null)
+            {
+                var product = basket.BasketProducts.FirstOrDefault(bp => bp.ProductId == productId);
+                if (product != null)
+                {
+                    basket.BasketProducts.Remove(product);
+                    await _basketRepository.SaveChangesAsync();
+                }
+            }
+        }
+
+        public async Task<List<BasketDto>> GetAllBasketsAsync()
+        {
+            var baskets = await _basketRepository.FindAllWithIncludes().Include(m => m.BasketProducts).ToListAsync();
+            return baskets.Select(b => ConvertToDto(b)).ToList();
         }
     }
 }

@@ -5,14 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Service.DTOs.Admin.Baskets
+namespace Service.DTOs.Ui.Baskets
 {
     public class BasketDto
     {
 
-        [Required]
+        public int Id { get; set; }
         public string AppUserId { get; set; }
-        [Required]
-        public int ProductId { get; set; }
+        public List<BasketProductDto> BasketProducts { get; set; }
+        public int TotalProductCount { get; set; }
+
+
     }
 }

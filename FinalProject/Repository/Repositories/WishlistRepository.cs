@@ -12,6 +12,7 @@ namespace Repository.Repositories
 
         public async Task AddAsync(Wishlist wishlist)
         {
+  
             _context.Wishlists.Add(wishlist);
 
         }

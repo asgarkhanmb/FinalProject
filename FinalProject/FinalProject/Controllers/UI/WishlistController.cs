@@ -1,11 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Service.DTOs.Admin.Wishlists;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Service.DTOs.Ui.Wishlists;
 using Service.Helpers.Exceptions;
 using Service.Services.Interfaces;
+using System.ComponentModel.DataAnnotations;
 
-namespace FinalProject.Controllers.Admin
+namespace FinalProject.Controllers.UI
 {
-    public class WishlistController : BaseController
+    [Authorize]
+    public class WishlistController :BaseController
     {
         private readonly IWishlistService _wishlistService;
 
@@ -25,24 +28,14 @@ namespace FinalProject.Controllers.Admin
         [HttpPost]
         public async Task<IActionResult> AddWishlist([FromQuery] WishlistDto wishlistDto)
         {
-            var wishlist = await _wishlistService.GetWishlistByUserIdAsync(wishlistDto.ToString());
-            if (wishlist == null) throw new NotFoundException("User not found");
             await _wishlistService.AddWishlistAsync(wishlistDto);
             return CreatedAtAction(nameof(GetWishlistByUserId), new { userId = wishlistDto.AppUserId }, wishlistDto);
         }
-
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteWishlist(int id)
-        {
-            if (id == null) throw new NotFoundException("Not Found");
-            await _wishlistService.DeleteWishlistAsync(id);
-            return Ok();
-        }
-        [HttpDelete("DeleteProductFromWishlist/{id}")]
-        public async Task<IActionResult> DeleteProductFromWishlist(int id, int productId)
+        public async Task<IActionResult> DeleteProductFromWishlist([Required] int id, [Required] int productId)
         {
             await _wishlistService.DeleteProductFromWishList(productId, id);
-            return NoContent();
+            return Ok();
         }
     }
 }

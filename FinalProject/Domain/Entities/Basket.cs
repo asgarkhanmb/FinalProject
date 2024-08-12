@@ -12,5 +12,9 @@ namespace Domain.Entities
         public string AppUserId { get; set; }
         public AppUser AppUser { get; set; }
         public List<BasketProduct> BasketProducts { get; set; }
+        public Basket()
+        {
+            BasketProducts= new List<BasketProduct>();
+        }
     }
 }
