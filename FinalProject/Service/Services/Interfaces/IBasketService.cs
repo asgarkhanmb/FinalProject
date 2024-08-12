@@ -6,8 +6,8 @@ namespace Service.Services.Interfaces
     {
         Task<BasketDto> GetBasketByUserIdAsync(string userId);
         Task AddBasketAsync(BasketCreateDto basketCreateDto);
-        Task IncreaseQuantityAsync(int productId, string userId);
-        Task DecreaseQuantityAsync(int productId, string userId);
+        Task IncreaseQuantityAsync(BasketCreateDto basketCreateDto);
+        Task DecreaseQuantityAsync(BasketCreateDto basketCreateDto);
         Task DeleteProductFromBasketAsync(int productId, string userId);
         Task<List<BasketDto>> GetAllBasketsAsync();
     }

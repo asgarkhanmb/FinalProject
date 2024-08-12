@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Repository.Repositories.Interfaces;
 using Service.DTOs.Ui.Baskets;
+using Service.Helpers.Exceptions;
 using Service.Services.Interfaces;
 
 namespace Service.Services
@@ -23,7 +24,16 @@ namespace Service.Services
 
         public async Task AddBasketAsync(BasketCreateDto basketCreateDto)
         {
+            if (string.IsNullOrEmpty(basketCreateDto.UserId) || basketCreateDto.ProductId == 0)
+            {
+                throw new RequiredException("UserId or ProductId cannot be null or zero.");
+            }
             var basket = await _basketRepository.GetByUserIdAsync(basketCreateDto.UserId);
+
+            if (basket == null)
+            {
+                throw new NotFoundException("User not found");
+            }
 
             if (basket == null)
             {
@@ -37,7 +47,11 @@ namespace Service.Services
             else
             {
                 var existingProduct = basket.BasketProducts.FirstOrDefault(bp => bp.ProductId == basketCreateDto.ProductId);
-                if (existingProduct != null)
+                if (existingProduct == null)
+                {
+                    throw new NotFoundException("Product not found");
+                }
+                else if (existingProduct != null)
                 {
                     existingProduct.Quantity++;
                 }
@@ -50,10 +64,26 @@ namespace Service.Services
         }
 
 
-        public async Task IncreaseQuantityAsync(int productId, string userId)
+        public async Task IncreaseQuantityAsync(BasketCreateDto basketCreateDto)
         {
-            var basket = await _basketRepository.GetByUserIdAsync(userId);
-            var product = basket.BasketProducts.FirstOrDefault(bp => bp.ProductId == productId);
+            if (string.IsNullOrEmpty(basketCreateDto.UserId) || basketCreateDto.ProductId == 0)
+            {
+                throw new RequiredException("UserId or ProductId cannot be null or zero.");
+            }
+
+            var basket = await _basketRepository.GetByUserIdAsync(basketCreateDto.UserId);
+
+            if (basket == null)
+            {
+                throw new NotFoundException("Basket not found for the given user.");
+            }
+
+            var product = basket.BasketProducts.FirstOrDefault(bp => bp.ProductId == basketCreateDto.ProductId);
+
+            if (product == null)
+            {
+                throw new NotFoundException("Product not found in the basket.");
+            }
             if (product != null)
             {
                 product.Quantity++;
@@ -61,19 +91,36 @@ namespace Service.Services
             }
         }
 
-        public async Task DecreaseQuantityAsync(int productId, string userId)
+        public async Task DecreaseQuantityAsync(BasketCreateDto basketCreateDto)
         {
-            var basket = await _basketRepository.GetByUserIdAsync(userId);
-            var product = basket.BasketProducts.FirstOrDefault(bp => bp.ProductId == productId);
-            if (product != null)
+
+            if (string.IsNullOrEmpty(basketCreateDto.UserId) || basketCreateDto.ProductId == 0)
             {
-                product.Quantity--;
-                if (product.Quantity == 0)
-                {
-                    basket.BasketProducts.Remove(product);
-                }
-                await _basketRepository.SaveChangesAsync();
+                throw new RequiredException("UserId or ProductId cannot be null or zero.");
             }
+
+            var basket = await _basketRepository.GetByUserIdAsync(basketCreateDto.UserId);
+
+            if (basket == null)
+            {
+                throw new NotFoundException("Basket not found for the given user.");
+            }
+
+            var product = basket.BasketProducts.FirstOrDefault(bp => bp.ProductId == basketCreateDto.ProductId);
+
+            if (product == null)
+            {
+                throw new NotFoundException("Product not found in the basket.");
+            }
+
+            product.Quantity--;
+
+            if (product.Quantity == 0)
+            {
+                basket.BasketProducts.Remove(product);
+            }
+
+            await _basketRepository.SaveChangesAsync();
         }
 
         private BasketDto ConvertToDto(Basket basket)
@@ -94,10 +141,22 @@ namespace Service.Services
 
         public async Task DeleteProductFromBasketAsync(int productId, string userId)
         {
+            if (string.IsNullOrEmpty(userId) || productId == 0)
+            {
+                throw new RequiredException("UserId or ProductId cannot be null or zero.");
+            }
             var basket = await _basketRepository.GetByUserIdAsync(userId);
+            if (basket == null)
+            {
+                throw new NotFoundException("User not found");
+            }
             if (basket != null)
             {
                 var product = basket.BasketProducts.FirstOrDefault(bp => bp.ProductId == productId);
+                if (product == null)
+                {
+                    throw new NotFoundException("Product not found");
+                }
                 if (product != null)
                 {
                     basket.BasketProducts.Remove(product);
