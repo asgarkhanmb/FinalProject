@@ -2,12 +2,13 @@
 using Microsoft.AspNetCore.Mvc;
 using Service.DTOs.Ui.Wishlists;
 using Service.Helpers.Exceptions;
+using Service.Services;
 using Service.Services.Interfaces;
 using System.ComponentModel.DataAnnotations;
 
 namespace FinalProject.Controllers.UI
 {
-    [Authorize]
+
     public class WishlistController :BaseController
     {
         private readonly IWishlistService _wishlistService;
@@ -31,11 +32,12 @@ namespace FinalProject.Controllers.UI
             await _wishlistService.AddWishlistAsync(wishlistDto);
             return CreatedAtAction(nameof(GetWishlistByUserId), new { userId = wishlistDto.AppUserId }, wishlistDto);
         }
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteProductFromWishlist([Required] int id, [Required] int productId)
+        [HttpDelete]
+        public async Task<IActionResult> DeleteProductFromWishlist(int productId, string userId)
         {
-            await _wishlistService.DeleteProductFromWishList(productId, id);
+            await _wishlistService.DeleteProductFromWishlistAsync(productId, userId);
             return Ok();
         }
+     
     }
 }

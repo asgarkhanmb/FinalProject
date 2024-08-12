@@ -1,4 +1,6 @@
 ﻿using Domain.Entities;
+using Microsoft.EntityFrameworkCore;
+using Repository.Repositories;
 using Repository.Repositories.Interfaces;
 using Service.DTOs.Ui.Wishlists;
 using Service.Helpers.Exceptions;
@@ -60,15 +62,30 @@ namespace Service.Services
 
             await _wishlistRepository.SaveChanges();
         }
-        public async Task DeleteProductFromWishList(int productId, int wishListId)
+        public async Task DeleteProductFromWishlistAsync(int productId, string userId)
         {
-            ArgumentNullException.ThrowIfNull(nameof(wishListId));
-
-            var wishList = await _wishlistRepository.GetById((int)wishListId) ?? throw new NotFoundException("Data not found");
-            Wishlist existWishList = await _wishlistRepository.GetByIdAsync(wishListId);
-            existWishList.WishlistProducts.RemoveAll(wp => wp.ProductId == productId);
-
-            await _wishlistRepository.SaveChanges();
+            if (string.IsNullOrEmpty(userId) || productId == 0)
+            {
+                throw new RequiredException("UserId or ProductId cannot be null or zero.");
+            }
+            var basket = await _wishlistRepository.GetByUserIdAsync(userId);
+            if (basket == null)
+            {
+                throw new NotFoundException("User not found");
+            }
+            if (basket != null)
+            {
+                var product = basket.WishlistProducts.FirstOrDefault(bp => bp.ProductId == productId);
+                if (product == null)
+                {
+                    throw new NotFoundException("Product not found");
+                }
+                if (product != null)
+                {
+                    basket.WishlistProducts.Remove(product);
+                    await _wishlistRepository.SaveChanges();
+                }
+            }
         }
 
         private WishlistDto ConvertToDto(Wishlist wishlist)
@@ -84,6 +101,12 @@ namespace Service.Services
                 ProductId = wishlist.WishlistProducts[0].ProductId,
 
             };
+        }
+
+        public async Task<List<WishlistDto>> GetAllWishlistsAsync()
+        {
+            var wishlists = await _wishlistRepository.FindAllWithIncludes().Include(m => m.WishlistProducts).ToListAsync();
+            return wishlists.Select(w => ConvertToDto(w)).ToList();
         }
     }
 }

@@ -12,7 +12,8 @@ namespace Service.Services.Interfaces
     {
         Task<WishlistDto> GetWishlistByUserIdAsync(string userId);
         Task AddWishlistAsync(WishlistDto wishlistDto);
-        Task DeleteProductFromWishList(int productId, int wishListId);
+        Task DeleteProductFromWishlistAsync(int productId, string userId);
+        Task<List<WishlistDto>> GetAllWishlistsAsync();
 
     }
 }
