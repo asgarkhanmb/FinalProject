@@ -52,7 +52,7 @@ namespace Repository.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Abouts");
+                    b.ToTable("Abouts", (string)null);
                 });
 
             modelBuilder.Entity("Domain.Entities.AppUser", b =>
@@ -149,7 +149,7 @@ namespace Repository.Migrations
 
                     b.HasIndex("AppUserId");
 
-                    b.ToTable("Baskets");
+                    b.ToTable("Baskets", (string)null);
                 });
 
             modelBuilder.Entity("Domain.Entities.BasketProduct", b =>
@@ -181,7 +181,7 @@ namespace Repository.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("BasketProducts");
+                    b.ToTable("BasketProducts", (string)null);
                 });
 
             modelBuilder.Entity("Domain.Entities.Blog", b =>
@@ -214,7 +214,7 @@ namespace Repository.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Blogs");
+                    b.ToTable("Blogs", (string)null);
                 });
 
             modelBuilder.Entity("Domain.Entities.Category", b =>
@@ -242,7 +242,7 @@ namespace Repository.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Categories", (string)null);
                 });
 
             modelBuilder.Entity("Domain.Entities.Contact", b =>
@@ -276,7 +276,7 @@ namespace Repository.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Contacts");
+                    b.ToTable("Contacts", (string)null);
                 });
 
             modelBuilder.Entity("Domain.Entities.ContactSetting", b =>
@@ -304,7 +304,7 @@ namespace Repository.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ContactSettings");
+                    b.ToTable("ContactSettings", (string)null);
                 });
 
             modelBuilder.Entity("Domain.Entities.Instagram", b =>
@@ -333,7 +333,7 @@ namespace Repository.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Instagrams");
+                    b.ToTable("Instagrams", (string)null);
                 });
 
             modelBuilder.Entity("Domain.Entities.InstagramGallery", b =>
@@ -355,7 +355,7 @@ namespace Repository.Migrations
 
                     b.HasIndex("InstagramId");
 
-                    b.ToTable("InstagramGalleries");
+                    b.ToTable("InstagramGalleries", (string)null);
                 });
 
             modelBuilder.Entity("Domain.Entities.Product", b =>
@@ -387,7 +387,7 @@ namespace Repository.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Products");
+                    b.ToTable("Products", (string)null);
                 });
 
             modelBuilder.Entity("Domain.Entities.ProductImage", b =>
@@ -412,7 +412,7 @@ namespace Repository.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("ProductImages");
+                    b.ToTable("ProductImages", (string)null);
                 });
 
             modelBuilder.Entity("Domain.Entities.Setting", b =>
@@ -445,7 +445,7 @@ namespace Repository.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Settings");
+                    b.ToTable("Settings", (string)null);
                 });
 
             modelBuilder.Entity("Domain.Entities.Slider", b =>
@@ -478,7 +478,7 @@ namespace Repository.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Sliders");
+                    b.ToTable("Sliders", (string)null);
                 });
 
             modelBuilder.Entity("Domain.Entities.Social", b =>
@@ -511,7 +511,7 @@ namespace Repository.Migrations
 
                     b.HasIndex("TeamId");
 
-                    b.ToTable("Socials");
+                    b.ToTable("Socials", (string)null);
                 });
 
             modelBuilder.Entity("Domain.Entities.Subscribe", b =>
@@ -535,7 +535,7 @@ namespace Repository.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Subscribes");
+                    b.ToTable("Subscribes", (string)null);
                 });
 
             modelBuilder.Entity("Domain.Entities.Team", b =>
@@ -573,7 +573,7 @@ namespace Repository.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Teams");
+                    b.ToTable("Teams", (string)null);
                 });
 
             modelBuilder.Entity("Domain.Entities.Testimonial", b =>
@@ -616,7 +616,7 @@ namespace Repository.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Testimonials");
+                    b.ToTable("Testimonials", (string)null);
                 });
 
             modelBuilder.Entity("Domain.Entities.Wishlist", b =>
@@ -641,7 +641,7 @@ namespace Repository.Migrations
 
                     b.HasIndex("AppUserId");
 
-                    b.ToTable("Wishlists");
+                    b.ToTable("Wishlists", (string)null);
                 });
 
             modelBuilder.Entity("Domain.Entities.WishlistProduct", b =>
@@ -670,7 +670,7 @@ namespace Repository.Migrations
 
                     b.HasIndex("WishlistId");
 
-                    b.ToTable("WishlistProducts");
+                    b.ToTable("WishlistProducts", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

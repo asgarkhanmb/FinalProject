@@ -29,6 +29,11 @@ namespace Service.Services
 
         public async Task CreateAsync(CategoryCreateDto model)
         {
+            if (!model.UploadImage.CheckFileType("image"))
+                throw new RequiredException("Invalid file type. Only image files are allowed.");
+
+            if (!model.UploadImage.CheckFileSize(1024))
+                throw new RequiredException("File size exceeds the limit.");
             bool categoryExists = await _categoryRepo.ExistAsync(m=>m.Name==model.Name);
 
             if (categoryExists)
@@ -60,26 +65,52 @@ namespace Service.Services
 
         public async Task EditAsync(int? id, CategoryEditDto model)
         {
+            if (id == null)
+            {
+                throw new ArgumentNullException(nameof(id), "Id cannot be null.");
+            }
+
+            if (model.Name.Length > 20)
+            {
+                throw new RequiredException("Exceed the Name length limit!");
+            }
+
+
+            bool categoryExists = await _categoryRepo.ExistAsync(m => m.Name == model.Name && m.Id != id);
+
+            if (categoryExists)
+            {
+                throw new RequiredException("A category with the same name already exists.");
+            }
+
             var existCategory = await _categoryRepo.GetById((int)id) ?? throw new NotFoundException("Data not found");
 
-            if (model.UploadImage is not null)
+            if (model.UploadImage != null)
             {
+
+                if (!model.UploadImage.CheckFileType("image"))
+                {
+                    throw new RequiredException("Invalid file type. Only image files are allowed.");
+                }
+
+                if (!model.UploadImage.CheckFileSize(1024))
+                {
+                    throw new RequiredException("File size exceeds the limit.");
+                }
+
+
                 string oldPath = _env.GenerateFilePath("images", existCategory.Icon);
                 oldPath.DeleteFileFromLocal();
 
+
                 string fileName = Guid.NewGuid().ToString() + "-" + model.UploadImage.FileName;
-
                 string newPath = _env.GenerateFilePath("images", fileName);
-
                 await model.UploadImage.SaveFileToLocalAsync(newPath);
 
                 model.Icon = fileName;
-
             }
+
             _mapper.Map(model, existCategory);
-
-
-
             await _categoryRepo.EditAsync(existCategory);
         }
 

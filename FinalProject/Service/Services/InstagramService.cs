@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Repository.Repositories.Interfaces;
 using Service.DTOs.Admin.Instagrams;
-using Service.DTOs.Admin.Products;
 using Service.Helpers.Exceptions;
 using Service.Helpers.Extensions;
 using Service.Services.Interfaces;
@@ -28,6 +27,18 @@ namespace Service.Services
         }
         public async Task CreateAsync(InstagramCreateDto model)
         {
+            foreach (var item in model.UploadImages)
+            {
+                if (!item.CheckFileType("image"))
+                    throw new RequiredException("Invalid file type. Only image files are allowed.");
+
+                if (!item.CheckFileSize(1024))
+                    throw new RequiredException("File size exceeds the limit.");
+            }
+            if (model.Title.Length > 50 || model.SocialName.Length>100)
+            {
+                throw new RequiredException("Exceed the length limit!!");
+            }
             bool instaExists = await _instagramRepo.ExistAsync(m => m.SocialName == model.SocialName);
 
             if (instaExists)
@@ -56,26 +67,58 @@ namespace Service.Services
 
         public async Task DeleteAsync(int? id)
         {
-            ArgumentNullException.ThrowIfNull(nameof(id));
-            var existCategory = await _instagramRepo.GetById((int)id) ?? throw new NotFoundException("Data not found");
-            string path = _env.GenerateFilePath("images", existCategory.InstagramGalleries.ToString());
-            path.DeleteFileFromLocal();
-
+            if (id == null)
+            {
+                throw new ArgumentNullException(nameof(id), "Instagram ID cannot be null.");
+            }
+            var existCategory = await _instagramRepo.GetByInclude(p => p.Id == id, "InstagramGalleries");
+            if (existCategory == null)
+            {
+                throw new NotFoundException("Data not found");
+            }
+            foreach (var gallery in existCategory.InstagramGalleries)
+            {
+                string path = _env.GenerateFilePath("images", gallery.Image);
+                path.DeleteFileFromLocal();
+            }
             await _instagramRepo.DeleteAsync(existCategory);
         }
 
         public async Task EditAsync(int? id, InstagramEditDto model)
         {
-            bool instaExists = await _instagramRepo.ExistAsync(m => m.SocialName == model.SocialName);
+            if (id == null)
+            {
+                throw new ArgumentNullException(nameof(id), "Product ID cannot be null.");
+            }
+            if (model.Title.Length > 50 || model.SocialName.Length > 100)
+            {
+                throw new RequiredException("Exceed the length limit!!");
+            }
+            if (model.UploadImages != null)
+            {
+                foreach (var item in model.UploadImages)
+                {
+                    if (!item.CheckFileType("image"))
+                    {
+                        throw new RequiredException("Invalid file type. Only image files are allowed.");
+                    }
 
-            if (instaExists)
+                    if (!item.CheckFileSize(1024))
+                    {
+                        throw new RequiredException("File size exceeds the 1MB limit.");
+                    }
+                }
+            }
+            bool instagramExists = await _instagramRepo.ExistAsync(m => m.SocialName == model.SocialName);
+
+            if (instagramExists)
             {
                 throw new RequiredException("A SocialName with the same name already exists.");
             }
-            var existInsta = await _instagramRepo.GetByInclude(p => p.Id == id, "ProductImages");
+            var existInsta = await _instagramRepo.GetByInclude(p => p.Id == id, "InstagramGalleries");
             _mapper.Map(model, existInsta);
 
-            if (model.UploadImages is not null)
+            if (model.UploadImages != null)
             {
 
                 List<string> oldImagePaths = existInsta.InstagramGalleries.Select(p => p.Image).ToList();
@@ -86,7 +129,7 @@ namespace Service.Services
                         File.Delete(Path.Combine(_env.WebRootPath, "images", oldPathImage));
 
                 }
-                existInsta.InstagramGalleries= new();
+                existInsta.InstagramGalleries = new();
                 foreach (var item in model.UploadImages)
                 {
 

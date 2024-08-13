@@ -30,6 +30,11 @@ namespace Service.Services
 
         public async Task CreateAsync(ContactSettingCreateDto model)
         {
+            if (!model.UploadImage.CheckFileType("image"))
+                throw new RequiredException("Invalid file type. Only image files are allowed.");
+
+            if (!model.UploadImage.CheckFileSize(1024))
+                throw new RequiredException("File size exceeds the limit.");
             if (model.Title.Length > 20) throw new RequiredException("Exceed the Title length limit!!");
             string fileName = Guid.NewGuid().ToString() + "-" + model.UploadImage.FileName;
 
@@ -54,26 +59,48 @@ namespace Service.Services
 
         public async Task EditAsync(int? id, ContactSettingEditDto model)
         {
-            var existContactSetting = await _contactSettingRepo.GetById((int)id) ?? throw new NotFoundException("Data not found");
-
-            if (model.UploadImage is not null)
+            if (id == null)
             {
-                string oldPath = _env.GenerateFilePath("images", existContactSetting.Image);
-                oldPath.DeleteFileFromLocal();
+                throw new ArgumentNullException(nameof(id), "Id cannot be null.");
+            }
+
+            if (model.Title.Length > 20)
+            {
+                throw new RequiredException("Exceed the Title length limit!");
+            }
+
+            var existContactSetting = await _contactSettingRepo.GetById((int)id)
+                ?? throw new NotFoundException("Data not found");
+
+            if (model.UploadImage != null)
+            {
+
+                if (!model.UploadImage.CheckFileType("image"))
+                {
+                    throw new RequiredException("Invalid file type. Only image files are allowed.");
+                }
+
+                if (!model.UploadImage.CheckFileSize(1024))
+                {
+                    throw new RequiredException("File size exceeds the limit.");
+                }
+
+
+                if (!string.IsNullOrEmpty(existContactSetting.Image))
+                {
+                    string oldPath = _env.GenerateFilePath("images", existContactSetting.Image);
+                    oldPath.DeleteFileFromLocal();
+                }
+
 
                 string fileName = Guid.NewGuid().ToString() + "-" + model.UploadImage.FileName;
-
                 string newPath = _env.GenerateFilePath("images", fileName);
-
                 await model.UploadImage.SaveFileToLocalAsync(newPath);
 
                 model.Image = fileName;
-
             }
+
             _mapper.Map(model, existContactSetting);
-
-
-
             await _contactSettingRepo.EditAsync(existContactSetting);
         }
 

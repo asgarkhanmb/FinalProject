@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace FinalProject.Controllers.Admin
 {
-    [Authorize]
+
     public class AboutController :BaseController
     {
         private readonly IAboutService _aboutService;

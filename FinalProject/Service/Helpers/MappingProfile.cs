@@ -10,11 +10,11 @@ using Service.DTOs.Admin.Products;
 using Service.DTOs.Admin.Settings;
 using Service.DTOs.Admin.Sliders;
 using Service.DTOs.Admin.Socials;
-using Service.DTOs.Admin.Subscribes;
 using Service.DTOs.Admin.Teams;
 using Service.DTOs.Admin.Testimonials;
 using Service.DTOs.Ui.Baskets;
 using Service.DTOs.Ui.Contacts;
+using Service.DTOs.Ui.Subscribes;
 using Service.DTOs.Ui.Wishlists;
 
 namespace Service.Helpers
@@ -42,7 +42,7 @@ namespace Service.Helpers
             CreateMap<Product, ProductDto>().ForMember(dest => dest.CategoryName, opt => opt.MapFrom(src => src.Category.Name))
                                             .ForMember(d => d.Images, opt => opt.MapFrom(s => s.ProductImages.Select(m => m.Image).ToList()));
             CreateMap<ProductCreateDto, Product>();
-            CreateMap<ProductEditDto, Product>();               
+            CreateMap<ProductEditDto, Product>();              
 
             CreateMap<Contact, ContactDto>();
             CreateMap<ContactCreateDto, Contact>();
@@ -56,9 +56,8 @@ namespace Service.Helpers
             CreateMap<SocialEditDto, Social>();
 
             CreateMap<Team, TeamDto>().ForMember(dest => dest.SocialNames, opt => opt.MapFrom(src => src.Socials.Select(m=>m.Name).ToList()));
-                                     
             CreateMap<TeamCreateDto, Team>();
-            CreateMap<TeamEditDto, Team>();
+            CreateMap<TeamEditDto, Team>().ForMember(dest => dest.Image, opt => opt.Condition(src => (src.Image is not null)));
 
             CreateMap<Testimonial, TestimonialDto>();
             CreateMap<TestimonialCreateDto, Testimonial>();
@@ -66,7 +65,7 @@ namespace Service.Helpers
 
             CreateMap<Instagram, InstagramDto>().ForMember(d => d.Images, opt => opt.MapFrom(s => s.InstagramGalleries.Select(m => m.Image).ToList()));
             CreateMap<InstagramCreateDto, Instagram>();
-            CreateMap<InstagramEditDto, Instagram>();
+            CreateMap<InstagramEditDto, Instagram>().ForMember(dest => dest.InstagramGalleries, opt => opt.Condition(src => (src.InstagramGalleries is not null)));
 
             CreateMap<Blog, BlogDto>();
             CreateMap<BlogCreateDto, Blog>();
@@ -78,7 +77,6 @@ namespace Service.Helpers
 
             CreateMap<Subscribe, SubscribeDto>();
             CreateMap<SubscribeCreateDto, Subscribe>();
-            CreateMap<SubscribeEditDto, Subscribe>();
 
             CreateMap<Wishlist, WishlistDto>();
             CreateMap<WishlistDto, Wishlist>();

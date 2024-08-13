@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Service.DTOs.Admin.Subscribes;
+using Service.DTOs.Ui.Subscribes;
 using Service.Services.Interfaces;
 
 namespace FinalProject.Controllers.UI

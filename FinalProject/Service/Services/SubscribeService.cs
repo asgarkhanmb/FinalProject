@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Domain.Entities;
 using Repository.Repositories.Interfaces;
-using Service.DTOs.Admin.Subscribes;
+using Service.DTOs.Ui.Subscribes;
 using Service.Helpers.Exceptions;
 using Service.Services.Interfaces;
 

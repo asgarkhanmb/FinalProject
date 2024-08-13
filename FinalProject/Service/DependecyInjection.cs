@@ -5,6 +5,7 @@ using Service.Helpers;
 using Service.Services.Interfaces;
 using Service.Services;
 using FluentValidation.AspNetCore;
+using static Service.DTOs.Account.LoginDto;
 
 namespace Service
 {
@@ -20,6 +21,7 @@ namespace Service
             });
 
             services.AddScoped<IValidator<RegisterDto>, RegisterDtoValidator>();
+            services.AddScoped<IValidator<LoginDto>, LoginDtoValidator>();
             services.AddDistributedMemoryCache();
             services.AddHttpContextAccessor();
             services.AddScoped<UrlHelperService>();

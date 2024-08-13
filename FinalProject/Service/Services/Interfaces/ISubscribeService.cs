@@ -1,4 +1,4 @@
-﻿using Service.DTOs.Admin.Subscribes;
+﻿using Service.DTOs.Ui.Subscribes;
 
 namespace Service.Services.Interfaces
 {

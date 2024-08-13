@@ -28,6 +28,11 @@ namespace Service.Services
 
         public async Task CreateAsync(TestimonialCreateDto model)
         {
+            if (!model.UploadImage.CheckFileType("image"))
+                throw new RequiredException("Invalid file type. Only image files are allowed.");
+
+            if (!model.UploadImage.CheckFileSize(1024))
+                throw new RequiredException("File size exceeds the limit.");
             if (model.Title.Length > 30 || model.Description.Length > 300 || model.FullName.Length > 50 || model.City.Length > 50)
                 throw new RequiredException("Exceed the length limit!!");
 
@@ -54,23 +59,40 @@ namespace Service.Services
 
         public async Task EditAsync(int? id, TestimonialEditDto model)
         {
+
+            if (id == null)
+            {
+                throw new ArgumentNullException(nameof(id), "Id cannot be null.");
+            }
+            if (model.Title.Length > 30 || model.Description.Length > 300 || model.FullName.Length > 50 || model.City.Length > 50)
+                throw new RequiredException("Exceed the length limit!!");
+
             var existTestimonial = await _testimonialRepo.GetById((int)id) ?? throw new NotFoundException("Data not found");
 
-            if (model.UploadImage is not null)
+            if (model.UploadImage != null)
             {
+                if (!model.UploadImage.CheckFileType("image"))
+                {
+                    throw new RequiredException("Invalid file type. Only image files are allowed.");
+                }
+
+                if (!model.UploadImage.CheckFileSize(1024))
+                {
+                    throw new RequiredException("File size exceeds the limit.");
+                }
                 string oldPath = _env.GenerateFilePath("images", existTestimonial.Image);
                 oldPath.DeleteFileFromLocal();
 
                 string fileName = Guid.NewGuid().ToString() + "-" + model.UploadImage.FileName;
-
                 string newPath = _env.GenerateFilePath("images", fileName);
-
                 await model.UploadImage.SaveFileToLocalAsync(newPath);
 
-                model.Image = fileName;
-
+                existTestimonial.Image = fileName;
             }
+
+
             _mapper.Map(model, existTestimonial);
+
             await _testimonialRepo.EditAsync(existTestimonial);
         }
 

@@ -28,6 +28,10 @@ namespace Service.Services
 
         public async Task CreateAsync(SocialCreateDto model)
         {
+            if (model.Name.Length > 50)
+            {
+                throw new RequiredException("Exceed the Name length limit!!");
+            }
             bool socialExists = await _socialRepo.ExistAsync(m => m.Url == model.Url);
 
             if (socialExists)
@@ -47,6 +51,10 @@ namespace Service.Services
 
         public async Task EditAsync(int? id, SocialEditDto model)
         {
+            if (model.Name.Length > 50)
+            {
+                throw new RequiredException("Exceed the Name length limit!!");
+            }
             bool socialExists = await _socialRepo.ExistAsync(m => m.Url == model.Url);
 
             if (socialExists)

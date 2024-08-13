@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
 
-namespace Service.DTOs.Admin.Subscribes
+namespace Service.DTOs.Ui.Subscribes
 {
     public class SubscribeCreateDto
     {

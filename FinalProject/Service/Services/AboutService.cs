@@ -27,7 +27,12 @@ namespace Service.Services
         }
         public async Task CreateAsync(AboutCreateDto model)
         {
-            if(model.Title.Length > 50 || model.Description.Length>200 ) throw new RequiredException("Exceed the Title or Description length limit!!");
+            if (!model.UploadImage.CheckFileType("image"))
+                throw new RequiredException("Invalid file type. Only image files are allowed.");
+
+            if (!model.UploadImage.CheckFileSize(1024))
+                throw new RequiredException("File size exceeds the limit.");
+            if (model.Title.Length > 50 || model.Description.Length>200 ) throw new RequiredException("Exceed the Title or Description length limit!!");
             
             string fileName = Guid.NewGuid().ToString() + "-" + model.UploadImage.FileName;
 
@@ -52,26 +57,43 @@ namespace Service.Services
 
         public async Task EditAsync(int? id, AboutEditDto model)
         {
+            if (id == null)
+            {
+                throw new NotFoundException("Id cannot be null.");
+            }
+
+            if (model.Title.Length > 50 || model.Description.Length > 200)
+            {
+                throw new RequiredException("Exceed the Title or Description length limit!!");
+            }
+
             var existAbout = await _aboutRepo.GetById((int)id) ?? throw new NotFoundException("Data not found");
 
-            if (model.UploadImage is not null)
+            if (model.UploadImage != null)
             {
+                if (!model.UploadImage.CheckFileType("image"))
+                {
+                    throw new RequiredException("Invalid file type. Only image files are allowed.");
+                }
+
+                if (!model.UploadImage.CheckFileSize(1024))
+                {
+                    throw new RequiredException("File size exceeds the limit.");
+                }
+
+
                 string oldPath = _env.GenerateFilePath("images", existAbout.Image);
                 oldPath.DeleteFileFromLocal();
 
+
                 string fileName = Guid.NewGuid().ToString() + "-" + model.UploadImage.FileName;
-
                 string newPath = _env.GenerateFilePath("images", fileName);
-
                 await model.UploadImage.SaveFileToLocalAsync(newPath);
 
-                model.Image = fileName;
 
+                model.Image = fileName;
             }
             _mapper.Map(model, existAbout);
-
-
-
             await _aboutRepo.EditAsync(existAbout);
         }
 

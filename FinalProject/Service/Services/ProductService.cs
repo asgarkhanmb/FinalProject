@@ -32,8 +32,19 @@ namespace Service.Services
 
         public async Task CreateAsync(ProductCreateDto model)
         {
-            bool productExists = await _productRepo.ExistAsync(m=>m.Name==model.Name);
+            foreach (var item in model.UploadImages)
+            {
+                if (!item.CheckFileType("image"))
+                    throw new RequiredException("Invalid file type. Only image files are allowed.");
 
+                if (!item.CheckFileSize(1024))
+                    throw new RequiredException("File size exceeds the limit.");
+            }
+            bool productExists = await _productRepo.ExistAsync(m=>m.Name==model.Name);
+            if (model.Name.Length > 50)
+            {
+                throw new RequiredException("Exceed the Name length limit!!");
+            }
             if (productExists)
             {
                 throw new RequiredException("A product with the same name already exists.");
@@ -87,6 +98,29 @@ namespace Service.Services
 
         public async Task EditAsync(int? id, ProductEditDto model)
         {
+            if (id == null)
+            {
+                throw new ArgumentNullException(nameof(id), "Product ID cannot be null.");
+            }
+            if (model.Name.Length > 50)
+            {
+                throw new RequiredException("Exceed the Name length limit!!");
+            }
+            if (model.UploadImages != null)
+            {
+                foreach (var item in model.UploadImages)
+                {
+                    if (!item.CheckFileType("image"))
+                    {
+                        throw new RequiredException("Invalid file type. Only image files are allowed.");
+                    }
+
+                    if (!item.CheckFileSize(1024))
+                    {
+                        throw new RequiredException("File size exceeds the 1MB limit.");
+                    }
+                }
+            }
             bool productExists = await _productRepo.ExistAsync(m => m.Name == model.Name);
 
             if (productExists)
