@@ -27,15 +27,15 @@ namespace FinalProject.Controllers.UI
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddWishlist([FromQuery] WishlistDto wishlistDto)
+        public async Task<IActionResult> AddWishlist([FromQuery] WishlistCreateDto wishlistDto)
         {
             await _wishlistService.AddWishlistAsync(wishlistDto);
             return CreatedAtAction(nameof(GetWishlistByUserId), new { userId = wishlistDto.AppUserId }, wishlistDto);
         }
         [HttpDelete]
-        public async Task<IActionResult> DeleteProductFromWishlist(int productId, string userId)
+        public async Task<IActionResult> DeleteProductFromWishlist(string userId,int productId)
         {
-            await _wishlistService.DeleteProductFromWishlistAsync(productId, userId);
+            await _wishlistService.DeleteProductFromWishlistAsync(userId,productId);
             return Ok();
         }
      

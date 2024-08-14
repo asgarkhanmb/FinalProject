@@ -11,9 +11,9 @@ namespace Service.Services.Interfaces
     public interface IWishlistService
     {
         Task<WishlistDto> GetWishlistByUserIdAsync(string userId);
-        Task AddWishlistAsync(WishlistDto wishlistDto);
-        Task DeleteProductFromWishlistAsync(int productId, string userId);
-        Task<List<WishlistDto>> GetAllWishlistsAsync();
+        Task AddWishlistAsync(WishlistCreateDto wishlistDto);
+        Task DeleteProductFromWishlistAsync(string userId, int productId);
+        Task<List<WishlistCreateDto>> GetAllWishlistsAsync();
 
     }
 }

@@ -29,24 +29,24 @@ namespace Service.Services
                 throw new RequiredException("UserId or ProductId cannot be null or zero.");
             }
             var basket = await _basketRepository.GetByUserIdAsync(basketCreateDto.UserId);
-
             if (basket == null)
             {
-                throw new NotFoundException("User not found");
+                throw new NotFoundException("User Not Found");
             }
+            var existBasket = await _basketRepository.GetByUserIdAsync(basketCreateDto.UserId);
 
-            if (basket == null)
+            if (existBasket == null)
             {
-                basket = new Basket
+                existBasket = new Basket
                 {
                     AppUserId = basketCreateDto.UserId
                 };
-                basket.BasketProducts.Add(new BasketProduct { ProductId = basketCreateDto.ProductId, Quantity = 1 });
-                await _basketRepository.AddAsync(basket);
+                existBasket.BasketProducts.Add(new BasketProduct { ProductId = basketCreateDto.ProductId, Quantity = 1 });
+                await _basketRepository.AddAsync(existBasket);
             }
             else
             {
-                var existingProduct = basket.BasketProducts.FirstOrDefault(bp => bp.ProductId == basketCreateDto.ProductId);
+                var existingProduct = existBasket.BasketProducts.FirstOrDefault(bp => bp.ProductId == basketCreateDto.ProductId);
                 if (existingProduct == null)
                 {
                     throw new NotFoundException("Product not found");
@@ -57,7 +57,7 @@ namespace Service.Services
                 }
                 else
                 {
-                    basket.BasketProducts.Add(new BasketProduct { ProductId = basketCreateDto.ProductId, Quantity = 1 });
+                    existBasket.BasketProducts.Add(new BasketProduct { ProductId = basketCreateDto.ProductId, Quantity = 1 });
                 }
             }
             await _basketRepository.SaveChangesAsync();
@@ -128,7 +128,6 @@ namespace Service.Services
             if (basket == null) return null;
             return new BasketDto
             {
-                Id = basket.Id,
                 AppUserId = basket.AppUserId,
                 BasketProducts = basket.BasketProducts.Select(bp => new BasketProductDto
                 {

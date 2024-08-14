@@ -24,7 +24,6 @@ namespace Repository.Repositories
         {
             return await _context.Baskets
         .Include(b => b.BasketProducts)
-        
         .FirstOrDefaultAsync(b => b.AppUserId == userId);
         }
 

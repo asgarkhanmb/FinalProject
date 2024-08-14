@@ -9,8 +9,6 @@ namespace Service.DTOs.Ui.Baskets
 {
     public class BasketDto
     {
-
-        public int Id { get; set; }
         public string AppUserId { get; set; }
         public List<BasketProductDto> BasketProducts { get; set; }
         public int TotalProductCount { get; set; }

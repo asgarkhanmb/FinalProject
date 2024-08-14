@@ -77,10 +77,15 @@ namespace Service.Helpers
 
             CreateMap<Subscribe, SubscribeDto>();
             CreateMap<SubscribeCreateDto, Subscribe>();
+            CreateMap<Wishlist, WishlistDto>()
+                      .ForMember(dest => dest.Products, opt => opt.MapFrom(src => src.WishlistProducts));
 
-            CreateMap<Wishlist, WishlistDto>();
-            CreateMap<WishlistDto, Wishlist>();
-            CreateMap<WishlistProduct, WishlistProductDto>();
+            CreateMap<WishlistProduct, WishlistProductDto>()
+                .ForMember(dest => dest.ProductName, opt => opt.MapFrom(src => src.Product.Name)) // Adjust based on your property names
+                .ForMember(dest => dest.ProductPrice, opt => opt.MapFrom(src => src.Product.Price))
+                .ForMember(dest => dest.ProductImage, opt => opt.MapFrom(src => src.Product.ProductImages)); // Adjust based on your property names
+
+            CreateMap<WishlistCreateDto, Wishlist>();
             CreateMap<WishlistProductDto, WishlistProduct>();
 
             CreateMap<Basket, BasketDto>();
