@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Service.DTOs.Admin.Sliders;
 using Service.Services.Interfaces;
 using System.ComponentModel.DataAnnotations;
 
 namespace FinalProject.Controllers.Admin
 {
+    [Authorize("Admin")]
     public class SliderController : BaseController
     {
         private readonly ISliderService _sliderService;

@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Service.DTOs.Account;
 using Service.Helpers.Account;
 using Service.Services.Interfaces;
 
 namespace FinalProject.Controllers.Admin
 {
+    [Authorize("Admin")]
     public class AccountController : BaseController
     {
 

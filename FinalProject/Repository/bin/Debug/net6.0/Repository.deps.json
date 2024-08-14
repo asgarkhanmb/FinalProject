@@ -742,7 +742,10 @@
           "Swashbuckle.AspNetCore.Annotations": "6.6.2"
         },
         "runtime": {
-          "Domain.dll": {}
+          "Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

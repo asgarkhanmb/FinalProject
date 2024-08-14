@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Service.DTOs.Admin.Blogs;
 using Service.Services.Interfaces;
 using System.ComponentModel.DataAnnotations;
 
 namespace FinalProject.Controllers.Admin
 {
+    [Authorize("Admin")]
     public class BlogController:BaseController
     {
         private readonly IBlogService _blogService;

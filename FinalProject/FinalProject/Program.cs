@@ -118,7 +118,7 @@ builder.Services
 
 builder.Services.AddAuthorization(o =>
 {
-    o.AddPolicy("RequireAdminRole", p => p.RequireRole("Admin"));
+    o.AddPolicy("Admin", p => p.RequireRole("Admin"));
 });
 
 var app = builder.Build();

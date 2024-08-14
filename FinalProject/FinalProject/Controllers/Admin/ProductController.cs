@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Service.DTOs.Admin.Products;
 using Service.Services.Interfaces;
 
 namespace FinalProject.Controllers.Admin
 {
+    [Authorize("Admin")]
     public class ProductController :BaseController
     {
         private readonly IProductService _productService;

@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Service.Services.Interfaces;
 using System.ComponentModel.DataAnnotations;
 
 namespace FinalProject.Controllers.Admin
 {
+    [Authorize("Admin")]
     public class SubscribeController :BaseController
     {
         private readonly ISubscribeService _subscribeService;

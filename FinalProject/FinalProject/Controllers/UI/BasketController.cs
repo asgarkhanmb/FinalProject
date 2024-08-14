@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Service.DTOs.Ui.Baskets;
 using Service.Helpers.Exceptions;
 using Service.Services.Interfaces;
 
 namespace FinalProject.Controllers.UI
 {
+    [Authorize]
     public class BasketController :BaseController
     {
         private readonly IBasketService _basketService;

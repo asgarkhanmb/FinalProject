@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Service.DTOs.Admin.Instagrams;
 using Service.Services.Interfaces;
 using System.ComponentModel.DataAnnotations;
 
 namespace FinalProject.Controllers.Admin
 {
+    [Authorize("Admin")]
     public class InstagramController :BaseController
     {
         private readonly IInstagramService _instagramService;

@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Service.DTOs.Admin.Socials;
 using Service.Services.Interfaces;
 using System.ComponentModel.DataAnnotations;
 
 namespace FinalProject.Controllers.Admin
 {
+    [Authorize("Admin")]
     public class SocialController : BaseController
     {
         private readonly ISocialService _socialService;

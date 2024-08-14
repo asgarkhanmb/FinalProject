@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace FinalProject.Controllers.UI
 {
-
+    [Authorize]
     public class WishlistController :BaseController
     {
         private readonly IWishlistService _wishlistService;
