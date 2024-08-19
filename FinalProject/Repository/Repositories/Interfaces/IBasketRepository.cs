@@ -13,5 +13,7 @@ namespace Repository.Repositories.Interfaces
         Task AddAsync(Basket basket);
         Task SaveChangesAsync();
         void Remove(BasketProduct basketProduct);
+        Task<bool> UserExistsAsync(string userId);
+        Task<bool>ProductExistAsync(int productId);
     }
 }

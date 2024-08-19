@@ -27,6 +27,12 @@ namespace Repository.Repositories
         .FirstOrDefaultAsync(b => b.AppUserId == userId);
         }
 
+        public async Task<bool> ProductExistAsync(int productId)
+        {
+            return await _context.Products.AnyAsync(p => p.Id == productId);
+
+        }
+
         public void Remove(BasketProduct basketProduct)
         {
             _context.BasketProducts.Remove(basketProduct);
@@ -35,6 +41,11 @@ namespace Repository.Repositories
         public async Task SaveChangesAsync()
         {
             await _context.SaveChangesAsync();
+        }
+
+        public async Task<bool> UserExistsAsync(string userId)
+        {
+            return await _context.Users.AnyAsync(u => u.Id == userId);
         }
     }
 }

@@ -48,5 +48,14 @@ namespace Repository.Repositories
             }
         }
 
+        public async Task<bool> UserExistsAsync(string userId)
+        {
+            return await _context.Users.AnyAsync(u => u.Id == userId);
+        }
+
+        public async Task<bool> ProductExistAsync(int productId)
+        {
+            return await _context.Products.AnyAsync(p => p.Id == productId);
+        }
     }
 }

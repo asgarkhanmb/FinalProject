@@ -40,48 +40,50 @@ namespace Service.Services
 
         public async Task AddWishlistAsync(WishlistCreateDto wishlistDto)
         {
-          
+            if (string.IsNullOrEmpty(wishlistDto.AppUserId) || wishlistDto.ProductId <= 0)
+            {
+                throw new RequiredException("UserId and ProductId cannot be null or zero.");
+            }
+
+            var userExists = await _wishlistRepository.UserExistsAsync(wishlistDto.AppUserId);
+            if (!userExists)
+            {
+                throw new NotFoundException("The UserId does not exist.");
+            }
+
+            var productExists = await _wishlistRepository.ProductExistAsync(wishlistDto.ProductId);
+            if (!productExists)
+            {
+                throw new NotFoundException("The ProductId does not exist.");
+            }
+
             var existingWishlist = await _wishlistRepository.GetByUserIdAsync(wishlistDto.AppUserId);
-            if (string.IsNullOrEmpty(wishlistDto.AppUserId) || wishlistDto.ProductId == 0)
-            {
-                throw new RequiredException("UserId or ProductId cannot be null or zero.");
-            }
 
-            var wishlist = await _wishlistRepository.GetByUserIdAsync(wishlistDto.AppUserId);
-
-            if (wishlist is null)
-            {
-                throw new NotFoundException("User not found");
-            }
-
-            if (existingWishlist.WishlistProducts.Any(wp => wp.ProductId == wishlistDto.ProductId))
-            {
-                throw new RequiredException("This product is already in your wishlist.");
-            }
             if (existingWishlist == null)
             {
-           
+     
                 var newWishlist = new Wishlist
                 {
                     AppUserId = wishlistDto.AppUserId,
                     WishlistProducts = new List<WishlistProduct>
+            {
+                new WishlistProduct
                 {
-                    new WishlistProduct
-                    {
-                        ProductId = wishlistDto.ProductId
-                    }
+                    ProductId = wishlistDto.ProductId
                 }
+            }
                 };
 
                 await _wishlistRepository.AddAsync(newWishlist);
             }
             else
             {
-                var existingProduct = existingWishlist.WishlistProducts.FirstOrDefault(bp => bp.ProductId == wishlistDto.ProductId);
-                if (existingProduct == null)
+
+                if (existingWishlist.WishlistProducts.Any(wp => wp.ProductId == wishlistDto.ProductId))
                 {
-                    throw new NotFoundException("Product not found");
+                    throw new RequiredException("This product is already in your wishlist.");
                 }
+
                 existingWishlist.WishlistProducts.Add(new WishlistProduct
                 {
                     ProductId = wishlistDto.ProductId
@@ -89,6 +91,8 @@ namespace Service.Services
 
                 await _wishlistRepository.UpdateAsync(existingWishlist);
             }
+
+            await _wishlistRepository.SaveChanges();
         }
 
         public async Task DeleteProductFromWishlistAsync(string userId, int productId)

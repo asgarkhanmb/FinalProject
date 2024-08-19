@@ -10,6 +10,8 @@ namespace Repository.Repositories.Interfaces
         Task AddAsync(Wishlist wishlist);
         Task UpdateAsync(Wishlist wishlist);
         Task DeleteAsync(int id);
+        Task<bool> UserExistsAsync(string userId);
+        Task<bool> ProductExistAsync(int productId);
 
     }
 }

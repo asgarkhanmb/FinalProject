@@ -24,15 +24,23 @@ namespace Service.Services
 
         public async Task AddBasketAsync(BasketCreateDto basketCreateDto)
         {
-            if (string.IsNullOrEmpty(basketCreateDto.UserId) || basketCreateDto.ProductId == 0)
+            if (string.IsNullOrEmpty(basketCreateDto.UserId) || basketCreateDto.ProductId <= 0)
             {
-                throw new RequiredException("UserId or ProductId cannot be null or zero.");
+                throw new RequiredException("UserId and ProductId cannot be null or zero.");
             }
-            var basket = await _basketRepository.GetByUserIdAsync(basketCreateDto.UserId);
-            if (basket == null)
+
+            var userExists = await _basketRepository.UserExistsAsync(basketCreateDto.UserId);
+            if (!userExists)
             {
-                throw new NotFoundException("User Not Found");
+                throw new NotFoundException("The provided UserId does not exist.");
             }
+
+            var productExists = await _basketRepository.ProductExistAsync(basketCreateDto.ProductId);
+            if (!productExists)
+            {
+                throw new NotFoundException("The provided ProductId does not exist.");
+            }
+
             var existBasket = await _basketRepository.GetByUserIdAsync(basketCreateDto.UserId);
 
             if (existBasket == null)
@@ -47,11 +55,7 @@ namespace Service.Services
             else
             {
                 var existingProduct = existBasket.BasketProducts.FirstOrDefault(bp => bp.ProductId == basketCreateDto.ProductId);
-                if (existingProduct == null)
-                {
-                    throw new NotFoundException("Product not found");
-                }
-                else if (existingProduct != null)
+                if (existingProduct != null)
                 {
                     existingProduct.Quantity++;
                 }
