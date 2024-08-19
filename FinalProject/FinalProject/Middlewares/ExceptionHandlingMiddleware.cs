@@ -66,7 +66,7 @@ namespace FinalProject.Middlewares
                     errorResponse.Message = ex.Message;
                     break;
                 case RequiredException ex:
-                    response.StatusCode = (int)HttpStatusCode.LengthRequired;
+                    response.StatusCode = (int)HttpStatusCode.NotFound;
                     errorResponse.Message = ex.Message;
                     break;
 

@@ -92,32 +92,17 @@ namespace Service.Services
 
             if (user == null)
             {
-                return new LoginResponse
-                {
-                    Success = false,
-                    Error = "Login failed: User not found",
-                    Token = null
-                };
+                throw new NotFoundException("Login failed: User not found!!!");
             }
             bool isPasswordCorrect = await _userManager.CheckPasswordAsync(user, model.Password);
             if (!isPasswordCorrect)
             {
-                return new LoginResponse
-                {
-                    Success = false,
-                    Error = "Login failed: Password or Username incorrect!!",
-                    Token = null
-                };
+                throw new RequiredException("Login failed: Password or Username incorrect!!");
             }
 
             if (!await _userManager.IsEmailConfirmedAsync(user))
             {
-                return new LoginResponse
-                {
-                    Success = false,
-                    Error = "Login failed: Email not confirmed",
-                    Token = null
-                };
+                throw new NotFoundException("Login failed: Email not confirmed!!!");
             }
 
             List<string> userRoles = (List<string>)await _userManager.GetRolesAsync(user);
