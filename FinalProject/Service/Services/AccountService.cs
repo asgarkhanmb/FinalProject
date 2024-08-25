@@ -321,11 +321,11 @@ namespace Service.Services
                     StatusCode = (int)StatusCodes.Status400BadRequest
                 };
             }
-            if (roleName.Equals(Roles.Member.ToString(), StringComparison.OrdinalIgnoreCase))
+            if (roleName.Equals(Roles.Admin.ToString(), StringComparison.OrdinalIgnoreCase))
             {
                 return new ResponseObj
                 {
-                    ResponseMessage = "The 'Member' role cannot be removed.",
+                    ResponseMessage = "The 'Admin' role cannot be removed.",
                     StatusCode = (int)StatusCodes.Status400BadRequest
                 };
             }
