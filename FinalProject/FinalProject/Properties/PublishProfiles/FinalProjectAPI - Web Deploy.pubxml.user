@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Bu dosya, Web projenizin yayımlama/paket işlemi tarafından kullanılıyor. MSBuild dosyasını düzenleyerek
+bu işlemin davranışını düzenleyebilirsiniz. Bununla ilgili daha fazla bilgi edinmek için https://go.microsoft.com/fwlink/?LinkID=208121 adresini ziyaret edin. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <History>False|2024-09-21T08:52:51.7097873Z||;False|2024-09-21T11:31:36.0220536+04:00||;False|2024-09-21T11:31:08.9401446+04:00||;True|2024-09-14T18:24:15.4195666+04:00||;True|2024-09-08T16:22:12.3887469+04:00||;False|2024-09-08T16:17:31.0762247+04:00||;False|2024-09-08T16:16:37.8958498+04:00||;False|2024-09-08T16:16:20.0557418+04:00||;False|2024-09-08T16:15:45.6010886+04:00||;False|2024-09-08T16:15:22.8622817+04:00||;False|2024-09-08T16:14:54.7754462+04:00||;False|2024-09-08T16:14:15.9850416+04:00||;False|2024-09-08T16:14:00.6252902+04:00||;False|2024-09-08T16:13:41.2282549+04:00||;True|2024-09-03T14:53:52.9753272+04:00||;True|2024-09-03T10:39:11.9109117+04:00||;True|2024-09-03T10:30:03.7698867+04:00||;True|2024-09-03T10:24:33.1914056+04:00||;False|2024-09-03T10:23:19.7928903+04:00||;True|2024-08-26T15:17:39.7882513+04:00||;True|2024-08-26T15:15:27.6099446+04:00||;True|2024-08-26T15:08:03.1582598+04:00||;True|2024-08-26T15:04:14.3369210+04:00||;True|2024-08-26T15:02:40.0587995+04:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

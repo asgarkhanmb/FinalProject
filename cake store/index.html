@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Shop — Təzə bişmiş tortlar və şirniyyatlar</title>
+    <meta name="description" content="Hər gün təzə bişirilən əl işi tortlar, kekslər və şirniyyatlar. Onlayn sifariş və təhlükəsiz ödəniş.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body data-page="home">
+<main>
+    <!-- Hero (Slider API) -->
+    <section class="hero" data-hero>
+        <div class="container hero__grid">
+            <div class="hero__text">
+                <span class="hero__badge"><span class="dot"></span> Bu səhər təzə bişirildi</span>
+                <h1 data-hero-title>Həyatınızı <em>şirinləşdirək</em></h1>
+                <p data-hero-desc>Əl işi tortlar və şirniyyatlar — hər dişləmdə ləzzət.</p>
+                <div class="hero__cta">
+                    <a href="shop.html" class="btn btn--primary">Tortlara bax <i class="fa fa-arrow-right"></i></a>
+                    <a href="about.html" class="btn btn--ghost">Hekayəmiz</a>
+                </div>
+                <div class="hero__dots" data-hero-dots></div>
+            </div>
+            <div class="hero__visual">
+                <div class="hero__img" data-hero-img style="background-image:url('img/hero/hero-1.jpg')" role="img" aria-label="Təzə tort"></div>
+                <div class="hero__float">
+                    <i class="fa fa-truck" aria-hidden="true"></i>
+                    <div><strong>Eyni gün çatdırılma</strong><small>Saat 14:00-dək sifarişlərə</small></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kateqoriyalar -->
+    <section class="section--tight">
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <span class="eyebrow">Kateqoriyalar</span>
+                    <h2>Sevimlinizi tapın</h2>
+                </div>
+                <a href="shop.html" class="btn btn--ghost btn--sm">Bütün məhsullar</a>
+            </div>
+            <div class="cat-row" data-categories></div>
+        </div>
+    </section>
+
+    <!-- Seçilmiş məhsullar -->
+    <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <span class="eyebrow">Ən çox satılanlar</span>
+                    <h2>Sobadan təzə çıxıb</h2>
+                    <p>Ən sevilən tortlarımız — hər gün kiçik partiyalarla bişirilir.</p>
+                </div>
+                <a href="shop.html" class="btn btn--dark btn--sm">Hamısına bax <i class="fa fa-arrow-right"></i></a>
+            </div>
+            <div class="product-grid" data-featured></div>
+        </div>
+    </section>
+
+    <!-- Haqqımızda (About API) -->
+    <section class="section section--alt" data-about>
+        <div class="container split">
+            <img class="split__img" data-about-img src="img/about-video.jpg" alt="Şirniyyat sexımız" loading="lazy">
+            <div>
+                <span class="eyebrow" data-about-title>Cake Shop haqqında</span>
+                <h2 data-about-desc>Kraliçalar evindən tortlar və şirniyyatlar</h2>
+                <p class="muted">Kiçik ailə mətbəxi kimi başlayan hekayəmiz bu gün bütün şəhərin sevdiyi şirniyyat sexinə çevrilib. Hər tortu hələ də əvvəlki kimi əllə hazırlayırıq.</p>
+                <ul class="check-list">
+                    <li><i class="fa fa-check-circle"></i><span>Təbii kərə yağı, kənd yumurtası və Belçika şokoladı</span></li>
+                    <li><i class="fa fa-check-circle"></i><span>Ad günü, toy və hər cür bayram üçün xüsusi sifariş tortlar</span></li>
+                    <li><i class="fa fa-check-circle"></i><span>Hər səhər təzə bişirilir — heç vaxt dondurulmur</span></li>
+                </ul>
+                <a href="about.html" class="btn btn--dark">Ətraflı</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Üstünlüklər -->
+    <section class="section">
+        <div class="container">
+            <div class="features">
+                <div class="feature">
+                    <div class="feature__icon"><i class="fa fa-leaf"></i></div>
+                    <h3>Təbii inqrediyentlər</h3>
+                    <p>Süni konservant yoxdur — yalnız keyfiyyətli və təbii məhsullar.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature__icon"><i class="fa fa-paint-brush"></i></div>
+                    <h3>Sifarişlə hazırlanır</h3>
+                    <p>İdeyanızı bizə deyin — dekoratorlarımız onu reallığa çevirsin.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature__icon"><i class="fa fa-lock"></i></div>
+                    <h3>Təhlükəsiz ödəniş</h3>
+                    <p>Stripe ilə kartla təhlükəsiz ödəyin. Kart məlumatlarınız bizim serverlərə düşmür.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Komanda -->
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-head section-head--center">
+                <span class="eyebrow">Komandamız</span>
+                <h2>Qənnadçılarımızla tanış olun</h2>
+                <p>Hər dilimin arxasında duran istedadlı insanlar.</p>
+            </div>
+            <div class="team-grid" data-team></div>
+        </div>
+    </section>
+
+    <!-- Rəylər -->
+    <section class="section">
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <span class="eyebrow">Rəylər</span>
+                    <h2>Müştərilərimiz nə deyir</h2>
+                </div>
+            </div>
+            <div class="quotes" data-testimonials></div>
+        </div>
+    </section>
+
+    <!-- Instagram -->
+    <section class="section--tight">
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <span class="eyebrow">Bizi Instagram-da izləyin</span>
+                    <h2 data-insta-title>Şirin anlar xatirə olaraq qalır</h2>
+                </div>
+                <a class="btn btn--ghost btn--sm" data-insta-handle href="#" target="_blank" rel="noopener">@sweetcake</a>
+            </div>
+            <div class="insta-grid" data-instagram></div>
+        </div>
+    </section>
+
+    <!-- Abunəlik -->
+    <section class="section">
+        <div class="container">
+            <div class="cta-band">
+                <div>
+                    <h2>Şirin təklifləri ilk siz öyrənin</h2>
+                    <p>Yeni dadlar, mövsümi təkliflər və xüsusi endirimlər üçün abunə olun.</p>
+                </div>
+                <form class="inline-form" data-subscribe-form>
+                    <label for="ctaEmail" class="sr-only">E-poçt</label>
+                    <input id="ctaEmail" type="email" placeholder="E-poçtunuzu yazın" required>
+                    <button class="btn btn--dark" type="submit">Abunə ol</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="js/api.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

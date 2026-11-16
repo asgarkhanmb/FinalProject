@@ -9,6 +9,7 @@ namespace Service.Helpers.Account
     public class RegisterResponse
     {
         public bool Success { get; set; }
+        public bool RequiresEmailConfirmation { get; set; }
         public IEnumerable<string> ResponseMessage { get; set; }
     }
 }

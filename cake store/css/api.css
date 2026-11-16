@@ -1,0 +1,117 @@
+/* ==========================================================
+   Backend inteqrasiyası üçün əlavə stillər (js/site.js)
+   ========================================================== */
+
+/* Kateqoriya ikonları — backend şəkil faylı qaytarır */
+.categories__item a.categories__item__icon {
+    display: block;
+    text-decoration: none;
+}
+.cs-category-icon {
+    display: block;
+    width: 100px !important;
+    height: 100px;
+    object-fit: contain;
+    margin: 0 auto 6px;
+}
+
+/* Məhsul kartında wishlist düyməsi */
+.product__item__pic .cs-wish {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #f08632;
+    font-size: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.2s;
+}
+.product__item:hover .cs-wish,
+.product__item__pic .cs-wish:focus {
+    opacity: 1;
+}
+.product__item__pic .cs-wish:hover {
+    transform: scale(1.1);
+}
+@media (hover: none) {
+    .product__item__pic .cs-wish { opacity: 1; }
+}
+
+/* Səhifələmə — aktiv səhifə */
+.shop__pagination a.cs-active {
+    background: #000000;
+    color: #ffffff;
+}
+
+/* Səbət / wishlist cədvəli */
+.cs-cart-img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+.pro-qty .cs-qty {
+    cursor: pointer;
+    user-select: none;
+}
+.cart__close .icon_close {
+    cursor: pointer;
+}
+
+/* Boş vəziyyət / yüklənmə mesajları */
+.cs-empty {
+    padding: 30px 0;
+    text-align: center;
+    color: #666666;
+    font-size: 16px;
+}
+.cs-empty a {
+    color: #f08632;
+    font-weight: 600;
+}
+
+/* Footer linkləri */
+.footer__widget ul li a,
+.blog__sidebar__item__categories ul li a {
+    color: inherit;
+}
+
+/* Bildirişlər (toast) */
+#cs-toasts {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: calc(100vw - 40px);
+}
+.cs-toast {
+    min-width: 220px;
+    max-width: 360px;
+    padding: 12px 18px;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 14px;
+    white-space: pre-line;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+    animation: cs-toast-in 0.25s ease-out;
+    transition: opacity 0.4s, transform 0.4s;
+}
+.cs-toast--success { background: #2e7d32; }
+.cs-toast--error { background: #c62828; }
+.cs-toast--info { background: #f08632; }
+.cs-toast--hide {
+    opacity: 0;
+    transform: translateY(10px);
+}
+@keyframes cs-toast-in {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Məhsul | Cake Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body data-page="product">
+<main>
+    <section class="section--tight">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Naviqasiya"><a href="index.html">Ana səhifə</a><span><a href="shop.html">Mağaza</a></span><span data-crumb>Məhsul</span></nav>
+            <div class="product-detail" data-product>
+                <div class="skeleton" style="aspect-ratio:1"></div>
+                <div>
+                    <div class="skeleton" style="height:40px;width:60%;margin-bottom:16px"></div>
+                    <div class="skeleton" style="height:24px;width:30%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" data-related-wrap hidden>
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <span class="eyebrow">Bunlar da xoşunuza gələ bilər</span>
+                    <h2>Oxşar tortlar</h2>
+                </div>
+            </div>
+            <div class="product-grid" data-related></div>
+        </div>
+    </section>
+</main>
+
+<script src="js/api.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

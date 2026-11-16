@@ -86,13 +86,13 @@ namespace Service.Services
                 }
             }
 
-            bool titleExists = await _settingRepo.ExistAsync(m => m.Title == model.Title);
+            bool titleExists = await _settingRepo.ExistAsync(m => m.Title == model.Title && m.Id != id);
             if (titleExists)
             {
                 throw new RequiredException("A Title already exists.");
             }
 
-            bool phoneExists = await _settingRepo.ExistAsync(m => m.Phone == model.Phone);
+            bool phoneExists = await _settingRepo.ExistAsync(m => m.Phone == model.Phone && m.Id != id);
             if (phoneExists)
             {
                 throw new RequiredException("A Phone number already exists.");

@@ -121,7 +121,7 @@ namespace Service.Services
                     }
                 }
             }
-            bool productExists = await _productRepo.ExistAsync(m => m.Name == model.Name);
+            bool productExists = await _productRepo.ExistAsync(m => m.Name == model.Name && m.Id != id);
 
             if (productExists)
             {

@@ -38,7 +38,7 @@ namespace Service.Services
             var productExists = await _basketRepository.ProductExistAsync(basketCreateDto.ProductId);
             if (!productExists)
             {
-                throw new NotFoundException("The provided ProductId does not exist.");
+                throw new NotFoundException("Məhsul tapılmadı.");
             }
 
             var existBasket = await _basketRepository.GetByUserIdAsync(basketCreateDto.UserId);
@@ -79,14 +79,14 @@ namespace Service.Services
 
             if (basket == null)
             {
-                throw new NotFoundException("Basket not found for the given user.");
+                throw new NotFoundException("Səbət tapılmadı.");
             }
 
             var product = basket.BasketProducts.FirstOrDefault(bp => bp.ProductId == basketCreateDto.ProductId);
 
             if (product == null)
             {
-                throw new NotFoundException("Product not found in the basket.");
+                throw new NotFoundException("Məhsul səbətdə tapılmadı.");
             }
             if (product != null)
             {
@@ -107,14 +107,14 @@ namespace Service.Services
 
             if (basket == null)
             {
-                throw new NotFoundException("Basket not found for the given user.");
+                throw new NotFoundException("Səbət tapılmadı.");
             }
 
             var product = basket.BasketProducts.FirstOrDefault(bp => bp.ProductId == basketCreateDto.ProductId);
 
             if (product == null)
             {
-                throw new NotFoundException("Product not found in the basket.");
+                throw new NotFoundException("Məhsul səbətdə tapılmadı.");
             }
 
             product.Quantity--;

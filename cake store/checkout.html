@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sifarişi rəsmiləşdir | Cake Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body data-page="checkout">
+<main>
+    <section class="page-hero">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Naviqasiya"><a href="index.html">Ana səhifə</a><span><a href="shoping-cart.html">Səbət</a></span><span>Rəsmiləşdirmə</span></nav>
+            <h1>Sifarişi rəsmiləşdir</h1>
+        </div>
+    </section>
+
+    <section class="section--tight">
+        <div class="container">
+            <div class="cart-layout" data-cart-layout>
+                <form class="card" data-checkout-form novalidate>
+                    <h2 style="font-size:26px">Çatdırılma məlumatları</h2>
+                    <p class="muted" style="margin-bottom:24px">Sifarişinizi hara çatdıraq?</p>
+                    <div class="alert" data-alert role="alert" style="margin-bottom:18px"></div>
+                    <div class="form-grid">
+                        <div class="field">
+                            <label for="coName">Ad soyad <span class="req">*</span></label>
+                            <input id="coName" class="input" autocomplete="name" maxlength="100">
+                            <div class="field-error"></div>
+                        </div>
+                        <div class="field">
+                            <label for="coPhone">Telefon <span class="req">*</span></label>
+                            <input id="coPhone" class="input" type="tel" autocomplete="tel" placeholder="+994 50 123 45 67" maxlength="30">
+                            <div class="field-error"></div>
+                        </div>
+                        <div class="field full">
+                            <label for="coAddress">Çatdırılma ünvanı <span class="req">*</span></label>
+                            <input id="coAddress" class="input" autocomplete="street-address" placeholder="Küçə, bina, mənzil, şəhər" maxlength="300">
+                            <div class="field-error"></div>
+                        </div>
+                        <div class="field full">
+                            <label for="coNote">Qənnadçı üçün qeyd <span class="muted">(istəyə bağlı)</span></label>
+                            <textarea id="coNote" class="textarea" maxlength="500" placeholder="Məsələn: tortun üzərinə “Ad günün mübarək, Leyla!” yazın"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--block" style="margin-top:24px"><i class="fa fa-lock"></i> Təhlükəsiz ödə</button>
+                    <div class="secure-note"><i class="fa fa-cc-stripe"></i> Ödəniş üçün Stripe səhifəsinə yönləndiriləcəksiniz</div>
+                </form>
+                <aside class="summary" data-summary>
+                    <div class="skeleton" style="height:260px"></div>
+                </aside>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="js/api.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

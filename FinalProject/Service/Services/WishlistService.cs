@@ -54,7 +54,7 @@ namespace Service.Services
             var productExists = await _wishlistRepository.ProductExistAsync(wishlistDto.ProductId);
             if (!productExists)
             {
-                throw new NotFoundException("The ProductId does not exist.");
+                throw new NotFoundException("Məhsul tapılmadı.");
             }
 
             var existingWishlist = await _wishlistRepository.GetByUserIdAsync(wishlistDto.AppUserId);
@@ -81,7 +81,7 @@ namespace Service.Services
 
                 if (existingWishlist.WishlistProducts.Any(wp => wp.ProductId == wishlistDto.ProductId))
                 {
-                    throw new RequiredException("This product is already in your wishlist.");
+                    throw new RequiredException("Bu məhsul artıq seçilmişlərinizdədir.");
                 }
 
                 existingWishlist.WishlistProducts.Add(new WishlistProduct

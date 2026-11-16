@@ -44,6 +44,7 @@ namespace Service
             services.AddScoped<ISendEmail, SendEmail>();
             services.AddScoped<IWishlistService, WishlistService>();
             services.AddScoped<IBasketService, BasketService>();
+            services.AddScoped<IOrderService, OrderService>();
 
 
 

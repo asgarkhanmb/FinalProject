@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ItBuqeQ6oes=",
+  "dgSpecHash": "FE3f+6bxXMc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\Repository\\Repository.csproj",
+  "projectFilePath": "D:\\Lahiyələr\\Final\\FinalProject\\Repository\\Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Əsgərxan\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Əsgərxan\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
@@ -77,5 +77,54 @@
     "C:\\Users\\Əsgərxan\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
     "C:\\Users\\Əsgərxan\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'AutoMapper' 13.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-6vhm-j9h7-f9gh",
+      "projectPath": "D:\\Lahiyələr\\Final\\FinalProject\\Repository\\Repository.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\Lahiyələr\\Final\\FinalProject\\Repository\\Repository.csproj",
+      "libraryId": "AutoMapper",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'AutoMapper' 13.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-gpwp-5797-mjff",
+      "projectPath": "D:\\Lahiyələr\\Final\\FinalProject\\Repository\\Repository.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\Lahiyələr\\Final\\FinalProject\\Repository\\Repository.csproj",
+      "libraryId": "AutoMapper",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'AutoMapper' 13.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
+      "projectPath": "D:\\Lahiyələr\\Final\\FinalProject\\Repository\\Repository.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\Lahiyələr\\Final\\FinalProject\\Repository\\Repository.csproj",
+      "libraryId": "AutoMapper",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "Package 'MailKit' 4.7.1.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-9j88-vvj5-vhgr",
+      "projectPath": "D:\\Lahiyələr\\Final\\FinalProject\\Repository\\Repository.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\Lahiyələr\\Final\\FinalProject\\Repository\\Repository.csproj",
+      "libraryId": "MailKit",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

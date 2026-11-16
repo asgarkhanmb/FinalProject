@@ -23,6 +23,7 @@ namespace Repository
             services.AddScoped<IBlogRepository, BlogRepository>();
             services.AddScoped<ISettingRepository, SettingRepository>();
             services.AddScoped<ISubscribeRepository, SubscribeRepository>();
+            services.AddScoped<IOrderRepository, OrderRepository>();
             services.AddScoped<IWishlistRepository, WishlistRepository>();
             services.AddScoped<IBasketRepository, BasketRepository>();
 

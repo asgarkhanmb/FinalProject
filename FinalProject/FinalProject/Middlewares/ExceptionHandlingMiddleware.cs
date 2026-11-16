@@ -72,7 +72,7 @@ namespace FinalProject.Middlewares
 
                 default:
                     response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                    errorResponse.Message = "Internal server error!";
+                    errorResponse.Message = "Serverdə xəta baş verdi. Bir az sonra yenidən cəhd edin.";
                     break;
             }
             _logger.LogError(exception.Message);

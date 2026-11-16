@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Lahiy\u0259l\u0259r\\Final\\FinalProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|d:\\lahiy\u0259l\u0259r\\final\\finalproject\\finalproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02ED7861-03BE-4A5D-A3E6-65E8F411D54C}|Repository\\Repository.csproj|d:\\lahiy\u0259l\u0259r\\final\\finalproject\\repository\\repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{02ED7861-03BE-4A5D-A3E6-65E8F411D54C}|Repository\\Repository.csproj|solutionrelative:repository\\repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|d:\\lahiy\u0259l\u0259r\\final\\finalproject\\finalproject\\controllers\\ui\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\controllers\\ui\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|d:\\lahiy\u0259l\u0259r\\final\\finalproject\\finalproject\\controllers\\ui\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F155B381-3AF8-418A-BEF9-FD711CC2741C}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\controllers\\ui\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Lahiy\u0259l\u0259r\\Final\\FinalProject\\FinalProject\\Program.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Program.cs",
+              "ToolTip": "D:\\Lahiy\u0259l\u0259r\\Final\\FinalProject\\FinalProject\\Program.cs",
+              "RelativeToolTip": "FinalProject\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAM0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-14T20:41:22.438Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Repository.csproj",
+              "DocumentMoniker": "D:\\Lahiy\u0259l\u0259r\\Final\\FinalProject\\Repository\\Repository.csproj",
+              "RelativeDocumentMoniker": "Repository\\Repository.csproj",
+              "ToolTip": "D:\\Lahiy\u0259l\u0259r\\Final\\FinalProject\\Repository\\Repository.csproj",
+              "RelativeToolTip": "Repository\\Repository.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-11-14T20:41:22.478Z",
+              "OwnerCaption": "Repository.csproj"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "D:\\Lahiy\u0259l\u0259r\\Final\\FinalProject\\FinalProject\\Controllers\\UI\\BaseController.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Controllers\\UI\\BaseController.cs",
+              "ToolTip": "D:\\Lahiy\u0259l\u0259r\\Final\\FinalProject\\FinalProject\\Controllers\\UI\\BaseController.cs",
+              "RelativeToolTip": "FinalProject\\Controllers\\UI\\BaseController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-14T20:41:22.573Z",
+              "OwnerCaption": "%2"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AboutController.cs",
+              "DocumentMoniker": "D:\\Lahiy\u0259l\u0259r\\Final\\FinalProject\\FinalProject\\Controllers\\UI\\AboutController.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Controllers\\UI\\AboutController.cs",
+              "ToolTip": "D:\\Lahiy\u0259l\u0259r\\Final\\FinalProject\\FinalProject\\Controllers\\UI\\AboutController.cs",
+              "RelativeToolTip": "FinalProject\\Controllers\\UI\\AboutController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-14T20:41:22.573Z",
+              "OwnerCaption": "%2"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

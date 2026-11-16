@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloq | Cake Shop</title>
+    <meta name="description" content="Mətbəximizdən reseptlər, məsləhətlər və hekayələr.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body data-page="blog">
+<main>
+    <section class="page-hero">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Naviqasiya"><a href="index.html">Ana səhifə</a><span>Bloq</span></nav>
+            <h1>Mətbəximizdən</h1>
+        </div>
+    </section>
+
+    <section class="section--tight">
+        <div class="container">
+            <div class="blog-grid" data-blogs></div>
+        </div>
+    </section>
+
+    <div class="modal" data-modal role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal__box">
+            <button class="icon-btn modal__close" aria-label="Bağla"><i class="fa fa-times"></i></button>
+            <img data-modal-img src="" alt="">
+            <div class="modal__content">
+                <h2 id="modalTitle" data-modal-title></h2>
+                <p class="muted" data-modal-text></p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="js/api.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

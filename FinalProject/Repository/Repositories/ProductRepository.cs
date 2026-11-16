@@ -26,7 +26,13 @@ namespace Repository.Repositories
 
         public async Task<IEnumerable<Product>> GetPaginateDataAsync(int page, int take)
         {
-            return await _entities.Skip((page - 1) * take).Take(take).ToListAsync();
+            return await _entities
+                .Include(m => m.Category)
+                .Include(m => m.ProductImages)
+                .OrderBy(m => m.Id)
+                .Skip((page - 1) * take)
+                .Take(take)
+                .ToListAsync();
         }
 
         public async Task<IEnumerable<Product>> SortBy(string sortKey, bool isDescending)
@@ -35,7 +41,10 @@ namespace Repository.Repositories
             {
                 throw new InvalidOperationException("The entities collection is not initialized.");
             }
-            var query = _entities.AsQueryable();
+            var query = _entities
+                .Include(m => m.Category)
+                .Include(m => m.ProductImages)
+                .AsQueryable();
             var normalizedSortKey = sortKey?.ToLowerInvariant();
             switch (normalizedSortKey)
             {

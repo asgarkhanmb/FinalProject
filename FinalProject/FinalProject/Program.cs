@@ -12,6 +12,12 @@ using System.Text;
 using Repository;
 using Microsoft.OpenApi.Models;
 using FinalProject.Middlewares;
+using FinalProject.Helpers;
+
+// Kompüterin regional ayarı (az-Latn-AZ) onluq ayırıcı kimi vergül işlədir.
+// Form-dan gələn "12.50" kimi qiymətlərin düzgün oxunması üçün invariant culture.
+System.Globalization.CultureInfo.DefaultThreadCurrentCulture = System.Globalization.CultureInfo.InvariantCulture;
+System.Globalization.CultureInfo.DefaultThreadCurrentUICulture = System.Globalization.CultureInfo.InvariantCulture;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,9 +30,26 @@ builder.Services.AddControllers().AddJsonOptions(options =>
 });
 
 
+// ==================== CORS ====================
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("Frontend", policy =>
+    {
+        policy
+            .AllowAnyOrigin()
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
+
+
+// ==================== IDENTITY ====================
+
 builder.Services
     .AddIdentity<AppUser, IdentityRole>()
     .AddEntityFrameworkStores<AppDbContext>()
+    .AddErrorDescriber<AzIdentityErrorDescriber>()
     .AddDefaultTokenProviders();
 
 builder.Services.Configure<IdentityOptions>(opt =>
@@ -37,36 +60,46 @@ builder.Services.Configure<IdentityOptions>(opt =>
     opt.Password.RequireDigit = true;
     opt.Password.RequireLowercase = true;
     opt.Password.RequireUppercase = true;
-    opt.SignIn.RequireConfirmedEmail = true;
+    // appsettings: "Auth:RequireConfirmedEmail" (Development-də false — e-poçt təsdiqi olmadan giriş)
+    opt.SignIn.RequireConfirmedEmail =
+        builder.Configuration.GetValue("Auth:RequireConfirmedEmail", true);
 });
-builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("Smtp"));
 
-builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("JWTSettings"));
 
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
+// ==================== SETTINGS ====================
+
+builder.Services.Configure<EmailSettings>(
+    builder.Configuration.GetSection("Smtp"));
+
+builder.Services.Configure<JwtSettings>(
+    builder.Configuration.GetSection("JWTSettings"));
+
+builder.Services.Configure<StripeSettings>(
+    builder.Configuration.GetSection("Stripe"));
+
+
+// ==================== DATABASE ====================
 
 builder.Services.AddDbContext<AppDbContext>(options =>
-       options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString("Default")));
 
 
-//var logger = new LoggerConfiguration()
-//    .ReadFrom.Configuration(builder.Configuration)
-//    .Enrich.FromLogContext()
-//    .CreateLogger();
-
-//builder.Logging.ClearProviders();
-//builder.Logging.AddSerilog(logger);
+// ==================== REPOSITORY & SERVICE ====================
 
 builder.Services.AddRepositoryLayer();
 
 builder.Services.AddServiceLayer();
 
+
+// ==================== SWAGGER ====================
+
+builder.Services.AddEndpointsApiExplorer();
+
 builder.Services.AddSwaggerGen(options =>
 {
     options.EnableAnnotations();
 
-    // Add security definitions
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Name = "Authorization",
@@ -77,7 +110,6 @@ builder.Services.AddSwaggerGen(options =>
         Description = "Please enter JWT with Bearer into field"
     });
 
-    // Add security requirement
     options.AddSecurityRequirement(new OpenApiSecurityRequirement
     {
         {
@@ -95,49 +127,99 @@ builder.Services.AddSwaggerGen(options =>
 });
 
 
-JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear(); // => remove default claims
+// ==================== JWT ====================
+
+JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
+
 builder.Services
     .AddAuthentication(options =>
     {
-        options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-        options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
-        options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+        options.DefaultAuthenticateScheme =
+            JwtBearerDefaults.AuthenticationScheme;
+
+        options.DefaultScheme =
+            JwtBearerDefaults.AuthenticationScheme;
+
+        options.DefaultChallengeScheme =
+            JwtBearerDefaults.AuthenticationScheme;
     })
     .AddJwtBearer(cfg =>
     {
         cfg.RequireHttpsMetadata = false;
         cfg.SaveToken = true;
-        cfg.TokenValidationParameters = new TokenValidationParameters
-        {
-            ValidIssuer = builder.Configuration["JWTSettings:Issuer"],
-            ValidAudience = builder.Configuration["JWTSettings:Issuer"],
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWTSettings:Key"])),
-            ClockSkew = TimeSpan.Zero // remove delay of token when expire
-        };
+
+        cfg.TokenValidationParameters =
+            new TokenValidationParameters
+            {
+                ValidIssuer =
+                    builder.Configuration["JWTSettings:Issuer"],
+
+                ValidAudience =
+                    builder.Configuration["JWTSettings:Issuer"],
+
+                IssuerSigningKey =
+                    new SymmetricSecurityKey(
+                        Encoding.UTF8.GetBytes(
+                            builder.Configuration["JWTSettings:Key"])),
+
+                ClockSkew = TimeSpan.Zero
+            };
     });
+
+
+// ==================== AUTHORIZATION ====================
 
 builder.Services.AddAuthorization(o =>
 {
-    o.AddPolicy("Admin", p => p.RequireRole("Admin"));
+    o.AddPolicy("Admin", p =>
+        p.RequireRole("Admin"));
 });
+
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+
+// ==================== SEED (rollar + admin istifadəçi) ====================
+
+await DataSeeder.SeedAsync(app.Services, app.Configuration, app.Logger);
+
+
+// ==================== SWAGGER ====================
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
+
+// ==================== MIDDLEWARE ====================
+
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 app.UseHttpsRedirection();
+
+// wwwroot/images altındakı şəkillər frontend-ə /images/... ünvanı ilə verilir
+app.UseStaticFiles();
+
+
+// ==================== CORS ====================
+
+app.UseCors("Frontend");
+
+
+// ==================== AUTHENTICATION ====================
 
 app.UseAuthentication();
 
 app.UseAuthorization();
 
+
+// ==================== CONTROLLERS ====================
+
 app.MapControllers();
+
+
+// ==================== RUN ====================
 
 app.Run();

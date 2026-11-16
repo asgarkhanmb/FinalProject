@@ -55,7 +55,7 @@ namespace Service.Services
             {
                 throw new RequiredException("Exceed the Name length limit!!");
             }
-            bool socialExists = await _socialRepo.ExistAsync(m => m.Url == model.Url);
+            bool socialExists = await _socialRepo.ExistAsync(m => m.Url == model.Url && m.Id != id);
 
             if (socialExists)
             {

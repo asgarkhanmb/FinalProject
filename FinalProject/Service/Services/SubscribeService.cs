@@ -26,12 +26,12 @@ namespace Service.Services
 
             if (subscribeExists)
             {
-                throw new RequiredException("A Email with the same name already subscribe exists.");
+                throw new RequiredException("Bu e-poçt artıq abunə olub.");
             }
             if (model == null) throw new NotFoundException("Data not found");
             if (string.IsNullOrEmpty(model.Email) || model.Email.Length > 200 || model.Email.Length <15)
             {
-                throw new RequiredException("Email is required, must be between 5 and 200 characters.");
+                throw new RequiredException("E-poçt tələb olunur (5–200 simvol).");
             }
             var subscribe = _mapper.Map<Subscribe>(model);
             await _subscribeRepo.CreateAsync(subscribe);

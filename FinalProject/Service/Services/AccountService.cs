@@ -18,6 +18,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Caching.Distributed;
 using Service.Helpers;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 
 
 namespace Service.Services
@@ -34,6 +35,8 @@ namespace Service.Services
         private readonly UrlHelperService _urlHelper;
         private readonly ISendEmail _sendEmail;
         private readonly IDistributedCache _distributedCache;
+        private readonly string _clientUrl;
+        private readonly bool _requireConfirmedEmail;
         public AccountService(UserManager<AppUser> userManager,
                               RoleManager<IdentityRole> roleManager,
                               IMapper mapper,
@@ -43,8 +46,11 @@ namespace Service.Services
                               ITokenService tokenService,
                               UrlHelperService urlHelper,
                               ISendEmail sendEmail,
-                              IDistributedCache distributedCache)
+                              IDistributedCache distributedCache,
+                              IConfiguration configuration)
         {
+            _clientUrl = (configuration["ClientUrl"] ?? "http://127.0.0.1:5500").TrimEnd('/');
+            _requireConfirmedEmail = configuration.GetValue("Auth:RequireConfirmedEmail", true);
             _userManager = userManager;
             _roleManager = roleManager;
             _mapper = mapper;
@@ -76,12 +82,30 @@ namespace Service.Services
             await _userManager.AddToRoleAsync(user, Roles.Member.ToString());
 
             string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-            string url = $"https://localhost:44317/Account/Verify/{HttpUtility.UrlEncode(user.Email)}/{HttpUtility.UrlEncode(token)}";
-            _emailService.Send(user.Email, "Email confirmation", url);
+            string url = $"{_clientUrl}/verify.html?email={HttpUtility.UrlEncode(user.Email)}&token={HttpUtility.UrlEncode(token)}";
+            string html = $"<p>Hesabınızı təsdiqləmək üçün <a href=\"{url}\">bu linkə</a> keçin.</p>";
+
+            if (_requireConfirmedEmail)
+            {
+                _emailService.Send(user.Email, "Email confirmation", html);
+            }
+            else
+            {
+                // Təsdiq məcburi deyilsə, e-poçt göndərilə bilməsə belə qeydiyyat uğurlu sayılır
+                try { _emailService.Send(user.Email, "Email confirmation", html); }
+                catch { /* SMTP xətası qeydiyyatı dayandırmasın */ }
+            }
+
             return new RegisterResponse
             {
                 Success = true,
-                ResponseMessage = new List<string>() { token }
+                RequiresEmailConfirmation = _requireConfirmedEmail,
+                ResponseMessage = new List<string>()
+                {
+                    _requireConfirmedEmail
+                        ? "Account created. Daxil olmazdan əvvəl e-poçtunuzu təsdiqləyin."
+                        : "Hesab uğurla yaradıldı."
+                }
             };
         }
 
@@ -92,21 +116,21 @@ namespace Service.Services
 
             if (user == null)
             {
-                throw new NotFoundException("Login failed: User not found!!!");
+                throw new NotFoundException("Bu istifadəçi adı və ya e-poçt ilə hesab tapılmadı.");
             }
             bool isPasswordCorrect = await _userManager.CheckPasswordAsync(user, model.Password);
             if (!isPasswordCorrect)
             {
-                throw new RequiredException("Login failed: Password or Username incorrect!!");
+                throw new ApplicationException("Şifrə yanlışdır.");
             }
 
-            if (!await _userManager.IsEmailConfirmedAsync(user))
+            if (_requireConfirmedEmail && !await _userManager.IsEmailConfirmedAsync(user))
             {
-                throw new NotFoundException("Login failed: Email not confirmed!!!");
+                throw new ForbiddenException("Daxil olmazdan əvvəl e-poçtunuzu təsdiqləyin.");
             }
 
             List<string> userRoles = (List<string>)await _userManager.GetRolesAsync(user);
-            string token = GenerateJwtToken(user.UserName, userRoles);
+            string token = GenerateJwtToken(user, userRoles);
 
             return new LoginResponse
             {
@@ -158,13 +182,16 @@ namespace Service.Services
             }
         }
 
-        private string GenerateJwtToken(string username, List<string> roles)
+        private string GenerateJwtToken(AppUser user, List<string> roles)
         {
             var claims = new List<Claim>
             {
-                new(JwtRegisteredClaimNames.Sub, username),
+                new(JwtRegisteredClaimNames.Sub, user.UserName),
                 new(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                new(ClaimTypes.NameIdentifier, username)
+                new(ClaimTypes.NameIdentifier, user.UserName),
+                // Frontend basket/wishlist sorğuları üçün istifadəçinin Id-sinə ehtiyac duyur
+                new("uid", user.Id),
+                new("fullName", user.FullName ?? string.Empty)
             };
 
             roles.ForEach(role =>
@@ -194,7 +221,7 @@ namespace Service.Services
             {
                 return new ResponseObj
                 {
-                    ResponseMessage = "User does not exist.",
+                    ResponseMessage = "İstifadəçi tapılmadı.",
                     StatusCode = (int)StatusCodes.Status400BadRequest
                 };
             }
@@ -221,12 +248,12 @@ namespace Service.Services
             AppUser appUser = await _userManager.FindByEmailAsync(email);
             if (appUser == null || appUser.IsDeleted) return new ResponseObj
             {
-                ResponseMessage = "User does not exist.",
+                ResponseMessage = "İstifadəçi tapılmadı.",
                 StatusCode = (int)StatusCodes.Status400BadRequest
             };
             string token = await _userManager.GeneratePasswordResetTokenAsync(appUser);
             var urlHelper = _urlHelper.GetUrlHelper();
-            string link = $"https://localhost:44317/reset/{HttpUtility.UrlEncode(appUser.Email)}/{HttpUtility.UrlEncode(token)}";
+            string link = $"{_clientUrl}/reset-password.html?email={HttpUtility.UrlEncode(appUser.Email)}&token={HttpUtility.UrlEncode(token)}";
             _sendEmail.Send("asgarkhanmb@code.edu.az", "Cake Store", appUser.Email, link, "Reset Password");
             IList<string> roles = await _userManager.GetRolesAsync(appUser);
             return new ResponseObj
@@ -248,7 +275,7 @@ namespace Service.Services
             if (!isSucceeded) return new ResponseObj
             {
                 StatusCode = (int)StatusCodes.Status400BadRequest,
-                ResponseMessage = "TokenIsNotValid"
+                ResponseMessage = "Link etibarsızdır və ya vaxtı keçib."
             };
             IdentityResult resoult = await _userManager.ResetPasswordAsync(appUser, userResetPasswordDto.Token, userResetPasswordDto.Password);
             if (!resoult.Succeeded) return new ResponseObj
@@ -261,7 +288,7 @@ namespace Service.Services
             return new ResponseObj
             {
                 StatusCode = (int)StatusCodes.Status200OK,
-                ResponseMessage = "Password successfully reseted"
+                ResponseMessage = "Şifrə uğurla yeniləndi."
             };
         }
 
@@ -272,7 +299,7 @@ namespace Service.Services
             {
                 return new ResponseObj
                 {
-                    ResponseMessage = "User does not exist.",
+                    ResponseMessage = "İstifadəçi tapılmadı.",
                     StatusCode = (int)StatusCodes.Status400BadRequest
                 };
             }
@@ -281,7 +308,7 @@ namespace Service.Services
             {
                 return new ResponseObj
                 {
-                    ResponseMessage = "Role does not exist.",
+                    ResponseMessage = "Belə rol yoxdur.",
                     StatusCode = (int)StatusCodes.Status400BadRequest
                 };
             }
@@ -309,7 +336,7 @@ namespace Service.Services
             {
                 return new ResponseObj
                 {
-                    ResponseMessage = "User does not exist.",
+                    ResponseMessage = "İstifadəçi tapılmadı.",
                     StatusCode = (int)StatusCodes.Status400BadRequest
                 };
             }
@@ -317,7 +344,7 @@ namespace Service.Services
             {
                 return new ResponseObj
                 {
-                    ResponseMessage = "Role does not exist.",
+                    ResponseMessage = "Belə rol yoxdur.",
                     StatusCode = (int)StatusCodes.Status400BadRequest
                 };
             }
@@ -325,7 +352,7 @@ namespace Service.Services
             {
                 return new ResponseObj
                 {
-                    ResponseMessage = "The 'Admin' role cannot be removed.",
+                    ResponseMessage = "'Admin' rolu silinə bilməz.",
                     StatusCode = (int)StatusCodes.Status400BadRequest
                 };
             }

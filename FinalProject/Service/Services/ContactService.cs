@@ -25,11 +25,11 @@ namespace Service.Services
         public async Task CreateAsync(ContactCreateDto model)
         {
         
-            if (model.Name.Length > 20||model.Message.Length>200) throw new RequiredException("Exceed the length limit!!");
+            if (model.Name.Length > 20||model.Message.Length>200) throw new RequiredException("Mətn çox uzundur: ad maksimum 20, mesaj maksimum 200 simvol ola bilər.");
             if (model == null)  throw new NotFoundException("Data not found");
             if (string.IsNullOrEmpty(model.Email) || model.Email.Length > 200 || model.Email.Length < 15)
             {
-                throw new RequiredException("Email is required, must be between 5 and 200 characters.");
+                throw new RequiredException("E-poçt tələb olunur (5–200 simvol).");
             }
             var contact = _mapper.Map<Contact>(model);
             await _contactRepo.CreateAsync(contact);

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\FinalProject\\FinalProject.csproj": {}
+    "D:\\Lahiyələr\\Final\\FinalProject\\FinalProject\\FinalProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\Domain\\Domain.csproj": {
+    "D:\\Lahiyələr\\Final\\FinalProject\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\Lahiyələr\\Final\\FinalProject\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\Domain\\Domain.csproj",
+        "projectPath": "D:\\Lahiyələr\\Final\\FinalProject\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Əsgərxan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\Domain\\obj\\",
+        "outputPath": "D:\\Lahiyələr\\Final\\FinalProject\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -31,6 +31,7 @@
         },
         "frameworks": {
           "net6.0": {
+            "framework": "net6.0",
             "targetAlias": "net6.0",
             "projectReferences": {}
           }
@@ -44,10 +45,12 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "11.0.100"
       },
       "frameworks": {
         "net6.0": {
+          "framework": "net6.0",
           "targetAlias": "net6.0",
           "dependencies": {
             "AutoMapper": {
@@ -131,18 +134,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\11.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\FinalProject\\FinalProject.csproj": {
+    "D:\\Lahiyələr\\Final\\FinalProject\\FinalProject\\FinalProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\FinalProject\\FinalProject.csproj",
+        "projectUniqueName": "D:\\Lahiyələr\\Final\\FinalProject\\FinalProject\\FinalProject.csproj",
         "projectName": "FinalProject",
-        "projectPath": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\FinalProject\\FinalProject.csproj",
+        "projectPath": "D:\\Lahiyələr\\Final\\FinalProject\\FinalProject\\FinalProject.csproj",
         "packagesPath": "C:\\Users\\Əsgərxan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\FinalProject\\obj\\",
+        "outputPath": "D:\\Lahiyələr\\Final\\FinalProject\\FinalProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -162,10 +165,11 @@
         },
         "frameworks": {
           "net6.0": {
+            "framework": "net6.0",
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\Service\\Service.csproj": {
-                "projectPath": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\Service\\Service.csproj"
+              "D:\\Lahiyələr\\Final\\FinalProject\\Service\\Service.csproj": {
+                "projectPath": "D:\\Lahiyələr\\Final\\FinalProject\\Service\\Service.csproj"
               }
             }
           }
@@ -179,10 +183,12 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "11.0.100"
       },
       "frameworks": {
         "net6.0": {
+          "framework": "net6.0",
           "targetAlias": "net6.0",
           "dependencies": {
             "AutoMapper": {
@@ -244,6 +250,14 @@
             "Swashbuckle.AspNetCore.Annotations": {
               "target": "Package",
               "version": "[6.6.2, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.7.3, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.7.3, )"
             }
           },
           "imports": [
@@ -265,18 +279,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\11.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\Repository\\Repository.csproj": {
+    "D:\\Lahiyələr\\Final\\FinalProject\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\Repository\\Repository.csproj",
+        "projectUniqueName": "D:\\Lahiyələr\\Final\\FinalProject\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\Repository\\Repository.csproj",
+        "projectPath": "D:\\Lahiyələr\\Final\\FinalProject\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\Əsgərxan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\Repository\\obj\\",
+        "outputPath": "D:\\Lahiyələr\\Final\\FinalProject\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -296,10 +310,11 @@
         },
         "frameworks": {
           "net6.0": {
+            "framework": "net6.0",
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\Domain\\Domain.csproj"
+              "D:\\Lahiyələr\\Final\\FinalProject\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Lahiyələr\\Final\\FinalProject\\Domain\\Domain.csproj"
               }
             }
           }
@@ -313,10 +328,12 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "11.0.100"
       },
       "frameworks": {
         "net6.0": {
+          "framework": "net6.0",
           "targetAlias": "net6.0",
           "dependencies": {
             "AutoMapper": {
@@ -400,18 +417,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\11.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\Service\\Service.csproj": {
+    "D:\\Lahiyələr\\Final\\FinalProject\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\Service\\Service.csproj",
+        "projectUniqueName": "D:\\Lahiyələr\\Final\\FinalProject\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\Service\\Service.csproj",
+        "projectPath": "D:\\Lahiyələr\\Final\\FinalProject\\Service\\Service.csproj",
         "packagesPath": "C:\\Users\\Əsgərxan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\Service\\obj\\",
+        "outputPath": "D:\\Lahiyələr\\Final\\FinalProject\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -431,10 +448,11 @@
         },
         "frameworks": {
           "net6.0": {
+            "framework": "net6.0",
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\Əsgərxan\\Desktop\\Final\\FinalProject\\Repository\\Repository.csproj"
+              "D:\\Lahiyələr\\Final\\FinalProject\\Repository\\Repository.csproj": {
+                "projectPath": "D:\\Lahiyələr\\Final\\FinalProject\\Repository\\Repository.csproj"
               }
             }
           }
@@ -448,10 +466,12 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "11.0.100"
       },
       "frameworks": {
         "net6.0": {
+          "framework": "net6.0",
           "targetAlias": "net6.0",
           "dependencies": {
             "AutoMapper": {
@@ -518,6 +538,10 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[47.4.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
@@ -543,7 +567,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\11.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

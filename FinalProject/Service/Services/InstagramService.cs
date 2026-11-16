@@ -109,7 +109,7 @@ namespace Service.Services
                     }
                 }
             }
-            bool instagramExists = await _instagramRepo.ExistAsync(m => m.SocialName == model.SocialName);
+            bool instagramExists = await _instagramRepo.ExistAsync(m => m.SocialName == model.SocialName && m.Id != id);
 
             if (instagramExists)
             {

@@ -15,5 +15,7 @@ namespace Service.DTOs.Admin.Teams
         public string FullName { get; set; }
         public string Position { get; set; }
         public List<string> SocialNames { get; set; }
+        // Frontend-də sosial ikonların linkləri üçün (Social -> SocialDto xəritəsi MappingProfile-da var)
+        public List<Service.DTOs.Admin.Socials.SocialDto> Socials { get; set; }
     }
 }
